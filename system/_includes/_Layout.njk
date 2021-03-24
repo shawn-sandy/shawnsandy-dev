@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <meta name="description" content="{{ pkg.description }}" />
+    <meta name="description" content="{{ settings.description }}" />
     {% block head %}
     <title>{{ settings.title }} | {{ title }}</title>
     <!-- load the critical styles inline -->
@@ -74,5 +74,7 @@
     {% if settings.scripts %} {% for src in settings.scripts %}
     <script src="{{ src }}"></script>
     {% endfor %} {% endif %}
+    <!-- recaptcha -->
+    {{ recaptcha or "no-captcha" }}
   </body>
 </html>

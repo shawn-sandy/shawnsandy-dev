@@ -37,3 +37,9 @@ strong {
     padding: 3rem 0;
   }
 }
+
+nav {
+  @media (min-width: 980px) {
+    //align-items: center;
+  }
+}

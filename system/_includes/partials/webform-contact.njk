@@ -4,7 +4,11 @@
     name="apikey"
     value="d1ee3a5e-b148-4264-a8b2-b0e68c6b39c1"
   />
-
+  <input
+    type="hidden"
+    name="subject"
+    value="New contact us submission from : {{ env.url }}"
+  />
   <div>
     <label for="name"> <em>Name</em></label>
     <input
@@ -40,6 +44,26 @@
       required
     ></textarea>
   </div>
-  <input type="hidden" name="redirect" value="{{ env.contact_success }}" />
+  <input
+    type="hidden"
+    name="redirect"
+    value="{{ env.url }}{{ env.contact_success }}"
+  />
+  <input type="hidden" name="recaptcha_response" id="recaptchaResponse" />
   <button type="submit">Submit Form</button>
 </form>
+<!-- recaptcha form -->
+<script src="https://www.google.com/recaptcha/api.js?render={{
+    env.recaptcha_key
+  }}"></script>
+<script>
+  grecaptcha.ready(function () {
+    grecaptcha
+      .execute("{{ env.recaptcha_key }}", {
+        action: "contact",
+      })
+      .then(function (token) {
+        recaptchaResponse.value = token;
+      });
+  });
+</script>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ settings.title }} | {{ title }}</title>
+    <meta name="description" content="{{ settings.description }}" />
+    <meta name="author" content="{{ settings.author.name }}" />
+    <!-- load the critical styles inline -->
+    {% set css %} {% include "src/css/critical.css" %} {% endset %}
+    <!-- feed it through our cssmin filter to minify -->
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+    <link rel="stylesheet" href="/css/dashboard.css" />
+  </head>
+
+  <body>
+    <section role="region" aria-label="Dashboard application" data-dashboard>
+      <section data-sidebar>
+        <nav
+          data-sidebar-nav
+          id="sidebar"
+          role="navigation"
+          aria-label="Main navigation"
+          data-nav
+        >
+          <section role="region" aria-label="dashboard-nav">
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </section>
+          <section data-show-mobile role="region" aria-label="Close nav">
+            <hr />
+            <a href="#" data-sidebar-button>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+                  />
+                </svg>
+              </span>
+            </a>
+          </section>
+        </nav>
+      </section>
+      <main>
+        <nav data-mobile role="navigation" aria-label="Main navigation">
+          <section>
+            <section data-show-mobile>
+              <a
+                role="button"
+                aria-label="Navigation button"
+                href="#sidebar"
+                data-sidebar-button
+              >
+                <small>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
+                    </svg>
+                  </span>
+                </small>
+              </a>
+            </section>
+            <section data-brand="">
+              <h1>
+                <a href="/" aria-label="Site logo">
+                  <span aria-label="logo text">FirstPaint</span>
+                </a>
+              </h1>
+            </section>
+          </section>
+        </nav>
+        <header>
+          <section role="banner-">
+            <div>
+              <!-- <img src="img/fp.svg" alt="" /> -->
+              <h2>Dashboard Page</h2>
+              <hr />
+            </div>
+          </section>
+        </header>
+        <section>
+          {{ content | safe }}
+        </section>
+      </main>
+    </section>
+
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>

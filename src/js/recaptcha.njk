@@ -1,0 +1,22 @@
+---
+permalink: "recaptcha"
+eleventyExcludeFromCollections: true
+---
+
+{% if env.recaptcha_key %}
+<!-- recaptcha form -->
+<script src="https://www.google.com/recaptcha/api.js?render={{
+    env.recaptcha_key
+  }}"></script>
+<script>
+  grecaptcha.ready(function () {
+    grecaptcha
+      .execute("{{ env.recaptcha_key }}", {
+        action: "contact",
+      })
+      .then(function (token) {
+        recaptchaResponse.value = token;
+      });
+  });
+</script>
+{% endif %}

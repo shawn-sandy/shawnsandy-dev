@@ -27,3 +27,21 @@ eleventyNavigation:
 </p>
 <hr />
 {% endif %}
+
+<!-- recaptcha form -->
+{% set recaptcha %}
+<script src="https://www.google.com/recaptcha/api.js?render={{
+    env.recaptcha_key
+  }}"></script>
+<script>
+  grecaptcha.ready(function () {
+    grecaptcha
+      .execute("{{ env.recaptcha_key }}", {
+        action: "contact",
+      })
+      .then(function (token) {
+        recaptchaResponse.value = token;
+      });
+  });
+</script>
+{% endset %}

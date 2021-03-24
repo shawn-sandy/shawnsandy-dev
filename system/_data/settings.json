@@ -1,7 +1,7 @@
 {
-  "title": "First.Paint Pages",
+  "title": "FP.Pages",
   "url": "https://proideas.dev/",
-  "description": "A minimalist UI Toolkit for building stylish, performance driven, accessibility first websites",
+  "description": "A minimalist UI Toolkit for building responsive, performance driven, accessibility first websites",
   "feed": {
     "subtitle": "A UI toolkit for creating and managing design/style systems, pattern libraries, style-guides, etc",
     "filename": "feed.xml",
