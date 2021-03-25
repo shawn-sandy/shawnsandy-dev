@@ -1,0 +1,62 @@
+<nav
+  data-sidebar-nav
+  id="sidebar"
+  role="navigation"
+  aria-label="Main navigation"
+  data-nav>
+    <section data-show-mobile role="region" aria-label="Close nav">
+    <a href="#" data-sidebar-button>
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+        </svg>
+      </span>
+    </a>
+
+  </section>
+  <section role="region" aria-label="dashboard-nav">
+    {% set navPages = collections.all | eleventyNavigation %}
+    <ul>
+      <li>
+        <strong>
+          Browse
+        </strong>
+        </li>
+      {%- for entry in navPages %}
+      <li>
+        <a href="{{ entry.url | url }}" {% if entry.url==page.url %} data-current="current item" {% endif
+          %}>{{ entry.title }}</a>
+      </li>
+      {%- endfor %}
+      <li>
+        <hr>
+      </li>
+      {% if env.node_env == 'development' %}
+      {% set docs = collections.developers %}
+      <li>
+        <strong>
+          DEVELOPMENT
+        </strong>
+      </li>
+      {%- for doc in docs %}
+      <li>
+        <a href="{{ doc.url | url }}" {% if entry.url==page.url %} data-current="current item" {% endif
+          %}>
+          {{ doc.data.title }}
+        </a>
+      </li>
+      {%- endfor %}
+      <li>
+        <hr>
+      </li>
+      {% endif %}
+    </ul>
+  </section>
+
+</nav>

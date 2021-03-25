@@ -30,6 +30,7 @@
  </section>
 
   {% set navPages = collections.all | eleventyNavigation %}
+
   <section id="sidebar">
     <ul>
     {%- for entry in navPages %}
@@ -38,7 +39,7 @@
       </li>
     {%- endfor %}
     {% if env.node_env == 'development'  %}
-    <li><a href="/developers">Developers</a></li>
+    <li><a href="/core-docs">Pages Docs</a></li>
     {% endif %}
     <li>
         <div data-show-mobile>
