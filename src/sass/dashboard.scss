@@ -1,1 +1,13 @@
-@use '@shawnsandy/first-paint/src/styles/dashboard.scss'
+@use '@shawnsandy/first-paint/src/styles/dashboard.scss';
+
+[data-dashboard] main {
+  width: 100%;
+  padding: 1rem;
+
+
+
+}
+
+[data-sidebar] strong a {
+  font-size: 1.1rem;
+}

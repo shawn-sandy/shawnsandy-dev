@@ -46,7 +46,7 @@
   },
   "homepage": "https://github.com/shawn-sandy/first-paint-apps#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-cache-assets": "^2.1.0",
     "@11ty/eleventy-img": "^0.8.2",
     "@11ty/eleventy-navigation": "^0.1.6",
@@ -61,7 +61,7 @@
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.12",
-    "@shawnsandy/first-paint": "^1.0.6",
+    "@shawnsandy/first-paint": "^1.0.8",
     "babel-watch": "^7.4.1",
     "lodash": "^4.17.21",
     "npm-force-resolutions": "0.0.10",

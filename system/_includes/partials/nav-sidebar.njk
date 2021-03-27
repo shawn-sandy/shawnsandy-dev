@@ -25,9 +25,9 @@
     <ul>
       <li>
         <strong>
-          Browse
+          BROWSE
         </strong>
-        </li>
+      </li>
       {%- for entry in navPages %}
       <li>
         <a href="{{ entry.url | url }}" {% if entry.url==page.url %} data-current="current item" {% endif
@@ -38,10 +38,10 @@
         <hr>
       </li>
       {% if env.node_env == 'development' %}
-      {% set docs = collections.developers %}
+      {% set docs = collections.developer | reverse %}
       <li>
         <strong>
-          DEVELOPMENT
+          <a href="/developers">DEVELOPER DOCS</a>
         </strong>
       </li>
       {%- for doc in docs %}

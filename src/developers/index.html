@@ -1,0 +1,30 @@
+---
+title: "FP. Pages Developer Docs"
+tags: "pages"
+category: developers
+scripts: []
+---
+
+<p>
+  Developer docs are are only available in your
+  <code>node_env: development</code>
+</p>
+
+{% for content in collections.developer | reverse %}
+<article>
+  <time datetime="{{ page.date.toLocaleString() }}">
+    Posted: {{ content.date.toUTCString() }}
+    <!-- Posted: {{ hlp.11ty.formatDate(content.date.toUTCString()) }} -->
+  </time>
+  <h4 id="{{ content.data.title | slug }}">
+    <a href="{{ content.url }}">{{ content.data.title }}</a>
+  </h4>
+  <p>{{ hlp.11ty.noHtml(content.templateContent) | truncate(300) }}</p>
+  <footer>
+    <a href="{{ content.url }}" role="button">
+      <em>Continue reading</em>
+    </a>
+  </footer>
+</article>
+<hr />
+{% endfor %}

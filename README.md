@@ -17,7 +17,7 @@
 * Once this is completed run `npm start` this will launch a local instance of the FP-Pages in the default browser
 * Open the repo in VSCODE or your favorite IDE/editor and edit the content inside your `src` folder, changes will will livereload in the browser.
 
-[READ START GUIDE](/GUIDE.md) for more info.
+[READ START GUIDE](/src/developers/01.md) for more info.
 
 **TODO**
 
