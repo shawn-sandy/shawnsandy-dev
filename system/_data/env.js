@@ -10,4 +10,5 @@ module.exports = {
   url: process.env.URL || null,
   developer_mode: process.env.DEVELOPER_MODE || true,
   recaptcha_key: process.env.RECAPTCHA_KEY || null
+
 }
