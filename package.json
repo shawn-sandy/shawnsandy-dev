@@ -61,7 +61,7 @@
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.12",
-    "@shawnsandy/first-paint": "^1.0.8",
+    "@shawnsandy/first-paint": "^1.0.9",
     "babel-watch": "^7.4.1",
     "lodash": "^4.17.21",
     "npm-force-resolutions": "0.0.10",
