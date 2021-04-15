@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>title</title>
+    <title>{{ settings.title }}</title>
     <meta name="description" content="title" />
     <meta name="author" content="author" />
     <script
@@ -27,16 +27,12 @@
         <section role="banner">
           <div>
             <!-- <img src="img/fp.svg" alt="" /> -->
-            <h2>Lightweight, Fast, Accessible, Inclusive</h2>
+            <h2>{{ settings.subtitle }}</h2>
             <p>
               <span>{{ settings.description }}</span>
             </p>
             <p>
-              <a
-                href="#"
-                role="button"
-                aria-label="Add word, cta action, to your button title"
-              >
+              <a href="/main" role="button" aria-label="Go to the main page">
                 <em>Get Started</em></a
               >
             </p>

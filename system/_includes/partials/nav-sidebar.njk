@@ -37,7 +37,7 @@
       <li>
         <hr>
       </li>
-      {% if env.node_env == 'development' %}
+      {% if env.developer_mode %}
       {% set docs = collections.developer | reverse %}
       <li>
         <strong>

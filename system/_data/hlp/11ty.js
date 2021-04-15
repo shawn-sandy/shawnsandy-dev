@@ -11,5 +11,7 @@ const stripHtml = (content) => content.replace(/(<([^>]+)>)/ig, '')
 module.exports = {
   year: currentYear,
   formatDate: formatDate,
+  strip: stripHtml,
   noHtml: stripHtml
+
 }
