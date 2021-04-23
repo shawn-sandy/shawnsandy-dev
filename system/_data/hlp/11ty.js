@@ -1,7 +1,7 @@
-//@ts-check
+// @ts-check
 'use strict'
 
-const take = require("lodash.take")
+const take = require('lodash.take')
 
 const date = new Date()
 
@@ -14,9 +14,8 @@ const stripHtml = (data = null) => {
   return data.replace(/(<([^>]+)>)/ig, '')
 }
 
-const _take = ($arr = [], $limit = 3) => {
-  if ($arr.length >= 1)
-    return take($arr, $limit)
+const limit = ($arr = [], $limit = 3) => {
+  if ($arr.length >= 1) { return take($arr, $limit) }
   return []
 }
 
@@ -25,6 +24,6 @@ module.exports = {
   formatDate: formatDate,
   strip: stripHtml,
   noHtml: stripHtml,
-  take: _take
+  limit: limit
 
 }

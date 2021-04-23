@@ -1,21 +1,20 @@
-{%- macro featured(tag = 'posts', limit = 3) -%} {%- set feature =
-hlp.11ty.take(collections[tag], limit) -%}
-<!-- {{ feature | length | log }} -->
-
-<section>
-  <div role="list">
-    {%- for item in feature %}
-    <div role="listitem">
-      <h3>
-        <i class="{{ item.data.icon }}"></i>
-        {{ item.data.title }}
-      </h3>
-      <p>
-        {{ hlp.11ty.noHtml(item.templateContent) |
+{%- macro featured(tag = 'posts', limit = 3) -%}
+  {%- set feature = hlp.11ty.limit(collections[tag], limit) -%}
+  <!-- {{ feature | length | log }} -->
+  <section>
+    <div role="list">
+      {%- for item in feature %}
+        <div role="listitem">
+          <h3>
+            <i class="{{ item.data.icon }}"></i>
+            {{ item.data.title }}
+          </h3>
+          <p>
+            {{ hlp.11ty.noHtml(item.templateContent) |
     truncate(200) }}
-      </p>
+          </p>
+        </div>
+      {%- endfor %}
     </div>
-    {%- endfor %}
-  </div>
-</section>
+  </section>
 {%- endmacro -%}
