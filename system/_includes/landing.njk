@@ -4,9 +4,9 @@
 <!-- content -->
 {% block content %}
 <!--  -->
-{% import "partials/feature-section.njk" as feature with context %}
+{% import "_macros/collection_featured.njk" as feature with context %}
 {{ feature.featured() }}
-
+<hr />
 {{ super() }}
 {% endblock %}
 <!-- sidebar -->

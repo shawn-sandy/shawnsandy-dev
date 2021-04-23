@@ -7,21 +7,15 @@ hlp.11ty.take(collections[tag], limit) -%}
     {%- for item in feature %}
     <div role="listitem">
       <h3>
-        <i class="fad fa-atom-alt"></i>
+        <i class="{{ item.data.icon }}"></i>
         {{ item.data.title }}
       </h3>
       <p>
-        {% if item.data.summary.length -%}
-        {{ item.data.summary |
-    truncate(250) }}
-        {% else %}
         {{ hlp.11ty.noHtml(item.templateContent) |
-    truncate(50) }}
-        {% endif -%}
+    truncate(200) }}
       </p>
     </div>
     {%- endfor %}
   </div>
 </section>
-<hr />
 {%- endmacro -%}
