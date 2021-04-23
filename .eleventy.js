@@ -6,6 +6,7 @@ const markdown = require("@shawnsandy/ideas/lib/markdown")
 const image = require("@11ty/eleventy-img")
 const CleanCSS = require("clean-css")
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation")
+const take = ("lodash.take")
 
 module.exports = function (eleventyConfig) {
 

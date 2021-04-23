@@ -55,6 +55,7 @@
     "clean-css": "^5.1.2",
     "dotenv": "^8.2.0",
     "html-minifier": "^4.0.0",
+    "lodash.take": "^4.1.1",
     "style-dictionary": "^2.10.3"
   },
   "devDependencies": {

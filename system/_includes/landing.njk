@@ -2,7 +2,10 @@
 <!-- cover -->
 {% block cover %} {% include "partials/hero.njk" %} {% endblock %}
 <!-- content -->
-{% block content %} {% include "partials/feature-section.njk" %}
+{% block content %}
+<!--  -->
+{% import "partials/feature-section.njk" as feature with context %}
+{{ feature.featured() }}
 
 {{ super() }}
 {% endblock %}
