@@ -4,17 +4,15 @@
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>{{ settings.title }}
+    <title>{{ title }}
       |
-      {{ title }}</title>
+      {{ settings.title }}
+    </title>
     <meta name="description" content="{{ settings.description }}"/>
-    <meta
-    name="author" content="{{ settings.author.name }}"/>
-    <!-- load the critical styles inline -->
+    <meta name="author" content="{{ settings.author.name }}"/>
     {% set css %}
     {% include "src/css/critical.css" %}
     {% endset %}
-    <!-- feed it through our cssmin filter to minify -->
     <style>
       {{css | cssmin | safe}}</style>
     <link rel="stylesheet" href="/css/dashboard.css"/>

@@ -1,9 +1,9 @@
-{%- macro featured(tag = 'posts', limit = 3) -%}
+{# adds a grid styled collection to the page #}
+{# attributes tag - tag, limit - number of post to display, words - word count #}
+  {%- macro featured(tag = 'posts', limit = 3, words = 200) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) -%}
-  <!-- {{ feature | length | log }} -->
-  <section>
-    <div role="list">
-      {%- for item in feature %}
+    <section>
+      <div role="list"> {%- for item in feature %}
         <div role="listitem">
           <h3>
             <i class="{{ item.data.icon }}"></i>
@@ -11,7 +11,7 @@
           </h3>
           <p>
             {{ hlp.11ty.noHtml(item.templateContent) |
-    truncate(200) }}
+    truncate(words) }}
           </p>
         </div>
       {%- endfor %}

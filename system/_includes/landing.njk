@@ -1,14 +1,10 @@
 {% extends "base.njk" %}
-<!-- cover -->
 {% block cover %}
   {% include "partials/hero.njk" %}
 {% endblock %}
-<!-- content -->
 {% block content %}
-  <!--  -->
   {% import "_macros/collections/featured.njk" as feature with context %}
   {{ feature.featured() }}
   <hr/>
   {{ super() }}
 {% endblock %}
-<!-- sidebar -->
