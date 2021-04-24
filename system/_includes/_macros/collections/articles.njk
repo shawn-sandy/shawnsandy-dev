@@ -1,0 +1,26 @@
+{% macro articles(category = 'post', collection = null) %}
+  {% set collectionArr = collections[category] | reverse %}
+  {% if collection !== null %}
+    {% set collectionArr = collection %}
+  {% endif %}
+  <article>
+    {% for content in collectionArr %}
+      <article>
+        <h3 id="{{ content.data.title | slug }}">
+          <a href="{{ content.url }}">{{ content.data.title }}</a>
+        </h3>
+        <time datetime="{{ page.date.toLocaleString() }}">
+          Posted:
+          {{ content.date.toUTCString() }}
+        </time>
+        <p>{{ content.data.summary }}</p>
+        <footer>
+          <a href="{{ content.url }}" role="button">
+            <em>Continue reading</em>
+          </a>
+        </footer>
+        <hr/>
+      </article>
+    {% endfor %}
+  </article>
+{% endmacro %}
