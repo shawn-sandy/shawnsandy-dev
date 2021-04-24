@@ -1,9 +1,10 @@
 {# adds a grid styled collection to the page #}
-{# attributes tag - tag, limit - number of post to display, words - word count #}
-  {%- macro featured(tag = 'posts', limit = 3, words = 200) -%}
+{# attributes tag - tag, limit - number of items, words - word count #}
+{%- macro featured(tag = 'posts', limit = 3, words = 200) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
-    <section>
-      <div role="list"> {%- for item in feature %}
+  <section>
+    <div role="list">
+      {%- for item in feature %}
         <div role="listitem">
           <h3>
             <i class="{{ item.data.icon }}"></i>
@@ -16,5 +17,63 @@
         </div>
       {%- endfor %}
     </div>
+  </section>
+{%- endmacro -%}
+
+{# display a list with title and links #}
+{# attributes tag - tag, limit - number of items #}
+{%- macro postLinks(tag = 'posts', limit = 3) -%}
+  {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
+  <section>
+    <span>
+      <ul role="list">
+        {%- for item in feature %}
+          <li role="listitem">
+            {% if item.data.coverPhoto %}
+              <picture>
+                <img src="{{ item.data.coverPhoto}}" alt="Image"/>
+              </picture>
+            {% endif %}
+            <h3>
+              <i class="{{ item.data.icon }}"></i>
+              <a href="{{ content.url }}" title="{{ item.data.title | slug}}">
+                {{ item.data.title }}
+              </a>
+            </h3>
+          </li>
+        {%- endfor %}
+      </ul>
+    </span>
+  </section>
+{%- endmacro -%}
+
+{# display a list with image/links or title #}
+{# attributes tag - tag, limit - number of items #}
+{%- macro postImages(tag = 'posts', limit = 3) -%}
+  {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
+  <section>
+    <span>
+      <ul role="list">
+        {%- for item in feature %}
+          <li role="listitem">
+            <a href="" title="{{ item.data.title | slug}}">
+              {% if item.data.coverPhoto %}
+                <picture>
+                  <img src="{{ item.data.coverPhoto}}" alt="Image"/>
+                </picture>
+              {% else %}
+                <h3>
+                  <i class="{{ item.data.icon }}"></i>
+                  <a href="{{ content.url }}" title="{{ item.data.title | slug}}">
+                    {{ item.data.title }}
+                  </a>
+                </h3>
+              {% endif %}
+
+            </a>
+          </li>
+        {%- endfor %}
+      </ul>
+    </span>
   </section>
 {%- endmacro -%}

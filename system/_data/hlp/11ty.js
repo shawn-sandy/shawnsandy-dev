@@ -16,14 +16,14 @@ const stripHtml = (data = null) => {
 
 const limit = ($arr = [], $limit = 3) => {
   if ($arr.length >= 1) { return take($arr, $limit) }
-  return []
+  return null
 }
 
 module.exports = {
   year: currentYear,
   formatDate: formatDate,
   strip: stripHtml,
-  noHtml: stripHtml,
+  noHtml: stripHtml, // deprecated use strip
   limit: limit
 
 }
