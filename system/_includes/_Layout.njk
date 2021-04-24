@@ -1,95 +1,80 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <script
-      src="https://kit.fontawesome.com/e2ffdf4c70.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <meta name="description" content="{{ settings.description }}" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <script src="https://kit.fontawesome.com/e2ffdf4c70.js" crossorigin="anonymous"></script>
+    <meta name="description" content="{{ settings.description }}"/>
     {% block head %}
-    <title>{{ settings.title }} | {{ title }}</title>
-    <!-- load the critical styles inline -->
-    {% set css %} {% include "src/css/critical.css" %} {% endset %}
-    <!-- feed it through our cssmin filter to minify -->
-    <style>
-      {{ css | cssmin | safe }}
-    </style>
-    <!-- custom stylesheets -->
-    <link
-      rel="stylesheet"
-      href="/css/styles.css"
-      rel="stylesheet"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="/css/elements.css"
-      rel="stylesheet"
-      media="all"
-    />
-    {% for styles in settings.styles %}
-    <link href="{{ styles }}" rel="stylesheet" media="all" />
-    {% endfor %} {% if stylesheets %} {% for style in stylesheets %}
-    <link rel="stylesheet" href="{{ style }}" media="all" />
-    {% endfor %} {% endif %} {% endblock %}
-  </head>
-
-  <body class="{{ title | slug }}">
-    <!-- header -->
-    <!-- header -->
-    {% block header %}
-    <!-- nav -->
-    {% include "partials/nav.njk" %} {% endblock %}
-    <!-- cover -->
-    <header>{% block cover %} {% endblock %}</header>
-    <!-- content -->
-    {% block content %}
-    {{ content | safe }}
+      <title>{{ settings.title }}
+        |
+        {{ title }}</title>
+      {% set css %}
+      {% include "src/css/critical.css" %}
+      {% endset %}
+      {# css #}
+      <style>
+        {{css | cssmin | safe}}
+      </style>
+      <link rel="stylesheet" href="/css/styles.css" media="all"/>
+      <link rel="stylesheet" href="/css/elements.css" media="all"/>
+      {% for styles in settings.styles %}
+        <link href="{{ styles }}" rel="stylesheet" media="all"/>
+      {% endfor %}
+      {% if stylesheets %}
+        {% for style in stylesheets %}
+          <link rel="stylesheet" href="{{ style }}" media="all"/>
+        {% endfor %}
+      {% endif %}
     {% endblock %}
-
-    <!-- footer -->
-    {% block footer %} {% include "partials/footer.njk" %} {% endblock %}
-    <!-- scripts - replaced jquery with vue -->
-    <!-- scripts - replaced jquery with vue -->
+    {# load up global macros #}
+    {% import "_macros/collections/featured.njk" as feature with context %}
+  </head>
+  <body class="{{ title | slug }}">
+    {% block header %}
+      {% include "partials/nav.njk" %}
+    {% endblock %}
+    <header>
+      {% block cover %}{% endblock %}
+    </header>
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+    {% block footer %}
+      {% include "partials/footer.njk" %}
+    {% endblock %}
     {% for js in metadata.scripts %}
-    <script src="{{ js }}"></script>
+      <script src="{{ js }}"></script>
     {% endfor %}
-    <!--  -->
-    {% if scripts %} {% for script in scripts %}
-    <script src="{{ script }}"></script>
-    {% endfor %} {% endif %}
-    <!--  -->
-    {% if settings.scripts %} {% for src in settings.scripts %}
-    <script src="{{ src }}"></script>
-    {% endfor %} {% endif %}
-    <!-- recaptcha -->
+    {# grab any scripts in the settings.js #}
+    {% if settings.scripts %}
+      {% for src in settings.scripts %}
+        <script src="{{ src }}"></script>
+      {% endfor %}
+    {% endif %}
+    {# load scripts data from the page #}
+    {% if scripts %}
+      {% for script in scripts %}
+        <script src="{{ script }}"></script>
+      {% endfor %}
+    {% endif %}
     {%- if showRecaptcha and env.form_provider === "web3forms" %}
-    <script src="https://www.google.com/recaptcha/api.js?render={{
-        env.recaptcha_key or 'key-not-found'
-      }}"></script>
-    <script>
-      grecaptcha.ready(function () {
-        grecaptcha
-          .execute("{{ env.recaptcha_key }}", {
-            action: "contact",
-          })
-          .then(function (token) {
-            recaptchaResponse.value = token;
-          });
-      });
-    </script>
+      <script src="https://www.google.com/recaptcha/api.js?render={{ env.recaptcha_key or 'key-not-found' }}"></script>
+      <script>
+        grecaptcha.ready(function () {
+          grecaptcha
+            .execute("{{ env.recaptcha_key }}", {action: "contact"})
+            .then(function (token) {
+              recaptchaResponse.value = token;
+            });
+        });
+      </script>
     {% endif -%}
   </body>
 </html>

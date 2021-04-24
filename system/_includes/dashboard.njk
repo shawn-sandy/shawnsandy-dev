@@ -14,17 +14,19 @@
     {% include "src/css/critical.css" %}
     {% endset %}
     <style>
-      {{css | cssmin | safe}}</style>
+      {{css | cssmin | safe}}
+    </style>
     <link rel="stylesheet" href="/css/dashboard.css"/>
   </head>
+  {% import "_macros/collections/featured.njk" as feature with context %}
   <body>
-    <section role="region" aria-label="Dashboard application" data-dashboard>
-      <section data-sidebar>{% include "partials/nav-sidebar.njk" %}</section>
+    <section role="region" aria-label="Dashboard application" data-dashboard="data-dashboard">
+      <section data-sidebar="data-sidebar">{% include "partials/nav-sidebar.njk" %}</section>
       <main>
-        <nav data-mobile role="navigation" aria-label="Main navigation">
+        <nav data-mobile="data-mobile" role="navigation" aria-label="Main navigation">
           <section>
-            <section data-show-mobile>
-              <a role="button" aria-label="Navigation button" href="#sidebar" data-sidebar-button>
+            <section data-show-mobile="data-show-mobile">
+              <a role="button" aria-label="Navigation button" href="#sidebar" data-sidebar-button="data-sidebar-button">
                 <small>
                   <span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24">

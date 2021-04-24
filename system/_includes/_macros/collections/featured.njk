@@ -1,7 +1,7 @@
 {# adds a grid styled collection to the page #}
 {# attributes tag - tag, limit - number of post to display, words - word count #}
   {%- macro featured(tag = 'posts', limit = 3, words = 200) -%}
-  {%- set feature = hlp.11ty.limit(collections[tag], limit) -%}
+  {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
     <section>
       <div role="list"> {%- for item in feature %}
         <div role="listitem">

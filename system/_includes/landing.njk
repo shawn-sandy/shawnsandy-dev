@@ -3,8 +3,6 @@
   {% include "partials/hero.njk" %}
 {% endblock %}
 {% block content %}
-  {% import "_macros/collections/featured.njk" as feature with context %}
-  {{ feature.featured() }}
-  <hr/>
+  {{ feature.featured('page') }}
   {{ super() }}
 {% endblock %}
