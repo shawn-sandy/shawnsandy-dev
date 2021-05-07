@@ -84,6 +84,7 @@ module.exports = function (eleventyConfig) {
   )
 
   eleventyConfig.addPlugin(require("@shawnsandy/ideas/eleventy"))
+  eleventyConfig.addPlugin(require("@shawnsandy/code-clipper"))
 
   eleventyConfig.addPlugin(pluginRss)
   eleventyConfig.addPlugin(markdown)

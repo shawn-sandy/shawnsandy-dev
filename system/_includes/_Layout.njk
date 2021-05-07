@@ -76,5 +76,26 @@
         });
       </script>
     {% endif -%}
+    {% clipboardscript %}
+    <script>
+      (function () {
+        const clipboard = new ClipboardJS('.mix-clipboard')
+
+        clipboard.on('success', e => {
+          var clipText = e.trigger.textContent
+          e.trigger.textContent = 'copied'
+
+          e.clearSelection()
+          setTimeout(function () {
+            e.trigger.textContent = clipText
+          }, 1000)
+        })
+
+        clipboard.on('error', e => {
+          // console.error('Action:', e.action)
+          // console.error('Trigger:', e.trigger)
+        })
+      })()
+    </script>
   </body>
 </html>

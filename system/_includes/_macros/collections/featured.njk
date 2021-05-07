@@ -11,7 +11,7 @@
             {{ item.data.title }}
           </h3>
           <p>
-            {{ hlp.11ty.noHtml(item.templateContent) |
+            {{ hlp.11ty.stripHtml(item.templateContent) |
     truncate(words) }}
           </p>
         </div>

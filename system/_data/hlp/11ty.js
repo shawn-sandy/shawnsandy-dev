@@ -5,6 +5,9 @@ const take = require('lodash.take')
 
 const date = new Date()
 
+const dayjs = require("dayjs")
+const relativeTime = require('dayjs/plugin/relativeTime')
+
 const currentYear = () => date.getFullYear()
 
 const formatDate = (date) => new Date(date).toDateString()
@@ -19,11 +22,18 @@ const limit = ($arr = [], $limit = 3) => {
   return null
 }
 
+const timeAgo = (date) => {
+  dayjs.extend(relativeTime)
+  return dayjs(date).fromNow()
+}
+
 module.exports = {
   year: currentYear,
-  formatDate: formatDate,
+  currentYear,
+  formatDate,
   strip: stripHtml,
-  noHtml: stripHtml, // deprecated use strip
-  limit: limit
+  stripHtml, // deprecated use strip
+  limit,
+  timeAgo
 
 }
