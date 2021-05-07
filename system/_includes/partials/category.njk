@@ -1,18 +1,18 @@
 {% for content in collections[category] | reverse %}
-<article>
-  <time datetime="{{ page.date.toLocaleString() }}">
-    Posted: {{ content.date.toUTCString() }}
-    <!-- Posted: {{ hlp.11ty.formatDate(content.date.toUTCString()) }} -->
-  </time>
-  <h3 id="{{ content.data.title | slug }}">
-    <a href="{{ content.url }}">{{ content.data.title }}</a>
-  </h3>
-  <p>{{ content.data.summary }}</p>
-  <footer>
-    <a href="{{ content.url }}" role="button">
-      <em>Continue reading</em>
-    </a>
-  </footer>
-  <hr />
-</article>
+  <article>
+    <time datetime="{{ page.date }}">
+      Posted:
+      {{ hlp.11ty.timeAgo(page.date) }}
+    </time>
+    <h3 id="{{ content.data.title | slug }}">
+      <a href="{{ content.url }}">{{ content.data.title }}</a>
+    </h3>
+    <p>{{ content.data.summary }}</p>
+    <footer>
+      <a href="{{ content.url }}" role="button">
+        <em>Continue reading</em>
+      </a>
+    </footer>
+    <hr/>
+  </article>
 {% endfor %}
