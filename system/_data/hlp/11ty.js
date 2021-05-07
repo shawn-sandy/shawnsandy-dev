@@ -5,7 +5,7 @@ const take = require('lodash.take')
 
 const date = new Date()
 
-const dayjs = require("dayjs")
+const dayjs = require('dayjs')
 const relativeTime = require('dayjs/plugin/relativeTime')
 
 const currentYear = () => date.getFullYear()
