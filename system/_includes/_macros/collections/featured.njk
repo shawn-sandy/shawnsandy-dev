@@ -12,7 +12,7 @@
           </h3>
           <p>
             {{ hlp.11ty.stripHtml(item.templateContent) |
-    truncate(words) }}
+    truncate(words) | safe }}
           </p>
         </div>
       {%- endfor %}
