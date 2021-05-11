@@ -3,7 +3,6 @@
   {% include "partials/hero.njk" %}
 {% endblock %}
 {% block content %}
-  {{ feature.featured('page') }}
+  {{ feature.featured('posts') }}
   {{ super() }}
 {% endblock %}
-{# {{ collections['all'] | log }} #}

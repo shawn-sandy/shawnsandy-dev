@@ -12,7 +12,9 @@
           {{ page.date.toDateString() }}
         </time>
       {% endif %}
-      {{ content | safe }}
+      <p>
+        {{ content | safe }}
+      </p>
     </section>
     <aside>{% include "partials/sidebar.njk" %}</aside>
   </main>
