@@ -18,7 +18,12 @@ const stripHtml = (data = null) => {
 }
 
 const limit = ($arr = [], $limit = 3) => {
-  if ($arr.length >= 1) { return take($arr, $limit) }
+  if ($arr.length >= 1) {
+    if (!$limit || $limit === null) {
+      return $arr
+    }
+    return take($arr, $limit)
+  }
   return null
 }
 

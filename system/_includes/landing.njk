@@ -3,6 +3,7 @@
   {% include "partials/hero.njk" %}
 {% endblock %}
 {% block content %}
-  {{ feature.featured('posts') }}
+  {{ feature.featured('info', null) }}
+  <hr>
   {{ super() }}
 {% endblock %}
