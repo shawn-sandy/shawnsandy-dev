@@ -1,3 +1,22 @@
 {
-    "recommendations": ["capaj.vscode-standardjs-snippets"]
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ecmel.vscode-html-css",
+    "mrmlnc.vscode-scss",
+    "dsznajder.es7-react-js-snippets",
+    "mgmcdermott.vscode-language-babel",
+    "sleistner.vscode-fileutils",
+    "christian-kohler.npm-intellisense",
+    "sleistner.vscode-fileutils",
+    "humao.rest-client",
+    "mkaufman.HTMLHint",
+    "eseom.nunjucks-template",
+    "msjsdiag.debugger-for-chrome",
+    "eg2.vscode-npm-script",
+    "capaj.vscode-standardjs-snippets",
+    "mgmcdermott.vscode-language-babel",
+    "douglaszaltron.nunjucks-vscode-extensionpack",
+    "VisualStudioExptTeam.vscodeintellicode"
+  ]
 }
