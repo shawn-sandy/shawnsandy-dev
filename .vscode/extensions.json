@@ -1,22 +1,16 @@
 {
   "recommendations": [
+    "shawnsandy.codestudio",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "ecmel.vscode-html-css",
-    "mrmlnc.vscode-scss",
-    "dsznajder.es7-react-js-snippets",
-    "mgmcdermott.vscode-language-babel",
-    "sleistner.vscode-fileutils",
-    "christian-kohler.npm-intellisense",
-    "sleistner.vscode-fileutils",
-    "humao.rest-client",
     "mkaufman.HTMLHint",
+    "humao.rest-client",
+    "dsznajder.es7-react-js-snippets",
     "eseom.nunjucks-template",
-    "msjsdiag.debugger-for-chrome",
-    "eg2.vscode-npm-script",
-    "capaj.vscode-standardjs-snippets",
-    "mgmcdermott.vscode-language-babel",
     "douglaszaltron.nunjucks-vscode-extensionpack",
-    "VisualStudioExptTeam.vscodeintellicode"
+    "msjsdiag.debugger-for-chrome",
+    "sdras.vue-vscode-extensionpack",
+    "octref.vetur",
+    "hollowtree.vue-snippets",
+    "sdras.vue-vscode-snippets"
   ]
 }
