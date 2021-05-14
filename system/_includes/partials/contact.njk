@@ -3,6 +3,7 @@
   method="POST"
   action="{{ env.contact_success }}"
   data-netlify="true"
+  data-netlify-recaptcha="true"
   netlify-honeypot="bot-field"
   id="contact-us"
 >
@@ -47,8 +48,8 @@
       >Don’t fill this out if you're human: <input name="bot-field"
     /></label>
   </div>
+  <div data-netlify-recaptcha="true"></div>
   <div>
     <button type="submit" name="submit">Submit Request</button>
   </div>
 </form>
-<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY_HERE"></script>

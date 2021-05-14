@@ -1,9 +1,9 @@
 {% extends "base.njk" %}
-<!-- cover -->
-{% block cover %} {% include "partials/hero.njk" %} {% endblock %}
-<!-- content -->
-{% block content %} {% include "partials/feature-section.njk" %}
-
-{{ super() }}
+{% block cover %}
+  {% include "partials/hero.njk" %}
 {% endblock %}
-<!-- sidebar -->
+{% block content %}
+  {{ feature.featured('info', null) }}
+  <hr>
+  {{ super() }}
+{% endblock %}

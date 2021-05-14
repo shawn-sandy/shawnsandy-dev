@@ -1,6 +1,6 @@
 ---
 title: Sample markdown
-date: 2021-12-05
+date: 2020-12-05
 summary: This is a summary of the article it should be easy
 ---
 

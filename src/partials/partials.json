@@ -1,4 +1,4 @@
 {
-  "eleventyExcludeFromCollections": false,
+  "eleventyExcludeFromCollections": true,
   "permalink": false
 }
