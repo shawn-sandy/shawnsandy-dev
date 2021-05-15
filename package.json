@@ -5,7 +5,10 @@
     "name": "A UI toolkit for building web-apps using First Paint and Eleventy ",
     "stylesheets": [
       ""
-    ]
+    ],
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "description": "FP Pages",
   "main": "index.js",
@@ -66,6 +69,13 @@
     "@babel/preset-env": "^7.14.2",
     "@shawnsandy/first-paint": "^1.1.15",
     "babel-watch": "^7.4.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.26.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.23.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
     "lodash": "^4.17.21",
     "npm-force-resolutions": "0.0.10",
     "npm-run-all": "^4.1.5",
