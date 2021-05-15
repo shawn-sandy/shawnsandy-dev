@@ -6,6 +6,12 @@
     <div role="list">
       {%- for item in feature %}
         <div role="listitem">
+          {% if item.data.coverImage %}
+            <picture>
+              <img src="{{ item.data.coverImage }}" alt="{{ item.data.title | slug }}"/>
+            </picture>
+
+          {% endif %}
           <h3>
             <i class="{{ item.data.icon }}"></i>
             {{ item.data.title }}
@@ -29,9 +35,9 @@
       <ul role="list">
         {%- for item in feature %}
           <li role="listitem">
-            {% if item.data.coverPhoto %}
+            {% if item.data.coverimage %}
               <picture>
-                <img src="{{ item.data.coverPhoto}}" alt="Image"/>
+                <img src="{{ item.data.coverPhoto}}" alt="item.data.title | slug"/>
               </picture>
             {% endif %}
             <h3>
