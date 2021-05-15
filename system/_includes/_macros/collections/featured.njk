@@ -37,7 +37,7 @@
           <li role="listitem">
             {% if item.data.coverimage %}
               <picture>
-                <img src="{{ item.data.coverPhoto}}" alt="item.data.title | slug"/>
+                <img src="{{ item.data.coverImage}}" alt="item.data.title | slug"/>
               </picture>
             {% endif %}
             <h3>
@@ -63,9 +63,9 @@
         {%- for item in feature %}
           <li role="listitem">
             <a href="" title="{{ item.data.title | slug}}">
-              {% if item.data.coverPhoto %}
+              {% if item.data.coverImage %}
                 <picture>
-                  <img src="{{ item.data.coverPhoto}}" alt="Image"/>
+                  <img src="{{ item.data.coverImage}}" alt="Image"/>
                 </picture>
               {% else %}
                 <h3>
