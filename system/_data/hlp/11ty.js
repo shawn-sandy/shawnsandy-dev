@@ -1,4 +1,5 @@
 // @ts-check
+
 'use strict'
 
 const take = require('lodash.take')
@@ -14,7 +15,7 @@ const formatDate = (date) => new Date(date).toDateString()
 
 const stripHtml = (data = null) => {
   if (data === null || data === undefined) return
-  return data.replace(/(<([^>]+)>)/ig, '')
+  return data.replace(/(<([^>]+)>)/gi, '')
 }
 
 const limit = ($arr = [], $limit = 3) => {
@@ -40,5 +41,4 @@ module.exports = {
   stripHtml, // deprecated use strip
   limit,
   timeAgo
-
 }

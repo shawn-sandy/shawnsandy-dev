@@ -5,7 +5,10 @@
     "name": "A UI toolkit for building web-apps using First Paint and Eleventy ",
     "stylesheets": [
       ""
-    ]
+    ],
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "description": "FP Pages",
   "main": "index.js",
@@ -23,7 +26,11 @@
     "build:scss": "sass --style compressed src/sass:src/css/. --load-path=node_modules",
     "js": "babel src/js/ -d src/js/min --minified --out-file-extension .min.js",
     "watch:js": "babel src/js/ -d src/js/min --out-file-extension .min.js  --minified --source-maps --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "git:add": "git add .",
+    "git:cz": "git cz",
+    "git:push": "git push",
+    "commit": "run-s git:add git:cz git:push"
   },
   "repository": {
     "type": "git",
@@ -48,28 +55,35 @@
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-cache-assets": "^2.2.1",
-    "@11ty/eleventy-img": "^0.8.3",
+    "@11ty/eleventy-img": "^0.9.0",
     "@11ty/eleventy-navigation": "^0.2.0",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@shawnsandy/code-clipper": "^0.2.2",
     "@shawnsandy/ideas": "0.2.3",
     "clean-css": "^5.1.2",
     "dayjs": "^1.10.4",
-    "dotenv": "^9.0.1",
+    "dotenv": "^9.0.2",
     "html-minifier": "^4.0.0",
     "lodash.take": "^4.1.1",
     "style-dictionary": "^2.10.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.16",
-    "@babel/core": "^7.14.0",
-    "@babel/preset-env": "^7.14.1",
-    "@shawnsandy/first-paint": "^1.1.14",
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@shawnsandy/first-paint": "^1.1.17",
     "babel-watch": "^7.4.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.26.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
     "lodash": "^4.17.21",
     "npm-force-resolutions": "0.0.10",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.32.12",
+    "sass": "^1.32.13",
     "trash-cli": "^4.0.0"
   }
 }

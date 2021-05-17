@@ -13,5 +13,8 @@
   "editor.formatOnType": true,
   "editor.tabSize": 2,
   "workbench.tree.indent": 4,
-  "xd.globalEditor": true
+  "xd.globalEditor": true,
+  "jshint.options": {
+    "esversion": 6,
+    }
 }
