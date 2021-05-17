@@ -1,13 +1,13 @@
 // @ts-check
 
-"use strict"
+'use strict'
 
-const take = require("lodash.take")
+const take = require('lodash.take')
 
 const date = new Date()
 
-const dayjs = require("dayjs")
-const relativeTime = require("dayjs/plugin/relativeTime")
+const dayjs = require('dayjs')
+const relativeTime = require('dayjs/plugin/relativeTime')
 
 const currentYear = () => date.getFullYear()
 
@@ -15,7 +15,7 @@ const formatDate = (date) => new Date(date).toDateString()
 
 const stripHtml = (data = null) => {
   if (data === null || data === undefined) return
-  return data.replace(/(<([^>]+)>)/gi, "")
+  return data.replace(/(<([^>]+)>)/gi, '')
 }
 
 const limit = ($arr = [], $limit = 3) => {
@@ -40,5 +40,5 @@ module.exports = {
   strip: stripHtml,
   stripHtml, // deprecated use strip
   limit,
-  timeAgo,
+  timeAgo
 }
