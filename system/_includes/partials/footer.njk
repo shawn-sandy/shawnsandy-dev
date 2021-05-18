@@ -1,39 +1,47 @@
-<footer role="contentinfo">
-  <section>
-    <div>
-      <h5>
-        <a href="/" aria-label="Site logo">
-          <!-- <img src="/img/fp.svg" alt=""> -->
-          <!-- <span aria-label="logo text">{{ pkg.app.name }}</span> -->
-          {% include 'partials/brand.njk' %}
-        </a>
-      </h5>
-    </div>
-    <div>
-      <!-- <h6 id="navigate">Navigate</h6> -->
-      <span>
-         {% set navPages = collections.all | eleventyNavigation %}
-        <ul>
-          {%- for entry in navPages %}
-          <li>
-            <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
-          </li>
-          {%- endfor %}
-        </ul>
-      </span>
-    </div>
-  </section>
-  <hr>
-  <section>
-    <p>
-      Copyright &copy; {{ hlp.11ty.year() }} {{ settings.author.name }} All rights reserved
-    </p>
-  </section>
-  {% if env.node_env == 'development' %}
-  <div style="text-align: center;">
-    <p>
-     NODE ENV {{env.node_env}}
-    </p>
+<footer role="contentinfo" class="dark-bg text-light">
+  <div class="text-center" style="text-align: center">
+    <nav>
+      <section>
+        <span>
+          <ul>
+            <li>
+              <a href="/tokens" title="Color tokens">Color</a>
+            </li>
+            <li>
+              <a href="/fonts" title="Font Tokens">Fonts</a>
+            </li>
+            <li>
+              <a href="/components" title="View components">Components</a>
+            </li>
+            <li>
+              <a href="/docs">Guide</a>
+            </li>
+            <li>
+              <a href="/changelog">Changes</a>
+            </li>
+            <li>
+              <a href="{{ pkg.homepage }}" target="_blank" rel="noopener">Github</a >
+            </li>
+          </ul>
+        </span>
+      </section>
+    </nav>
   </div>
+
+  <div>
+    <section>
+      <p>
+        Copyright &copy;
+        {{ hlp.11ty.year() }}
+        {{ settings.author.name }}
+        All rights reserved
+      </p>
+    </section>
+  </div>
+  {% if env.node_env == 'development' %}
+    <div style="text-align: center">
+      <p>NODE ENV
+        {{ env.node_env }}</p>
+    </div>
   {% endif %}
 </footer>
