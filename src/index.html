@@ -1,62 +1,9 @@
-<!DOCTYPE html>
+---
+layout: landing.njk
+title: "Cover Page"
+scripts: []
+category: posts
+---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ settings.title }}</title>
-    <meta name="description" content="title" />
-    <meta name="author" content="author" />
-    <script
-      src="https://kit.fontawesome.com/e2ffdf4c70.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- load the critical styles inline -->
-    {% set css %} {% include "src/css/cover-page.css" %} {% endset %}
-    <!-- feed it through our cssmin filter to minify -->
-    <style>
-      {{ css | cssmin | safe }}
-    </style>
-  </head>
-
-  <body>
-    <div data-cover>
-      {% include 'partials/nav.njk' %}
-      <header>
-        <section role="banner">
-          <div>
-            <!-- <img src="img/fp.svg" alt="" /> -->
-            <h2>{{ settings.subtitle }}</h2>
-            <p>
-              <span>{{ settings.description }}</span>
-            </p>
-            <p>
-              <a href="/main" role="button" aria-label="Go to the main page">
-                <em>Get Started, Read The Docs</em></a
-              >
-            </p>
-            <p>
-              <a
-                href="https://app.netlify.com/start/deploy?repository=https://github.com/shawn-sandy/fp-pages"
-                title="Read the documentation"
-              >
-                <em>Deploy on Netlify</em>
-              </a>
-            </p>
-          </div>
-        </section>
-      </header>
-      <footer role="contentinfo">
-        <div>
-          <p>
-            Copyright &copy; {{ hlp.11ty.year() }} {{ settings.author.name }}
-            All rights reserved
-          </p>
-        </div>
-      </footer>
-    </div>
-
-    <!-- <script src="index.js"></script> -->
-  </body>
-</html>
+{%- include "partials/category.njk" %}
+<!--  -->
