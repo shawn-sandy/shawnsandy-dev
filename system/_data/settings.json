@@ -1,17 +1,17 @@
 {
-  "title": "FP.Pages",
+  "title": "Shawn.Sandy",
   "subtitle": "Lightweight, Fast, Accessible, Inclusive",
-  "url": "https://proideas.dev/",
+  "url": "https://shawnsandy.dev/",
   "description": "A minimalist UI Toolkit for building responsive, performance driven, accessibility first websites",
   "feed": {
     "subtitle": "A UI toolkit for creating and managing design/style systems, pattern libraries, style-guides, etc",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://proideas.dev/"
+    "id": "https://shawnsandy.dev/"
   },
   "author": {
     "name": "Shawn Sandy",
-    "email": "shawnsandy@proideas.dev"
+    "email": "shawnsandy@shawnsandy.dev"
   },
   "styles": [],
   "scripts": [
