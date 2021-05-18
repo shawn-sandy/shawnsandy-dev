@@ -1,1 +1,21 @@
 @use '@shawnsandy/first-paint/src/styles/critical.scss';
+@use "tokens.scss";
+
+.primary {
+  color: tokens.$primary !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @extend .primary;
+}
+
+footer[role="contentinfo"] {
+  nav {
+
+    flex-direction: column;
+  }
+}
