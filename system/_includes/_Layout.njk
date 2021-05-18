@@ -35,6 +35,7 @@
     {% endblock %}
     {# load up global macros #}
     {% import "_macros/collections/featured.njk" as feature with context %}
+    {% import "_macros/nav.njk" as nav with context %}
   </head>
   <body class="{{ title | slug }}">
     {% block header %}

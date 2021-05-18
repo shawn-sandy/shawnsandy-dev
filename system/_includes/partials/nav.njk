@@ -27,19 +27,9 @@
     </section>
   </section>
 
-  {% set navPages = collections.all | eleventyNavigation %}
   <section id="sidebar">
     <ul>
-      {%- for entry in navPages %}
-        <li>
-          <a href="{{ entry.url | url }}" {% if entry.url == page.url %} data-current="current item" {% endif %}>{{ entry.title }}</a>
-        </li>
-      {%- endfor %}
-      {% if env.developer_mode %}
-        <li>
-          <a href="/developers">Developers</a>
-        </li>
-      {% endif %}
+      {% include "partials/nav-list.njk" %}
       <li>
         <div data-show-mobile="data-show-mobile">
           <a href="#">
