@@ -5,6 +5,27 @@ body {
   border-left: tokens.$primary-blue solid 0.5rem;
 }
 
+a {
+  &:any-link,
+  &:any-link:active,
+  &:any-link:visited {
+    color: tokens.$primary-blue;
+    text-decoration: none;
+  }
+  &:any-link:hover {
+    color: darken(tokens.$primary-blue, 20%);
+    text-decoration: underline;
+  }
+}
+
+header,
+.border {
+  border-color: lighten(tokens.$primary-blue, 10%) !important;
+  border-style: dotted !important;
+  border-bottom: none !important;
+  border: none !important;
+}
+
 .primary {
   color: tokens.$primary !important;
 }
