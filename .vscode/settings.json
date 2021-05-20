@@ -16,5 +16,10 @@
   "xd.globalEditor": true,
   "jshint.options": {
     "esversion": 6,
-    }
+    },
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "yaml.format.singleQuote": true,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single"
 }

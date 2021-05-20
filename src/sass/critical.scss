@@ -1,5 +1,9 @@
 @use '@shawnsandy/first-paint/src/styles/critical.scss';
-@use "tokens.scss";
+@use 'tokens.scss';
+
+body {
+  border-left: tokens.$primary-blue solid 0.5rem;
+}
 
 .primary {
   color: tokens.$primary !important;
@@ -14,8 +18,9 @@ h5 {
 }
 
 footer[role="contentinfo"] {
-  nav {
+  font-size: 0.9rem;
 
+  nav {
     flex-direction: column;
   }
 }
