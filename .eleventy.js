@@ -38,7 +38,6 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPassthroughCopy("./src/robots.txt")
 
   // eleventy img
-  //
   eleventyConfig.addNunjucksAsyncShortcode(
     "img",
     async function (src, alt = "", outputFormat = "jpeg") {
