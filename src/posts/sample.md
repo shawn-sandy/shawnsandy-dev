@@ -1,6 +1,6 @@
 ---
 title: Sample markdown post
-date: 2021-12-01
+date: 2021-01-01
 summary: "Test Summary "
 ---
 

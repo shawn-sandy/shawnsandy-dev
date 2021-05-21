@@ -1,9 +1,6 @@
 {
   "xd.lastPackage": "/C:/Users/shawn/DSP/11ty-dsp-kit/system/dsp",
   // settings.json
-  "emmet.includeLanguages": {
-    "nunjucks": "html"
-  },
   "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
   "eslint.format.enable": true,
@@ -22,10 +19,11 @@
   "yaml.format.singleQuote": true,
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-  "files.associations": {
-    "*.html": "njk"
-  },
+  "html.suggest.html5": true,
   "emmet.includeLanguages": {
     "njk": "html"
+  },
+  "files.associations": {
+    "*.njk": "njk"
   }
 }
