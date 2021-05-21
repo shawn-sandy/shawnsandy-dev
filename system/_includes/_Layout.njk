@@ -39,7 +39,8 @@
 
   <body class="{{ title | slug }}">
     {% block header %} {% include "partials/nav.njk" %} {% endblock %}
-    <header>{% block cover %}{% endblock %}</header>
+    <header>{% block cover %}
+      {% endblock %}</header>
     {% block content %}
     {{ content | safe }}
     {% endblock %} {% block footer %} {% include "partials/footer.njk" %} {%
