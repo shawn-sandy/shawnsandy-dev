@@ -26,6 +26,14 @@ header,
   border: none !important;
 }
 
+body > header {
+  background-image: url(/images/feature-bg@2x.png);
+  background-size: cover;
+  [role="banner"] {
+    text-shadow: rgba(62, 66, 66, 0.4) 0px 10px 24px;
+  }
+}
+
 .primary {
   color: tokens.$primary !important;
 }
@@ -43,5 +51,26 @@ footer[role="contentinfo"] {
 
   nav {
     flex-direction: column;
+  }
+}
+
+.bg-section {
+  background-image: url(images/feature-bg@2x.png);
+}
+
+footer[role="contentinfo"] {
+  background-color: darken(tokens.$primary, 20%);
+  color: #fff;
+  a {
+    &:any-link,
+    &:any-link:active,
+    &:any-link:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+    &:any-link:hover {
+      color: darken(#fff, 20%);
+      text-decoration: underline;
+    }
   }
 }

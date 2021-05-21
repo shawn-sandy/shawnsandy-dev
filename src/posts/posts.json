@@ -1,5 +1,5 @@
 {
-  "layout": "news.njk",
+  "layout": "page.njk",
   "title": "Content Page",
   "tags": "posts",
   "showDate": true,
