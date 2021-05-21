@@ -1,16 +1,17 @@
 {# adds a grid styled collection to the page #}
-{# attributes tag - tag, limit - number of items, words - word count #}
-{%- macro featured(tag = 'posts', limit = 3, words = 200) -%}
-  {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
-  <section>
-    <div role="list">
-      {%- for item in feature %}
+{# attributes tag - tag, limit -
+number of items, words - word count #}
+  {%- macro featured(tag = 'posts', limit =
+3, words = 200) -%}
+  {%- set feature = hlp.11ty.limit(collections[tag], limit) |
+reverse -%}
+    <section>
+      <div role="list"> {%- for item in feature %}
         <div role="listitem">
           {% if item.data.coverImage %}
             <picture>
               <img src="{{ item.data.coverImage }}" alt="{{ item.data.title | slug }}"/>
             </picture>
-
           {% endif %}
           <h3>
             <i class="{{ item.data.icon }}"></i>
@@ -20,14 +21,24 @@
             {{ hlp.11ty.stripHtml(item.templateContent) |
     truncate(words) | safe }}
           </p>
+         {% if item.url  %}
+          <p>
+            <a href="{{ item.url }}" role="button">
+              <em>
+                Continue
+              </em>
+            </a>
+          </p>
+         {% endif %}
+
         </div>
       {%- endfor %}
     </div>
   </section>
 {%- endmacro -%}
-
 {# display a list with title and links #}
-{# attributes tag - tag, limit - number of items #}
+{# attributes tag -
+tag, limit - number of items #}
 {%- macro postLinks(tag = 'posts', limit = 3) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
   <section>
@@ -37,12 +48,12 @@
           <li role="listitem">
             {% if item.data.coverimage %}
               <picture>
-                <img src="{{ item.data.coverImage}}" alt="item.data.title | slug"/>
+                <img src="{{ item.data.coverImage }}" alt="item.data.title | slug"/>
               </picture>
             {% endif %}
             <h3>
               <i class="{{ item.data.icon }}"></i>
-              <a href="{{ content.url }}" title="{{ item.data.title | slug}}">
+              <a href="{{ content.url }}" title="{{ item.data.title | slug }}">
                 {{ item.data.title }}
               </a>
             </h3>
@@ -52,30 +63,30 @@
     </span>
   </section>
 {%- endmacro -%}
-
 {# display a list with image/links or title #}
-{# attributes tag - tag, limit - number of items #}
-{%- macro postImages(tag = 'posts', limit = 3) -%}
+{# attributes
+tag - tag, limit - number of items #}
+{%- macro postImages(tag = 'posts', limit
+= 3) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
   <section>
     <span>
       <ul role="list">
         {%- for item in feature %}
           <li role="listitem">
-            <a href="" title="{{ item.data.title | slug}}">
+            <a href="" title="{{ item.data.title | slug }}">
               {% if item.data.coverImage %}
                 <picture>
-                  <img src="{{ item.data.coverImage}}" alt="Image"/>
+                  <img src="{{ item.data.coverImage }}" alt="Image"/>
                 </picture>
               {% else %}
                 <h3>
                   <i class="{{ item.data.icon }}"></i>
-                  <a href="{{ content.url }}" title="{{ item.data.title | slug}}">
+                  <a href="{{ content.url }}" title="{{ item.data.title | slug }}">
                     {{ item.data.title }}
                   </a>
                 </h3>
               {% endif %}
-
             </a>
           </li>
         {%- endfor %}

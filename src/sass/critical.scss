@@ -16,6 +16,10 @@ a {
     color: darken(tokens.$primary-blue, 20%);
     text-decoration: underline;
   }
+
+  &[role="button"] {
+    line-height: 1;
+  }
 }
 
 header,
