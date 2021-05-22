@@ -14,7 +14,7 @@ a {
   }
   &:any-link:hover {
     color: darken(tokens.$primary-blue, 20%);
-    text-decoration: underline;
+    // text-decoration: underline;
   }
 }
 
