@@ -46,6 +46,19 @@ h5 {
   @extend .primary;
 }
 
+main,
+section {
+  a[role="button"] > em {
+    border: tokens.$primary-blue solid thick;
+    &:hover {
+      background-color: tokens.$primary;
+      color: #fff;
+      border-color: tokens.$bg-color-light;
+      text-decoration: none;
+    }
+  }
+}
+
 footer[role="contentinfo"] {
   font-size: 0.9rem;
 
@@ -56,10 +69,12 @@ footer[role="contentinfo"] {
 
 .bg-section {
   background-image: url(images/feature-bg@2x.png);
+  text-align: center;
+  padding: calc(40rem / 16);
 }
 
 footer[role="contentinfo"] {
-  background-color: darken(tokens.$primary, 20%);
+  background-color: tokens.$bg-color;
   color: #fff;
   a {
     &:any-link,

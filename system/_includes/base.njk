@@ -5,6 +5,7 @@
 {% block content %}
 <main>
   <section>
+    <h3>{{ title }}</h3>
     {% if showDate %} Posted:
     <time datetime="{{ page.date }}">
       {{ page.date.toDateString() }}
