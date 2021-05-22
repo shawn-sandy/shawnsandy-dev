@@ -16,11 +16,14 @@
     </p>
   </section>
   <aside>
-    <h5>{{ settings.author.name }}</h5>
+    <section class="bio">
+    <h5>
+      <i class="ti ti-arrow-bar-to-right"></i> {{ settings.author.name }}</h5>
     <p class="primary">
       {{ settings.description }}
     </p>
-    <hr />
+    </section>
+    {# <hr /> #}
     {% include "partials/sidebar.njk" %}
   </aside>
 </main>
