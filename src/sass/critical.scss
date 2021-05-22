@@ -46,6 +46,12 @@ h4,
 h5 {
   @extend .primary;
 }
+main {
+  img[alt] {
+    padding: 0.5rem;
+    background-color: tokens.$bg-color;
+  }
+}
 
 main,
 section {
@@ -56,7 +62,7 @@ section {
     &:hover,
     &:focus {
       color: #fff;
-      background-color: tokens.$bg-color;
+      background-color: tokens.$primary-blue;
       border-color: transparent;
       text-decoration: none;
     }

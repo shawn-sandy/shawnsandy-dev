@@ -18,19 +18,19 @@ reverse -%}
             {{ item.data.title }}
           </h3>
           <p>
-            {{ hlp.11ty.stripHtml(item.templateContent) |
-    truncate(words) | safe }}
+            {{ item.data.summary or hlp.11ty.stripHtml(item.templateContent) |
+    truncate(300) | safe }}
           </p>
-         {% if item.url  %}
-          <p>
-            <a href="{{ item.url }}" role="button">
-              <em>
-                Continued <i class="ti ti-arrow-right"></i>
-              </em>
-            </a>
-          </p>
-         {% endif %}
-
+          {% if item.url %}
+            <p>
+              <a href="{{ item.url }}" role="button">
+                <em>
+                  Continued
+                  <i class="ti ti-arrow-right"></i>
+                </em>
+              </a>
+            </p>
+          {% endif %}
         </div>
       {%- endfor %}
     </div>

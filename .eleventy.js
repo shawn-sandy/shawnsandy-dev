@@ -48,6 +48,7 @@ module.exports = function (eleventyConfig) {
         outputDir: "./www/images/",
       });
       let props = stats[outputFormat].pop();
+      console.log(props);
 
       return `<img src="${props.url}" alt="${alt}">`;
     }
