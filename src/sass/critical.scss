@@ -50,11 +50,14 @@ h5 {
 main,
 section {
   a[role="button"] > em {
+    display: flex;
+    justify-content: space-between;
     border: tokens.$primary-blue solid 0.19rem;
-    &:hover {
+    &:hover,
+    &:focus {
       color: #fff;
       background-color: tokens.$bg-color;
-      border-color: tokens.$bg-color-light;
+      border-color: transparent;
       text-decoration: none;
     }
   }
