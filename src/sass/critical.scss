@@ -59,21 +59,26 @@ section {
   }
 }
 
-footer[role="contentinfo"] {
-  font-size: 0.9rem;
-
-  nav {
-    flex-direction: column;
-  }
-}
-
 .bg-section {
   background-image: url(images/feature-bg@2x.png);
   text-align: center;
   padding: calc(40rem / 16);
 }
 
+.bio {
+  padding: 2rem;
+  background-color: tokens.$bg-color-light;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
 footer[role="contentinfo"] {
+  font-size: 0.9rem;
+
+  nav {
+    flex-direction: column;
+  }
   background-color: tokens.$bg-color;
   color: #fff;
   a {
