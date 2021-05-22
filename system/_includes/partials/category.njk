@@ -1,4 +1,4 @@
-{% for content in collections[category] | reverse %}
+  {% for content in collections[category] | reverse %}
   <article>
     <time datetime="{{ content.date }}">
       Posted:
@@ -10,7 +10,9 @@
     <p>{{ content.data.summary }}</p>
     <footer>
       <a href="{{ content.url }}" role="button">
-        <em>Continue reading</em>
+        <em>Continue reading <i class="ti ti-arrow-right"></i>
+
+</em>
       </a>
     </footer>
     <hr/>
