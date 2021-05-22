@@ -1,8 +1,7 @@
-  {% for content in collections[category] | reverse %}
+{% for content in collections[category] | reverse %}
   <article>
     <time datetime="{{ content.date }}">
-      Posted:
-      {{ hlp.11ty.timeAgo(content.date) }}
+      Posted: {{ hlp.11ty.timeAgo(content.date) }}
     </time>
     <h3 id="{{ content.data.title | slug }}">
       <a href="{{ content.url }}">{{ content.data.title }}</a>
@@ -10,9 +9,9 @@
     <p>{{ content.data.summary }}</p>
     <footer>
       <a href="{{ content.url }}" role="button">
-        <em>Continue reading <i class="ti ti-arrow-right"></i>
-
-</em>
+        <em>Continue reading
+          <i class="ti ti-arrow-right"></i>
+        </em>
       </a>
     </footer>
     <hr/>
