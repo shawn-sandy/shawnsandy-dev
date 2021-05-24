@@ -69,6 +69,10 @@ section {
   }
 }
 
+p > i {
+  font-style: italic;
+}
+
 .bg-section {
   background-image: url(images/feature-bg@2x.png);
   text-align: center;
