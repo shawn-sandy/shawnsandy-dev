@@ -69,8 +69,13 @@ section {
   }
 }
 
-p > i {
-  font-style: italic;
+p {
+  i {
+    font-style: italic;
+  }
+  strong {
+    font-weight: 500;
+  }
 }
 
 .bg-section {
