@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" media="screen">
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" media="screen"/>
     <meta name="description" content="{{ settings.description }}"/>
     {% block head %}
       <title>
@@ -72,20 +72,5 @@
       </script>
     {% endif -%}
     {% clipboardscript %}
-    <script>
-      (function () {
-        const clipboard = new ClipboardJS(".mix-clipboard");
-        clipboard.on("success", (e) => {
-          var clipText = e.trigger.textContent;
-          e.trigger.textContent = "copied";
-          e.clearSelection();
-          setTimeout(function () {
-            e.trigger.textContent = clipText;
-          }, 1000);
-        });
-        clipboard.on("error", (e) => { // console.error('Action:', e.action) console.error('Trigger:', e.trigger)
-        });
-      })();
-    </script>
   </body>
 </html>
