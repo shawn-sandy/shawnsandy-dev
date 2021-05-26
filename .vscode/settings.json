@@ -26,5 +26,8 @@
   "files.associations": {
     "*.njk": "njk"
   },
-  "terminal.integrated.automationShell.osx": ""
+  "terminal.integrated.automationShell.osx": "",
+  "conventionalCommits.scopes": [
+    "content"
+  ]
 }
