@@ -1,32 +1,34 @@
 {% extends "_Layout.njk" %}
 {% block head %}
-{{ super() }}
+  {{ super() }}
 {% endblock %}
 {% block content %}
-<main>
-  <section>
-    <h3>{{ title }}</h3>
-    {% if showDate %} Posted:
-    <time datetime="{{ page.date }}">
-      {{ page.date.toDateString() }}
-    </time>
-    {% endif %}
-    <p>
-      {{ content | safe }}
-    </p>
-  </section>
-  <aside>
-    <section class="bio">
-    <h5>
-      <i class="ti ti-arrow-bar-to-right"></i> {{ settings.author.name }}
-     </h5>
-      {# <i class="ti ti-brand-twitter"></i> #}
-    <p class="primary">
-      {{ settings.description }}
-    </p>
+  <main>
+    <section>
+      <h2>{{ title }}</h2>
+      {% if showDate %}
+        Posted:
+        <time datetime="{{ page.date }}">
+          {{ page.date.toDateString() }}
+        </time>
+      {% endif %}
+      <p>
+        {{ content | safe }}
+      </p>
     </section>
-    {# <hr /> #}
-    {% include "partials/sidebar.njk" %}
-  </aside>
-</main>
+    <aside>
+      <section class="bio">
+        <h5>
+          <i class="ti ti-arrow-bar-to-right"></i>
+          {{ settings.author.name }}
+        </h5>
+        {# <i class="ti ti-brand-twitter"></i> #}
+        <p class="primary">
+          {{ settings.description }}
+        </p>
+      </section>
+      {# <hr /> #}
+      {% include "partials/sidebar.njk" %}
+    </aside>
+  </main>
 {% endblock %}
