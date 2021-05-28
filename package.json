@@ -64,6 +64,7 @@
     "dayjs": "^1.10.4",
     "dotenv": "^9.0.2",
     "html-minifier": "^4.0.0",
+    "jimp": "^0.16.1",
     "lodash.take": "^4.1.1",
     "style-dictionary": "^2.10.3"
   },
