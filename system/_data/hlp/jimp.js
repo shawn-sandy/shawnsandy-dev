@@ -2,21 +2,21 @@
 
 'use-strict'
 
-const img = require('jimp')
+const Jimp = require('jimp')
 
-const jimp = async (images = 'https://source.unsplash.com/random', width = '', height = Jimp.AUTO, quality) => {
-  await Promise.all(
-    images.map(async (imgPath) => {
-      const image = await img.read(imgPath)
-      await image.resize(width, height)
-      // await image.quality(quality)
-      await image.writeAsync(imgPath)
-    })
-  )
-
-  return 'images'
+const resize = () => {
+  // open a file called "lenna.png"
+  Jimp.read('./img/aem-pr-request.jpg', (err, lenna) => {
+    // if(file)
+    if (err) throw err
+    lenna
+      .resize(256, Jimp.AUTO) // resize
+      .quality(60) // set JPEG quality
+      .write('./www/images/aem-bw.jpg') // save
+    // console.log(lenna)
+  })
 }
 
 module.exports = {
-  jimp
+  resize
 }
