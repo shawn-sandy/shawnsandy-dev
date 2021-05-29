@@ -9,27 +9,27 @@ const img = ($img = 'google-security-check.jpg', options = {}) => {
   const srcDir = options.srcDir || './img/'
   const outputDir = options.outputDir || './www/images/'
   const outputCache = options.outputDir || './images/min/'
-
+  const quality = options.quality || 80
   const imagePath = `${outputCache}${$img}`
 
   try {
-    if (!fs.existsSync(imagePath)) {
+    if (!fs.existsSync(imagePath) && options.force) {
       Jimp.read(`${srcDir}${$img}`, (err, lenna) => {
         if (err) throw err
         lenna
           .resize(width, height)
-          .quality(60)
+          .quality(quality)
           .write(`${outputDir}${$img}`)
           .write(`${outputCache}${$img}`)
-        console.log(lenna)
+        // console.log(lenna)
       })
     } else {
-      console.log(`Image already exist ${imagePath}`)
+      console.log(`Seems image already exist ${imagePath}`)
     }
 
     return `/images/${$img}`
   } catch (error) {
-    console.log(error)
+    console.info(error)
   }
 }
 
