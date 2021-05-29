@@ -18,7 +18,7 @@ const img = ($img = 'aem-pr-request.jpg', $options = {}) => {
       .write(`${outputCache}${$img}`)
     // console.log(lenna)
   })
-  return `./images/${$img}`
+  return `/images/${$img}`
 }
 
 module.exports = {
