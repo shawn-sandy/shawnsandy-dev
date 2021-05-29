@@ -3,34 +3,37 @@
 const Jimp = require('jimp')
 const fs = require('fs')
 
-const img = ($img = 'google-security-check.jpg', options = {}) => {
+const img = (imgs = 'google-security-check.jpg', options = {}) => {
   const width = options.width || 1280
   const height = options.width || Jimp.AUTO
-  const srcDir = options.srcDir || './img/'
+  const srcDir = options.srcDir || './assets/img/'
   const outputDir = options.outputDir || './www/images/'
-  const outputCache = options.outputDir || './images/min/'
   const quality = options.quality || 80
-  const imagePath = `${outputCache}${$img}`
+  const imageSrc = `${srcDir}${imgs}`
+  const imagePath = `${outputDir}${imgs}`
+  const force = options.force || false
+  // const outputCache = options.outputDir || './images/min/'
+  // console.log('files exisits', fs.existsSync(imagePath))
 
   try {
-    if (!fs.existsSync(imagePath) && options.force) {
-      Jimp.read(`${srcDir}${$img}`, (err, lenna) => {
+    if (!fs.existsSync(imagePath) && fs.existsSync(imageSrc) || force) {
+      console.log('processing files')
+
+      Jimp.read(`${srcDir}${imgs}`, (err, lenna) => {
         if (err) throw err
         lenna
           .resize(width, height)
           .quality(quality)
-          .write(`${outputDir}${$img}`)
-          .write(`${outputCache}${$img}`)
-        // console.log(lenna)
+          .write(`${outputDir}${imgs}`)
+          // .write(`${outputCache}${imgs}`)
       })
     } else {
       console.log(`Seems image already exist ${imagePath}`)
     }
-
-    return `/images/${$img}`
   } catch (error) {
     console.info(error)
   }
+  return `/images/${imgs}`
 }
 
 module.exports = {
