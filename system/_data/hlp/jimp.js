@@ -1,22 +1,26 @@
 // @ts-check
 
-'use-strict'
-
 const Jimp = require('jimp')
 
-const resize = () => {
-  // open a file called "lenna.png"
-  Jimp.read('./img/aem-pr-request.jpg', (err, lenna) => {
-    // if(file)
+const img = ($img = 'aem-pr-request.jpg', $options = {}) => {
+  const width = $options.width || 1280
+  const height = $options.width || Jimp.AUTO
+  const srcDir = $options.srcDir || './img/'
+  const outputDir = $options.outputDir || './www/images/'
+  const outputCache = $options.outputDir || './images/min/'
+
+  Jimp.read(`${srcDir}${$img}`, (err, lenna) => {
     if (err) throw err
     lenna
-      .resize(256, Jimp.AUTO) // resize
-      .quality(60) // set JPEG quality
-      .write('./www/images/aem-bw.jpg') // save
+      .resize(width, height)
+      .quality(60)
+      .write(`${outputDir}${$img}`)
+      .write(`${outputCache}${$img}`)
     // console.log(lenna)
   })
+  return `./images/${$img}`
 }
 
 module.exports = {
-  resize
+  img
 }

@@ -34,5 +34,8 @@
   "terminal.integrated.automationShell.osx": "",
   "conventionalCommits.scopes": [
     "content"
+  ],
+  "cSpell.words": [
+    "lenna"
   ]
 }
