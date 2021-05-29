@@ -12,12 +12,11 @@ const img = (imgs = 'google-security-check.jpg', options = {}) => {
   const imageSrc = `${srcDir}${imgs}`
   const imagePath = `${outputDir}${imgs}`
   const force = options.force || false
-  // const outputCache = options.outputDir || './images/min/'
-  // console.log('files exisits', fs.existsSync(imagePath))
+  const outputCache = options.cacheDir || './.cache/images/'
 
   try {
-    if (!fs.existsSync(imagePath) && fs.existsSync(imageSrc) || force) {
-      console.log('processing files')
+    if (!fs.existsSync(`${outputCache}${imgs}`) && fs.existsSync(imageSrc) || force) {
+      console.log('processing image')
 
       Jimp.read(`${srcDir}${imgs}`, (err, lenna) => {
         if (err) throw err
@@ -25,7 +24,7 @@ const img = (imgs = 'google-security-check.jpg', options = {}) => {
           .resize(width, height)
           .quality(quality)
           .write(`${outputDir}${imgs}`)
-          // .write(`${outputCache}${imgs}`)
+          .write(`${outputCache}${imgs}`)
       })
     } else {
       console.log(`Seems image already exist ${imagePath}`)

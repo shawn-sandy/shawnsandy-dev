@@ -13,6 +13,7 @@
   },
   "rules": {
     "prefer-template": "warn",
-    "strict": "off"
+    "strict": "off",
+    "no-mixed-operators": "warn"
   }
 }
