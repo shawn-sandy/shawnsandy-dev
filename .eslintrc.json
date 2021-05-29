@@ -11,5 +11,8 @@
     "ecmaVersion": 6,
     "sourceType": "script"
   },
-  "rules": {}
+  "rules": {
+    "prefer-template": "warn",
+    "strict": "off"
+  }
 }

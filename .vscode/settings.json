@@ -16,6 +16,11 @@
   },
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "eslint.lintTask.enable": true,
+  "eslint.run": "onSave",
   "yaml.format.singleQuote": true,
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
@@ -29,5 +34,8 @@
   "terminal.integrated.automationShell.osx": "",
   "conventionalCommits.scopes": [
     "content"
+  ],
+  "cSpell.words": [
+    "lenna"
   ]
 }
