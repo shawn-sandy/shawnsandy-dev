@@ -3,8 +3,9 @@
 const Jimp = require('jimp')
 const fs = require('fs')
 
-const img = (imgs = 'google-security-check.jpg', options = {}) => {
+const img = (imgs = 'google-security-check.jpg', name = null, options = {}) => {
   const width = options.width || 1280
+  const fileName = name || `data-${Date.now()}`
   const height = options.width || Jimp.AUTO
   const srcDir = options.srcDir || './assets/img/'
   const outputDir = options.outputDir || './www/images/'
@@ -15,7 +16,7 @@ const img = (imgs = 'google-security-check.jpg', options = {}) => {
   const outputCache = options.cacheDir || './.cache/images/'
 
   try {
-    if (!fs.existsSync(`${outputCache}${imgs}`) && fs.existsSync(imageSrc) || force) {
+    if (!fs.existsSync(`${imagePath}`) && fs.existsSync(imageSrc) || force) {
       console.log('processing image')
 
       Jimp.read(`${srcDir}${imgs}`, (err, lenna) => {
