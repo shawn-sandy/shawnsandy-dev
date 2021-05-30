@@ -21,12 +21,8 @@ const img = (imgs = 'google-security-check.jpg', name = null, options = {}) => {
     sharp(`${imageSrc}`)
       .toFormat(format)
       .resize({ width: width, height: height })
-      .toFile(`${outputDir}${imgName}.${format}`, (e) => {
-        console.log('Error', e)
-      }).then(() => {
-        // output.png is a 200 pixels wide and 300 pixels high image
-        // containing a nearest-neighbour scaled version
-        // contained within the north-east corner of a semi-transparent white canvas
+      .toFile(`${outputDir}${imgName}.${format}`, (err) => {
+        console.log('Error', err)
       })
   } else {
     console.warn('Image exists')
