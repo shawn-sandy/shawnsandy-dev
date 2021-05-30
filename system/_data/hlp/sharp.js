@@ -1,10 +1,11 @@
 // @ts-check
 
 const sharp = require('sharp')
+const fs = require('fs')
 
 const img = (imgs = 'google-security-check.jpg', name = null, options = {}) => {
   const _name = imgs.split('.')
-  const imgName = name || _name[0]
+  const imgName = name || _name[0].replace('/', '-')
   const width = options.width || 1280
   const format = options.format || 'webp'
   const height = options.width || null
@@ -12,42 +13,31 @@ const img = (imgs = 'google-security-check.jpg', name = null, options = {}) => {
   const outputDir = options.outputDir || './www/images/'
   const quality = options.quality || 80
   const imageSrc = `${srcDir}${imgs}`
-  const imagePath = `${outputDir}${imgs}`
+  const imagePath = `${outputDir}${imgName}.${format}`
   const force = options.force || false
   const outputCache = options.cacheDir || './.cache/images/'
-  try {
+
+  if (!fs.existsSync(imagePath) || force) {
+    console.warn('Image processing')
     sharp(`${imageSrc}`)
       .resize({ width: width, height: height })
       .toFormat(format)
-      .toFile(`${outputDir}${imgName}.${format}`)
-      .then((e) => {
-        console.log(e)
+      .toFile(`${outputDir}${imgName}.${format}`, (e) => {
+        console.log('Error', e)
+      }).then((e) => {
+        console.log('output', e)
       })
-  } catch (e) {
-    console.warn(e)
+  } else {
+    console.warn('Image exists')
   }
-  console.log(`${outputDir}${imgName}.${format}`)
-  return `images/${imgName}.${format}`
+  return `/images/${imgName}.${format}`
 }
 
-const metadata = () => {
-  const image = sharp('./assets/img/google-security-check.jpg')
-  image
-    .metadata()
-    .then(function (metadata) {
-      console.info('sharp', metadata)
-      return image
-        .resize(Math.round(metadata.width / 2))
-        .toFormat('webp')
-        .toFile('OutputMeta.webp')
-    })
-    .then(function (data) {
-      console.log(data)
-    // data contains a WebP image half the width and height of the original JPEG
-    }).catch((err) => console.warn(err))
+const imgSrc = (imgs = 'google-security-check.jpg', name = null, options = {}) => {
+  return `<img src="${img(imgs, name, options)}" alt="${options.name || name}" />`
 }
 
 module.exports = {
   img,
-  metadata
+  imgSrc
 }
