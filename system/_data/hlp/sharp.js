@@ -24,8 +24,6 @@ const img = (imgs = 'google-security-check.jpg', name = null, options = {}) => {
       .toFormat(format)
       .toFile(`${outputDir}${imgName}.${format}`, (e) => {
         console.log('Error', e)
-      }).then((e) => {
-        console.log('output', e)
       })
   } else {
     console.warn('Image exists')
