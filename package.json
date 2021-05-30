@@ -61,13 +61,13 @@
     "@shawnsandy/code-clipper": "^0.2.2",
     "@shawnsandy/ideas": "0.2.3",
     "clean-css": "^5.1.2",
-    "dayjs": "^1.10.4",
-    "dotenv": "^9.0.2",
+    "dayjs": "^1.10.5",
+    "dotenv": "^10.0.0",
     "html-minifier": "^4.0.0",
     "jimp": "^0.16.1",
     "lodash.take": "^4.1.1",
     "sharp": "^0.28.3",
-    "style-dictionary": "^2.10.3"
+    "style-dictionary": "^3.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.3",
