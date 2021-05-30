@@ -1,4 +1,3 @@
-// @ts-check
 
 const sharp = require('sharp')
 const fs = require('fs')
@@ -20,10 +19,12 @@ const img = (imgs = 'google-security-check.jpg', name = null, options = {}) => {
   if (!fs.existsSync(imagePath) || force) {
     console.warn('Image processing')
     sharp(`${imageSrc}`)
-      .resize({ width: width, height: height })
       .toFormat(format)
+      .resize({ width: width, height: height })
       .toFile(`${outputDir}${imgName}.${format}`, (e) => {
         console.log('Error', e)
+      }).then(e => {
+
       })
   } else {
     console.warn('Image exists')
