@@ -2,9 +2,9 @@
 const sharp = require('sharp')
 const fs = require('fs')
 
-const img = (imgs = 'google-security-check.jpg', name = null, options = {}) => {
+const img = (imgs = 'google-security-check.jpg', options = {}) => {
   const _name = imgs.split('.')
-  const imgName = name || _name[0].replace('/', '-')
+  const imgName = options.name || _name[0].replace('/', '-')
   const width = options.width || 1280
   const format = options.format || 'webp'
   const height = options.width || null
