@@ -2,6 +2,9 @@
 <!-- hide cover page -->
 {% block cover %}
   <section class="bg-section" style="">
-    <h3 role="presentation">"{{ subtitle or settings.subtitle }}"</h3>
+    <h3 role="presentation">
+      <i class="ti ti-message-circle"></i>
+      {{ subtitle or settings.subtitle }}
+    </h3>
   </section>
 {% endblock %}
