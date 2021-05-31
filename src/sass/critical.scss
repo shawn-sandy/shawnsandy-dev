@@ -30,7 +30,7 @@ header,
 body > header {
   background-image: url(/images/feature-bg@2x.png);
   background-size: cover;
-  [role="banner"] {
+  [role='banner'] {
     text-shadow: rgba(62, 66, 66, 0.4) 0px 10px 24px;
   }
 }
@@ -55,7 +55,7 @@ main {
 
 main,
 section {
-  a[role="button"] > em {
+  a[role='button'] > em {
     display: flex;
     justify-content: space-between;
     border: tokens.$primary-blue solid 0.19rem;
@@ -81,7 +81,12 @@ p {
 .bg-section {
   background-image: url(images/feature-bg@2x.png);
   text-align: center;
-  padding: calc(40rem / 16);
+  padding: calc(60rem / 16);
+  max-width: 70%;
+  margin: auto;
+  h3 {
+    font-weight: 500;
+  }
 }
 
 .bio {
@@ -92,7 +97,7 @@ p {
   border-radius: 1rem;
 }
 
-footer[role="contentinfo"] {
+footer[role='contentinfo'] {
   font-size: 0.9rem;
 
   nav {
