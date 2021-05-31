@@ -6,14 +6,17 @@ subtitle:
 tags: ['posts', 'tools']
 ---
 
-<p>
-  <img src="/images/clipboard-setup-win10.jpg" alt="" />
-</p>
-<p>
+<!-- <p>
   <img src="{{ hlp.jimp.img() }}" alt="" />
 </p>
 <p>
   <img src="{{ hlp.sharp.img() }} " alt="" />
+</p> -->
+<p>
+  <img
+    src="{{ hlp.sharp.img('clipboard-setup-win10.jpg', {'force': true}) }} "
+    alt=""
+  />
 </p>
 
 <p>
@@ -27,10 +30,6 @@ tags: ['posts', 'tools']
 </p>
 
 <p>
-  <img src="/images/clipboard-sync.jpg" alt="" />
-</p>
-
-<p>
   What it does not have is a way to sync my clipboard between devices (WINDOWS),
   urls, code snippets, etc. Would be a cool feature. Recently I discovered that
   the Windows 10 not only has a built in clipboard manager but also gives you
@@ -38,7 +37,10 @@ tags: ['posts', 'tools']
 </p>
 
 <p>
-  <img src="/images/clipboard-setup-win10.jpg" alt="" />
+  <img
+    src="{{ hlp.sharp.img('clipboard-settings.jpg', {'force': true}) }} "
+    alt=""
+  />
 </p>
 <p>
   To enable the windows clipboard you just need to hit the
