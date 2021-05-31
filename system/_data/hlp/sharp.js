@@ -21,8 +21,9 @@ const img = (imgs = 'google-security-check.jpg', options = {}) => {
     sharp(`${imageSrc}`)
       .toFormat(format)
       .resize({ width: width, height: height })
-      .toFile(`${outputDir}${imgName}.${format}`, (err) => {
-        console.log('Error', err)
+      .toFile(`${outputDir}${imgName}.${format}`, (err, info) => {
+        if (err) console.log('Error', err)
+        if (info) console.warn('Info', info)
       })
   } else {
     console.warn('Image exists')
