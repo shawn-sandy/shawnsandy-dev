@@ -3,5 +3,6 @@
   "title": "Content Page",
   "tags": "posts",
   "showDate": true,
+  "subtitle": "Frontend blog on Design, Code, Performance, Usability, Accessibility, Inclusion",
   "scripts": []
 }
