@@ -2,9 +2,10 @@
 <!-- hide cover page -->
 {% block cover %}
   <section class="bg-section" style="">
-    <h3 role="presentation">
-      <i class="ti ti-message-circle"></i>
+    <h3
+      role="presentation">
+      {# <i class="ti ti-message-circle"></i> #}
       {{ subtitle or settings.subtitle }}
     </h3>
-  </section>
-{% endblock %}
+    {# <hr style="max-width: 40%"></section> #}
+  {% endblock %}
