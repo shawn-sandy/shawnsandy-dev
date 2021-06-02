@@ -6,7 +6,7 @@ const img = (imgs = 'google-security-check.jpg', options = {}) => {
   const _name = imgs.split('.')
   const imgName = options.name || _name[0].replace('/', '-')
   const width = options.width || 1280
-  const format = options.format || 'webp'
+  const format = options.format || 'jpeg'
   const height = options.width || null
   const srcDir = options.srcDir || './assets/img/'
   const outputDir = options.outputDir || './www/images/'

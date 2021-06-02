@@ -5,12 +5,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" media="screen"/>
-    <meta name="description" content="{{ settings.description }}"/>
     {% block head %}
       <title>
-        {{ settings.title }} | {{ title }}
+        {{ title or settings.subtitle }} | {{ settings.title }}
       </title>
-      {% set css %}
+      <meta name="description" content="{{ subtitle or settings.description }}"/>
+      <meta property="og:title" content="{{ title or settings.subtitle }}"/>
+      <meta property="og:type" content="article"/>
+      <meta property="og:url" content="{{ settings.url }}{{ page.url }}"/>
+      <meta property="og:image" content="{{ settings.url }}{{ coverImage or '/images/og-cover.png' }}"/> {% set css %}
       {% include "src/css/critical.css" %}
       {% endset %}
       {# css #}
