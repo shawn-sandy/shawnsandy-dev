@@ -25,13 +25,13 @@ More importantly, I work with a team. I'm not the only person contributing to th
 
 After a quick google search, I found [commitizen](http://commitizen.github.io/cz-cli/), an open-source project created to help developers  write better commit messages by making the the process simple! Setup via npm takes about 5-10mins and once completed it you get interactive commits in your terminal, it's even shorter if you are a VS Code user grab(install) the [commitizen extensions](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits) run via a command panel or icon click via the source control panel.
 
-### Install
+#### Install
 
 VS Code
 
-![alt]({{ hlp.sharp.img('vs-conventional-commit-demo.gif', {'force': true }) }})
+![alt]({{ hlp.sharp.img('convential-commits.jpg', {'force': true, 'format': 'webp' }) }})
 
-### Resources
+#### Resources
 
 [Commitizen by commitizen](https://www.notion.so/Commitizen-by-commitizen-e5c5e4c100dc441bbe268a99debe38bd)
 
