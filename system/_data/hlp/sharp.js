@@ -17,13 +17,13 @@ const img = (imgs = 'google-security-check.jpg', options = {}) => {
   const outputCache = options.cacheDir || './.cache/images/'
 
   if (!fs.existsSync(imagePath) || force) {
-    console.warn('Image processing')
+    console.warn(imgName)
     sharp(`${imageSrc}`)
       .toFormat(format)
       .resize({ width: width, height: height })
       .toFile(`${outputDir}${imgName}.${format}`, (err, info) => {
         if (err) console.log('Error', err)
-        if (info) console.warn('Info', info)
+        // if (info) console.warn('Info', info)
       })
   } else {
     console.warn('Image exists')

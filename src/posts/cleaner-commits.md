@@ -5,6 +5,10 @@ tags: ['posts', 'tips', 'Win10']
 date: 2021-06-02
 ---
 
+![alt]({{ hlp.sharp.img('commitizen-terminal.jpg', {'force': true}) }})
+
+<!-- {{ hlp.sharp.img('commitizen-terminal.jpg') }} -->
+
  Let's, chat about commit messages, what we as developers can do to improve how we write them and why we owe it to our peers to do so.
 
 Now, I will be the first to admin that  I have written some pretty horrible commit messages—WIP (personal fav), updated code, refine page layout/style(CSS), fix error on page, add new functionName(), add a feature for new post, or some other random description.
@@ -25,9 +29,9 @@ After a quick google search, I found [commitizen](http://commitizen.github.io/cz
 
 VS Code
 
-NPM
+![alt]({{ hlp.sharp.img('vs-conventional-commit-demo.gif', {'force': true }) }})
 
-What's git commit
+### Resources
 
 [Commitizen by commitizen](https://www.notion.so/Commitizen-by-commitizen-e5c5e4c100dc441bbe268a99debe38bd)
 
