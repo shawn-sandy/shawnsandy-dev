@@ -9,11 +9,11 @@ date: 2021-06-02
 
 <!-- {{ hlp.sharp.img('commitizen-terminal.jpg') }} -->
 
- Let's, chat about commit messages, what we as developers can do to improve how we write them and why we owe it to our peers to do so.
+ Let's, chat about commit messages and what we as developers can do to improve how we write them.
 
-Now, I will be the first to admin that  I have written some pretty horrible commit messages—WIP (personal fav), updated code, refine page layout/style(CSS), fix error on page, add new functionName(), add a feature for new post, or some other random description.
+> A commit message is a short description of the changes you've made to a file added before committing the changes to your repository.
 
-> A commit message is a short description of the changes you've made to a file added before committing the changes to you repository.
+Let me be the first to admit that I have written some pretty horrible commit (still do)--messages—WIP (personal fav), updated code, refine page layout/style(CSS), fix error on page, add new functionName(), add a feature for new post, or some other random description.
 
 So what's the problem? I use commits messages to help me better understand and figure out the purpose of a code change and why it was made when either reviewing PR's or working directly with the code itself. So writing something that makes sense is kind of important. Yet, I'm mortified when going through my commit messages, muttering to myself how horrible they are, and promising to work on improving them in my next commit.
 
