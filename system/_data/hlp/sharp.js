@@ -27,7 +27,7 @@ const resize = (imgs = [], options = {}) => {
     const _name = img.split('.')
     const imgName = options.name || _name[0]
     const imagePath = `${outputDir}${imgName}.${format}`
-    console.log(imagePath)
+    // console.log(imagePath)
     if (!fs.existsSync(imagePath) || force) {
       console.warn(imgName)
       sharp(`${imageSrc}`)
