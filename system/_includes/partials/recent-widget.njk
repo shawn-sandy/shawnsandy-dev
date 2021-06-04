@@ -1,9 +1,9 @@
 <span>
   <ul>
     {% for content in collections[recentCategory] | reverse %}
-    <li id="{{ content.data.title | slug }}">
-      <a href="{{ content.url }}">{{ content.data.title }}</a>
-    </li>
+      <li id="sidebar-{{ content.data.title | slug }}">
+        <a href="{{ content.url }}">{{ content.data.title }}</a>
+      </li>
     {% endfor %}
   </ul>
 </span>
