@@ -23,9 +23,9 @@ After a quick google search, I found [commitizen](http://commitizen.github.io/cz
 
 ---
 
-### Conventional Commits (VS Code extension)
+#### Conventional Commits (VS Code extension)
 
-#### Installation/Setup
+##### Installation/Setup
 
  Search for the extension by typing `conventional commits` in your VS CODE extensions panel search and hitting install. Alternatively you can install directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
 
@@ -38,6 +38,39 @@ Click on the `conventional commit` icon in the source control menu ot `command/c
 Follow the prompts to complete your commit!
 
 ![alt]({{ hlp.sharp.img(['cz-prompts.jpg'], {'force': true, 'format': 'webp' }) }})
+
+---
+
+#### Install commitizen via NPM
+
+Install commitizen globally or in your project/repo
+
+```terminal
+# global install
+npm install -g commitizen
+
+# project install
+npm install commitizen
+
+```
+
+Make sure your project/repo is commitizen friendly
+
+```BASH
+npm install commitizen -g
+```
+
+Initialize your project to use the cz-conventional-changelog
+
+```BASH
+#npm
+commitizen init cz-conventional-changelog --save-dev --save-exact
+
+#yarn
+commitizen init cz-conventional-changelog --yarn --dev --exact
+```
+
+If you run into any problems checkout the project [docs here](http://commitizen.github.io/cz-cli/)
 
 ---
 
