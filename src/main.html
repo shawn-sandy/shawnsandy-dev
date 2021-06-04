@@ -8,10 +8,14 @@
     <title>{{ settings.title }}</title>
     <meta name="description" content="title" />
     <meta name="author" content="author" />
+    {% if env.node_env != 'production' %}
+    <script src="https://cdn.accesslint.com/accesslint-1.1.2.js"></script>
+    {% endif %}
     <script
       src="https://kit.fontawesome.com/e2ffdf4c70.js"
       crossorigin="anonymous"
     ></script>
+
     <!-- load the critical styles inline -->
     {% set css %} {% include "src/css/cover-page.css" %} {% endset %}
     <!-- feed it through our cssmin filter to minify -->
