@@ -21,28 +21,48 @@ More importantly, I work with a team. I'm not the only person contributing to th
 
 After a quick google search, I found [commitizen](http://commitizen.github.io/cz-cli/), an open-source project created to help developers  write better commit messages by making the the process simple! Setup via npm takes about 5-10mins and once completed it you get interactive commits in your terminal, it's even shorter if you are a VS Code user grab(install) the [commitizen extensions](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits) run via a command panel or icon click via the source control panel.
 
-### Installation/Setup
+---
 
-#### Conventional Commits (VS Code extension)
+### Conventional Commits (VS Code extension)
 
-![alt]({{ hlp.sharp.img(['convential-commits.jpg'], {'force': true, 'format': 'webp' }) }})
+#### Installation/Setup
 
-VS Code
+ Search for the extension by typing `conventional commits` in your VS CODE extensions panel search and hitting install. Alternatively you can install directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
+
+![alt]({{ hlp.sharp.img(['commitizen-install-extension.jpg'], {'force': true, 'format': 'webp' }) }})
+
+Click on the `conventional commit` icon in the source control menu ot `command/ctrl + shift + p` enter `conventional commit` to launch the interactive prompts
+
+![alt]({{ hlp.sharp.img(['conventional-commit-run.jpg'], {'force': true, 'format': 'webp' }) }})
+
+Follow the prompts to complete your commit!
+
+![alt]({{ hlp.sharp.img(['cz-prompts.jpg'], {'force': true, 'format': 'webp' }) }})
 
 ---
 
 #### Resources
 
-[Commitizen by commitizen](https://www.notion.so/Commitizen-by-commitizen-e5c5e4c100dc441bbe268a99debe38bd)
+---
 
-[Conventional Commits](https://www.notion.so/Conventional-Commits-fa51511da96a40079e6e493bae7bb11d)
+##### [Commitizen by commitizen](http://commitizen.github.io/cz-cli/)
 
-[Git MERGE vs REBASE - YouTube](https://www.notion.so/Git-MERGE-vs-REBASE-YouTube-c231474f5e154f509a6719922508d7cd)
+When you commit with Commitizen, you'll be prompted to fill out any required commit fields at commit time. No more waiting until later for a git commit hook to run and reject your commit (though that can still be helpful). No more digging through CONTRIBUTING.md to find what the preferred format is. Get instant feedback on your commit message formatting and be prompted for required fields.
 
-[How to write a good commit message - DEV Community](https://www.notion.so/How-to-write-a-good-commit-message-DEV-Community-fa2b87063387465797d421306fc64ac5)
+---
 
-[Udacity Nanodegree Style Guide](https://www.notion.so/Udacity-Nanodegree-Style-Guide-b679ee3fc2ef462a956b0eb339b79ce4)
+##### [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-[Writing Meaningful Commit Messages](https://www.notion.so/Writing-Meaningful-Commit-Messages-53c0a165b51749388130305637c78c5c)
+The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages.
 
-[commitlint - Lint commit messages](https://www.notion.so/commitlint-Lint-commit-messages-5f7465225b364674bcfbc188463e8fb7)
+---
+
+##### [How to write a good commit message - DEV Community](https://dev.to/chrissiemhrk/git-commit-message-5e21)
+
+---
+
+##### [Udacity Nanodegree Style Guide](https://udacity.github.io/git-styleguide/)
+
+---
+
+##### [Writing Meaningful Commit Messages](https://reflectoring.io/meaningful-commit-messages/)
