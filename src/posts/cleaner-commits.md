@@ -5,9 +5,7 @@ tags: ['posts', 'tips', 'Win10']
 date: 2021-06-02
 ---
 
-![alt]({{ hlp.sharp.img('commitizen-terminal.jpg', {'force': true}) }})
-
-<!-- {{ hlp.sharp.img('commitizen-terminal.jpg') }} -->
+![alt]({{ hlp.sharp.img(['commitizen-terminal.jpg'], {'force': true, 'format': 'webp'}) }})
 
  Let's, chat about commit messages and what we as developers can do to improve how we write them.
 
@@ -29,7 +27,7 @@ After a quick google search, I found [commitizen](http://commitizen.github.io/cz
 
 #### Conventional Commits (VS Code extension)
 
-![alt]({{ hlp.sharp.img('convential-commits.jpg', {'force': true, 'format': 'webp' }) }})
+![alt]({{ hlp.sharp.img(['convential-commits.jpg'], {'force': true, 'format': 'webp' }) }})
 
 VS Code
 
