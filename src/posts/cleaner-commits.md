@@ -2,6 +2,7 @@
 title: Cleaner, useful team commits messages with commitizen
 subtitle: Commitizen is an open-source project created to help developers  write better commit messages by making the process simple!
 tags: ['posts', 'tips', 'Win10']
+coverImage: ['commitizen-terminal.jpg']
 date: 2021-06-02
 ---
 
