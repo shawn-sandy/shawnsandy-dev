@@ -2,7 +2,7 @@
 <meta property="og:description" content="{{ subtitle or settings.description }}"/>
 <meta property="og:type" content="{{ type or 'website' }}"/>
 <meta property="og:url" content="{{ settings.url }}{{ page.url }}"/>
-<meta property="og:image" content="{{ settings.url }}{{ hlp.sharp.coverImage(coverImage) or 'og-cover.png' }}"/>
+<meta property="og:image" content="/{{ hlp.sharp.coverImage(coverImage) or 'og-cover.png' }}"/>
 <meta property="twitter:site" content="{{ settings.author.twitter }}"/>
 <meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:image" content="{{ settings.url }}{{ hlp.sharp.coverImage(coverImage) or 'og-cover.png' }}"/>
+<meta property="twitter:image" content="/{{ hlp.sharp.coverImage(coverImage) or 'og-cover.png' }}"/>
