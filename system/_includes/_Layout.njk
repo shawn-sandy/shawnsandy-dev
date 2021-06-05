@@ -34,46 +34,45 @@
     {% import "_macros/collections/featured.njk" as feature with context %}
     {% import "_macros/nav.njk" as nav with context %}
   </head>
-  <body class="{{ title | slug }}">
+  <body class="{{ title | slug }} page-{{ page.fileSlug or 'home' }}">
     {% block header %}
       {% include "partials/nav.njk" %}
     {% endblock %}
-    <header>
-      {% block cover %}{% endblock %}
-    </header>
-    {% block content %}
-      {{ content | safe }}
-    {% endblock %}
-    {% block footer %}
-      {% include "partials/footer.njk" %}
-    {% endblock %}
-    {% for js in metadata.scripts %}
-      <script src="{{ js }}"></script>
-    {% endfor %}
-    {# grab any scripts in the settings.js #}
-    {% if
+    <header class=" header-{{ page.fileSlug or 'home' }}"> {% block cover %}{% endblock %}
+      </header>
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
+      {% block footer %}
+        {% include "partials/footer.njk" %}
+      {% endblock %}
+      {% for js in metadata.scripts %}
+        <script src="{{ js }}"></script>
+      {% endfor %}
+      {# grab any scripts in the settings.js #}
+      {% if
     settings.scripts %}
-      {% for src in settings.scripts %}
-        <script src="{{ src }}"></script>
-      {% endfor %}
-    {% endif %}
-    {# load scripts data from the page #}
-    {% if scripts %}
-      {% for script in scripts %}
-        <script src="{{ script }}"></script>
-      {% endfor %}
-    {% endif %}
-    {%- if showRecaptcha and env.form_provider ===
+        {% for src in settings.scripts %}
+          <script src="{{ src }}"></script>
+        {% endfor %}
+      {% endif %}
+      {# load scripts data from the page #}
+      {% if scripts %}
+        {% for script in scripts %}
+          <script src="{{ script }}"></script>
+        {% endfor %}
+      {% endif %}
+      {%- if showRecaptcha and env.form_provider ===
     "web3forms" %}
-      <script src="https://www.google.com/recaptcha/api.js?render={{ env.recaptcha_key or 'key-not-found' }}"></script>
-      <script>
-        grecaptcha.ready(function () {
-          grecaptcha.execute("{{ env.recaptcha_key }}", {action: "contact"}).then(function (token) {
-            recaptchaResponse.value = token;
+        <script src="https://www.google.com/recaptcha/api.js?render={{ env.recaptcha_key or 'key-not-found' }}"></script>
+        <script>
+          grecaptcha.ready(function () {
+            grecaptcha.execute("{{ env.recaptcha_key }}", {action: "contact"}).then(function (token) {
+              recaptchaResponse.value = token;
+            });
           });
-        });
-      </script>
-    {% endif -%}
-    {% clipboardscript %}
-  </body>
-</html>
+        </script>
+      {% endif -%}
+      {% clipboardscript %}
+    </body>
+  </html>
