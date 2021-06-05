@@ -22,8 +22,8 @@ const resize = (imgs = [], options = {}) => {
   const force = options.force || false
   // const quality = options.quality || 80
 
-  if (imgs.length < 0) {
-    console.warn('O Images found')
+  if (!Array.isArray(imgs) || imgs.length < 0) {
+    console.error('Image error (please ensure img is and array)')
     return
   }
 
