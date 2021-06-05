@@ -5,16 +5,20 @@
 {% block content %}
   <main>
     <section>
-      <h2>{{ title }}</h2>
-      {% if showDate %}
-        <time datetime="{{ page.date }}">
-          <i class="ti ti-calendar-event"></i>
-          {{ page.date.toDateString() }}
-        </time>
-      {% endif %}
-      <p>
-        {{ content | safe }}
-      </p>
+      <article>
+        {% if title %}
+          <h2>{{ title }}</h2>
+          {% if showDate %}
+            <time datetime="{{ page.date }}">
+              <i class="ti ti-calendar-event"></i>
+              {{ hlp.11ty.timeAgo(page.date) }}
+            </time>
+          {% endif %}
+        {% endif %}
+        <p>
+          {{ content | safe }}
+        </p>
+      </article>
     </section>
     <aside>
       <section class="bio">

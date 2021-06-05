@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/> {% include "partials/favicon.njk" %}
+    {% if env.node_env != 'production' %}
+      <script src="https://cdn.accesslint.com/accesslint-1.1.2.js"></script>
+    {% endif %}
     <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" media="screen"/>
     {% block head %}
       <title>
         {{ title or settings.subtitle }} | {{ settings.title }}
       </title>
-      <meta name="description" content="{{ subtitle or settings.description }}"/>
-      <meta property="og:title" content="{{ title or settings.subtitle }}"/>
-      <meta property="og:type" content="article"/>
-      <meta property="og:url" content="{{ settings.url }}{{ page.url }}"/>
-      <meta property="og:image" content="{{ settings.url }}{{ coverImage or '/images/og-cover.png' }}"/> {% set css %}
+      <meta name="description" content="{{ subtitle or settings.description }}"/> {% include "partials/open-graph.njk" %}
+      {% set css %}
       {% include "src/css/critical.css" %}
       {% endset %}
       {# css #}
@@ -34,46 +34,45 @@
     {% import "_macros/collections/featured.njk" as feature with context %}
     {% import "_macros/nav.njk" as nav with context %}
   </head>
-  <body class="{{ title | slug }}">
+  <body class="{{ title | slug }} page-{{ page.fileSlug or 'home' }}">
     {% block header %}
       {% include "partials/nav.njk" %}
     {% endblock %}
-    <header>
-      {% block cover %}{% endblock %}
-    </header>
-    {% block content %}
-      {{ content | safe }}
-    {% endblock %}
-    {% block footer %}
-      {% include "partials/footer.njk" %}
-    {% endblock %}
-    {% for js in metadata.scripts %}
-      <script src="{{ js }}"></script>
-    {% endfor %}
-    {# grab any scripts in the settings.js #}
-    {% if
+    <header class=" header-{{ page.fileSlug or 'home' }}"> {% block cover %}{% endblock %}
+      </header>
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
+      {% block footer %}
+        {% include "partials/footer.njk" %}
+      {% endblock %}
+      {% for js in metadata.scripts %}
+        <script src="{{ js }}"></script>
+      {% endfor %}
+      {# grab any scripts in the settings.js #}
+      {% if
     settings.scripts %}
-      {% for src in settings.scripts %}
-        <script src="{{ src }}"></script>
-      {% endfor %}
-    {% endif %}
-    {# load scripts data from the page #}
-    {% if scripts %}
-      {% for script in scripts %}
-        <script src="{{ script }}"></script>
-      {% endfor %}
-    {% endif %}
-    {%- if showRecaptcha and env.form_provider ===
+        {% for src in settings.scripts %}
+          <script src="{{ src }}"></script>
+        {% endfor %}
+      {% endif %}
+      {# load scripts data from the page #}
+      {% if scripts %}
+        {% for script in scripts %}
+          <script src="{{ script }}"></script>
+        {% endfor %}
+      {% endif %}
+      {%- if showRecaptcha and env.form_provider ===
     "web3forms" %}
-      <script src="https://www.google.com/recaptcha/api.js?render={{ env.recaptcha_key or 'key-not-found' }}"></script>
-      <script>
-        grecaptcha.ready(function () {
-          grecaptcha.execute("{{ env.recaptcha_key }}", {action: "contact"}).then(function (token) {
-            recaptchaResponse.value = token;
+        <script src="https://www.google.com/recaptcha/api.js?render={{ env.recaptcha_key or 'key-not-found' }}"></script>
+        <script>
+          grecaptcha.ready(function () {
+            grecaptcha.execute("{{ env.recaptcha_key }}", {action: "contact"}).then(function (token) {
+              recaptchaResponse.value = token;
+            });
           });
-        });
-      </script>
-    {% endif -%}
-    {% clipboardscript %}
-  </body>
-</html>
+        </script>
+      {% endif -%}
+      {% clipboardscript %}
+    </body>
+  </html>

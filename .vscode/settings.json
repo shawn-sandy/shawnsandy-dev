@@ -36,7 +36,9 @@
     "content",
     "assets",
     "wip",
-    "update"
+    "update",
+    "draft",
+    "accessibility"
   ],
   "cSpell.words": [
     "lenna"

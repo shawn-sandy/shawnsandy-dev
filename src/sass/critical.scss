@@ -80,11 +80,20 @@ p {
   }
 }
 
+blockquote {
+  margin: 1rem;
+}
+pre,
+textarea[role='presentation'] {
+  display: flex;
+  align-items: center;
+}
+
 .bg-section {
-  background-image: url(images/feature-bg@2x.png);
+  background-image: url(/images/feature-bg@2x.png);
   text-align: center;
   padding: calc(70rem / 16) 0;
-  max-width: 50vw;
+  max-width: 60vw;
   margin: auto;
   h3 {
     font-weight: normal;
