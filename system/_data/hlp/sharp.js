@@ -31,7 +31,6 @@ const resize = (imgs = [], options = {}) => {
     const _name = img.split('.')
     const imgName = options.name || _name[0]
     const imagePath = `${outputDir}${imgName}.${format}`
-    // console.log(imagePath)
     if (!fs.existsSync(imagePath) || force) {
       console.warn(imgName)
       sharp(`${imageSrc}`)
@@ -47,12 +46,13 @@ const resize = (imgs = [], options = {}) => {
   })
 }
 
-const img = (imgs = 'google-security-check.jpg', options = {}) => {
-  if (!Array.isArray(imgs)) {
-    console.error('Image param needs to be array')
-    return
-  }
-
+/**
+ *
+ * @param {*} imgs
+ * @param {*} options
+ * @returns
+ */
+const img = (imgs = ['google-security-check.jpg'], options = {}) => {
   if (imgs.length > 0) {
     resize([imgs[0]], options)
     const imgName = getName(imgs[0])
@@ -61,12 +61,29 @@ const img = (imgs = 'google-security-check.jpg', options = {}) => {
   return null
 }
 
+/**
+ *
+ * @param {*} imgs
+ * @param {*} options
+ * @returns
+ */
 const imgSrc = (imgs = 'google-security-check.jpg', options = {}) => {
   return `<img src="${img(imgs, options)}" alt="${options.name}"/>`
+}
+
+/**
+ *
+ * @param {*} imgs
+ * @returns
+ */
+const coverImage = (imgs = ['og-cover.png']) => {
+  const cover = img(imgs, { width: 300, height: 157, format: 'jpeg' })
+  return cover
 }
 
 module.exports = {
   img,
   imgSrc,
-  resize
+  resize,
+  coverImage
 }
