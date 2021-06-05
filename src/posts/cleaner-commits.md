@@ -54,13 +54,7 @@ npm install commitizen
 
 ```
 
-Make sure your project/repo is commitizen friendly
-
-```BASH
-npm install commitizen -g
-```
-
-Initialize your project to use the cz-conventional-changelog
+Make sure your project/repo is commitizen friendly. Initialize your project to use the cz-conventional-changelog
 
 ```BASH
 #npm
@@ -70,7 +64,15 @@ commitizen init cz-conventional-changelog --save-dev --save-exact
 commitizen init cz-conventional-changelog --yarn --dev --exact
 ```
 
-If you run into any problems checkout the project [docs here](http://commitizen.github.io/cz-cli/)
+Replace git commit with `git cz` and follow the prompts or add the command to your `npm scripts`
+
+```BASH
+"scripts": {
+    "commit": "cz"
+  }
+```
+
+[If you run into any problems checkout the project docs here](http://commitizen.github.io/cz-cli/)
 
 ---
 
