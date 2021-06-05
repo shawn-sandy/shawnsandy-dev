@@ -14,7 +14,7 @@
   "main": "index.js",
   "scripts": {
     "startup": "run-p serve watch:*",
-    "start": "run-s trash scss js && run-p watch:* 11ty",
+    "start": "run-s scss js && run-p watch:* 11ty",
     "serve": "eleventy --serve --incremental",
     "11ty": "eleventy --serve",
     "build-11ty": "eleventy",

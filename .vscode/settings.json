@@ -35,7 +35,10 @@
   "conventionalCommits.scopes": [
     "content",
     "assets",
-    "wip"
+    "wip",
+    "update",
+    "draft",
+    "accessibility"
   ],
   "cSpell.words": [
     "lenna"

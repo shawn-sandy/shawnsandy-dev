@@ -35,6 +35,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./img");
   eleventyConfig.addPassthroughCopy("./src/js/min", "www/js");
   eleventyConfig.addPassthroughCopy("./src/admin");
+  eleventyConfig.addPassthroughCopy("./src/favicons/*.*", "/");
   // eleventyConfig.addPassthroughCopy("./src/robots.txt")
 
   // eleventy img
