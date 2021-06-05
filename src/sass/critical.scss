@@ -83,6 +83,11 @@ p {
 blockquote {
   margin: 1rem;
 }
+pre,
+textarea[role='presentation'] {
+  display: flex;
+  align-items: center;
+}
 
 .bg-section {
   background-image: url(images/feature-bg@2x.png);
