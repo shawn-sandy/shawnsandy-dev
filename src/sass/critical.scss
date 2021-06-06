@@ -5,6 +5,21 @@ body {
   border-left: tokens.$primary-blue solid 0.5rem;
 }
 
+body > section,
+body > main,
+body > header > section,
+body > footer > section,
+nav {
+  @media (min-width: 980px) {
+    max-width: calc(1600rem / 16) !important;
+    width: 80%;
+  }
+  @media (min-width: 1980px) {
+    max-width: calc(1500rem / 16) !important;
+    width: 80%;
+  }
+}
+
 a {
   &:any-link,
   &:any-link:active,
