@@ -10,3 +10,17 @@
     </h3>
     {# <hr style="max-width: 40%"></section> #}
   {% endblock %}
+  {% block content %}
+    {{ super() }}
+    <section>
+      <p style="margin-bottom: 3rem">
+        <small>
+          <a href="{{ env.repository }}/blob/main/{{ page.inputPath }}" target="_blank" rel="noopener nofollower" role="button">
+            <span>
+              <i class="ti ti-edit"></i>
+              Edit this page on GitHub</span>
+          </a>
+        </small>
+      </p>
+    </section>
+  {% endblock %}
