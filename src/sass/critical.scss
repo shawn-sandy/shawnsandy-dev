@@ -19,6 +19,10 @@ a {
   }
 }
 
+p + * {
+  margin-top: 1.5rem !important;
+}
+
 header,
 .border {
   border-color: lighten(tokens.$primary-blue, 10%) !important;
@@ -67,8 +71,9 @@ section {
       text-decoration: none;
     }
   }
-
-  padding-right: calc(80rem / 16);
+  @media (min-width: calc(980rem / 16)) {
+    padding-right: calc(80rem / 16);
+  }
 }
 
 p {
