@@ -67,8 +67,9 @@ section {
       text-decoration: none;
     }
   }
-
-  padding-right: calc(80rem / 16);
+  @media (min-width: calc(980rem / 16)) {
+    padding-right: calc(80rem / 16);
+  }
 }
 
 p {
