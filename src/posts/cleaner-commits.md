@@ -14,7 +14,7 @@ date: 2021-06-02
 
 So what's the problem, we all do it? Well, I use commits messages to help me better understand and figure out the purpose of a code change and why it was made when either reviewing PR's or working directly with the code itself. So writing something that makes sense is kind of important. Yet, I'm mortified when going through my commit messages, muttering to myself how horrible they are, and promising to work on improving them in my next commit.
 
-> Commit messages are a way of communication between team members. Let’s say there’s a bug in the application which was not there before. To find out what caused the problem, reading the commit messages could be handy. The proper commit message can save a great deal of time finding the recent changes related to a bug
+> Commit messages are a way of communication between team members. Let’s say there’s a bug in the application which was not there before. To find out what caused the problem, reading the commit messages could be handy. The proper commit message can save a great deal of time finding the recent changes related to a bugs.
 
 More importantly, I work with a team. I'm not the only person contributing to the codebase(s). Commit messages help team members understand what new feature was added or why a developer made changes; it saves developers time! Bad commit message can hurt my team's productivity, so it became a mission of mine to improve my commit messages.
 
