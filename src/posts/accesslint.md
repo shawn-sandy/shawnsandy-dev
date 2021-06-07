@@ -23,4 +23,4 @@ Created by the Accesslint team, `accesslint.js` , when added to any page, allows
 <script src="https://cdn.accesslint.com/accesslint-1.1.2.js"></script>
 ```
 
-Visit the [Access Lint GitHub page](https://github.com/AccessLint/accesslint.js) for more information and detailed install instructions. Enjoy!
+Visit the <a href="https://github.com/AccessLint/accesslint.js" rel="nofollow noopener">Access Lint GitHub page</a> for more information and detailed install instructions. Enjoy!

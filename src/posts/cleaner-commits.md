@@ -28,7 +28,7 @@ After a quick google search, I found [commitizen](http://commitizen.github.io/cz
 
 ##### Installation/Setup
 
- Search for the extension by typing `conventional commits` in your VS CODE extensions panel search and hitting install. Alternatively you can install directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
+ Search for the extension by typing `conventional commits` in your VS CODE extensions panel search and hitting install. Alternatively you can install directly from the <a href="https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits" rel="nofolow noopener" target="_blank">Visual Studio Marketplace</a>
 
 ![alt]({{ hlp.sharp.img(['commitizen-install-extension.jpg'], {'force': true, 'format': 'webp' }) }})
 
@@ -73,7 +73,7 @@ Replace git commit with `git cz` and follow the prompts or add the command to yo
   }
 ```
 
-[If you run into any problems checkout the project docs here](http://commitizen.github.io/cz-cli/)
+<a href="http://commitizen.github.io/cz-cli/" rel="nofolow noopener" target="_blank">If you run into any problems checkout the project docs here</a>
 
 ---
 
@@ -81,24 +81,20 @@ Replace git commit with `git cz` and follow the prompts or add the command to yo
 
 ---
 
-##### [Commitizen by commitizen](http://commitizen.github.io/cz-cli/)
+##### <a href="http://commitizen.github.io/cz-cli/" rel="nofolow noopener" target="_blank">Commitizen by commitizen</a>
 
 When you commit with Commitizen, you'll be prompted to fill out any required commit fields at commit time. No more waiting until later for a git commit hook to run and reject your commit (though that can still be helpful). No more digging through CONTRIBUTING.md to find what the preferred format is. Get instant feedback on your commit message formatting and be prompted for required fields.
 
 ---
 
-##### [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+##### <a href="https://www.conventionalcommits.org/en/v1.0.0/" rel="nofolow noopener" target="_blank">Conventional Commits</a>
 
 The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages.
 
 ---
 
-##### [How to write a good commit message - DEV Community](https://dev.to/chrissiemhrk/git-commit-message-5e21)
+##### <a href="https://dev.to/chrissiemhrk/git-commit-message-5e21" rel="nofolow noopener" target="_blank">How to write a good commit message - DEV Community</a>
 
 ---
 
-##### [Udacity Nanodegree Style Guide](https://udacity.github.io/git-styleguide/)
-
----
-
-##### [Writing Meaningful Commit Messages](https://reflectoring.io/meaningful-commit-messages/)
+##### <a href="https://reflectoring.io/meaningful-commit-messages/" rel="nofolow noopener" target="_blank">Writing Meaningful Commit Messages</a>
