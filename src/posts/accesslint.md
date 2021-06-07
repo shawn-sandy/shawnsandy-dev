@@ -19,4 +19,8 @@ Created by the Accesslint team, `accesslint.js` , when added to any page, allows
 * Add the link to the script below above your closing body tag.
 * View the page in your browsers and check your console for errors and warnings.
 
+```HTML
+<script src="https://cdn.accesslint.com/accesslint-1.1.2.js"></script>
+```
+
 Visit the [Access Lint GitHub page](https://github.com/AccessLint/accesslint.js) for more information and detailed install instructions. Enjoy!
