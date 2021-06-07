@@ -9,6 +9,7 @@ module.exports = {
   form_provider: process.env.FORM_PROVIDER || null,
   url: process.env.URL || null,
   developer_mode: process.env.DEVELOPER_MODE || true,
-  recaptcha_key: process.env.RECAPTCHA_KEY || null
+  recaptcha_key: process.env.RECAPTCHA_KEY || null,
+  repository: process.env.REPOSITORY_URL || 'https://github.com/shawn-sandy/shawnsandy-dev'
 
 }
