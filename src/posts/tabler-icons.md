@@ -8,7 +8,7 @@ coverImage: ['tabler.jpg']
 
 ![Tabler Icons]({{ hlp.sharp.img(['tabler-icons.jpg']) }})
 
-If you are searching for a new set of font icons or SVG icons, or maybe you want to replace the popular FontAwesome, check out Tabler. It's a free icon set that comes with over 1250+ icons line style icons. Created by Michał Wolny and has an MIT license, check it out. You can find it by going to <a href="https://tabler-icons.io/" target="_blank" rel="nofollow noopener">https://tabler-icons.io/</a>. Enjoy!
+If you are searching for a new set of font icons or SVG icons, or maybe you want to replace the popular FontAwesome, check out Tabler. It's a free icon set that comes with over 1250+ icons line style icons. Created by Michał Wolny and has an MIT license, check it out. You can find it by going to <a href="https://tabler-icons.io/" target="_blank" rel="nofollow noopener" style="user-select: auto; ">https://tabler-icons.io/</a>. Enjoy!
 
 #### Usage
 
