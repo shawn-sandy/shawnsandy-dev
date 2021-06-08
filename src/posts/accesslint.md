@@ -1,6 +1,6 @@
 ---
 title: 'AccessLint: quickly add dynamic accessibility testing to your development workflow'
-subtitle: ''
+subtitle: 'Accessibility warnings for dynamic web content.'
 date: 2021-06-07
 coverImage: ['access-lint.jpg']
 tags: ['posts', 'tools', accessibility']
