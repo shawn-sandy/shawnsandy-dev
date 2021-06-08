@@ -12,7 +12,7 @@ When building dynamic websites, you will most likely find yourself working with 
 
 Here's a tip I found on <a href="https://11ty.rocks/tips/layout-templating/" target="_blank" rel="nofollow noopenner">11ty rocks</a> that allows you to add dynamic classes on your  Eleventy template. I cleaned up the code to remove the if statements on Nunjucks templates and replaced them with `or` statement; personal preference.
 
-### Usage
+#### Usage
 
 I usually add these to the body tag; you can also add them to individual components; prefix the class with the component name something like `banner-main` for easier identification.
 
