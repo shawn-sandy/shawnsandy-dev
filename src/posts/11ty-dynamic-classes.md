@@ -14,7 +14,11 @@ Here's a tip I found on <a href="https://11ty.rocks/tips/layout-templating/" tar
 
 #### Usage
 
-I usually add these to the body tag; you can also add them to individual components; prefix the class with the component name something like `banner-main` for easier identification.
+> The fileSlug variable is mapped from inputPath and is useful for creating your own clean permalinks.
+
+* You are going to need the grab the `flileSlug` from the 11ty supplied data `page` data.
+
+* I usually add these to the body tag; you can also add them to individual components; prefix the class with the component name something like `banner-main` for easier identification (prefixing is optional).
 
 Page name classes
 
