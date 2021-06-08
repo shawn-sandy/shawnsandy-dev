@@ -41,4 +41,4 @@ Component class
 {% endraw %}
 ```
 
-Enjoy!
+For more info visit the {{ hlp.11ty.openUrl('https://www.11ty.dev/docs/data-eleventy-supplied/') | safe }}  Enjoy!
