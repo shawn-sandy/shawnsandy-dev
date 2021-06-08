@@ -3,11 +3,14 @@ title: 'Tip: Simple, dynamic 11ty class-names'
 subtitle: ''
 date: 2021-06-08
 tags: ['posts', 'tips', '11ty']
+coverImage: ['11ty-class-names-code.jpg']
 ---
 
-When building dynamic websites, you will most likely find yourself working with template-driven pages controlled by a master layout(s). So it's standard practice for developers to generate unique CSS class names for each page from dynamic data, allowing them to customize the look and feel of individual pages quickly.
+!['11ty classnames screenshots']({{ hlp.sharp.img(['11ty-class-names-code.jpg'])}})
 
-Here's a tip I found on 11ty rocks that allows you to add dynamic classes on your Eleventy template. I cleaned up the code to remove the if statements on Nunjucks templates; personal preference.
+When building dynamic websites, you will most likely find yourself working with template-driven pages controlled by a master layout(s). So it's standard practice for developers to generate dynamic CSS class-names for each page from template data, allowing them to quickly customize the look and feel of individual pages.
+
+Here's a tip I found on <a href="https://11ty.rocks/tips/layout-templating/" target="_blank" rel="nofollow noopenner">11ty rocks</a> that allows you to add dynamic classes on your  Eleventy template. I cleaned up the code to remove the if statements on Nunjucks templates and replaced them with `or` statement; personal preference.
 
 ### Usage
 
@@ -15,8 +18,23 @@ I usually add these to the body tag; you can also add them to individual compone
 
 Page name classes
 
-Template classes
+```HTML
+{% raw %}
 
-Using them together
+<body class="page-{{ page.fileSlug or 'home' }}">
+    ...
+</body>
+{% endraw %}
+```
 
-More info on the Eleventy docs
+Component class
+
+```HTML
+{% raw %}
+<header class=" header-{{ page.fileSlug or 'home' }}">
+    ...
+</header>
+{% endraw %}
+```
+
+Enjoy!
