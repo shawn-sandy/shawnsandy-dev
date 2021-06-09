@@ -6,7 +6,7 @@ coverImage: ['commitizen-terminal.jpg']
 date: 2021-06-02
 ---
 
-![alt]({{ hlp.sharp.img(['commitizen-terminal.jpg'], {'force': true, 'format': 'webp'}) }})
+![alt]({{ hlp.sharp.img(['commitizen-terminal.jpg'], {'format': 'webp'}) }})
 
 > A commit message is a short description of the changes you've made to a file added before committing the changes to your repository.
 
@@ -30,15 +30,15 @@ After a quick google search, I found [commitizen](http://commitizen.github.io/cz
 
  Search for the extension by typing `conventional commits` in your VS CODE extensions panel search and hitting install. Alternatively you can install directly from the <a href="https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits" rel="nofolow noopener" target="_blank">Visual Studio Marketplace</a>
 
-![alt]({{ hlp.sharp.img(['commitizen-install-extension.jpg'], {'force': true, 'format': 'webp' }) }})
+![alt]({{ hlp.sharp.img(['commitizen-install-extension.jpg'], {'format': 'webp' }) }})
 
 Click on the `conventional commit` icon in the source control menu ot `command/ctrl + shift + p` enter `conventional commit` to launch the interactive prompts
 
-![alt]({{ hlp.sharp.img(['conventional-commit-run.jpg'], {'force': true, 'format': 'webp' }) }})
+![alt]({{ hlp.sharp.img(['conventional-commit-run.jpg'], {'format': 'webp' }) }})
 
 Follow the prompts to complete your commit!
 
-![alt]({{ hlp.sharp.img(['cz-prompts.jpg'], {'force': true, 'format': 'webp' }) }})
+![alt]({{ hlp.sharp.img(['cz-prompts.jpg'], {'format': 'webp' }) }})
 
 ---
 

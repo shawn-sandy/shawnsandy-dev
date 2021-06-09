@@ -33,6 +33,11 @@ const timeAgo = (date) => {
   return dayjs(date).fromNow()
 }
 
+const openUrl = (url, label = null) => {
+  if (!url) { console.warn('url required'); return }
+  return `<a href="${url}" target="_blank" rel="nofollow noopener">${label || url}</a>`
+}
+
 module.exports = {
   year: currentYear,
   currentYear,
@@ -40,5 +45,6 @@ module.exports = {
   strip: stripHtml,
   stripHtml, // deprecated use strip
   limit,
-  timeAgo
+  timeAgo,
+  openUrl
 }
