@@ -3,5 +3,7 @@
   {% include "partials/hero.njk" %}
 {% endblock %}
 {% block content %}
-  {{ super() }}
-{% endblock %}
+  {{ feature.featured('projects', 3) }}
+  <hr>
+    {{ super() }}
+  {% endblock %}

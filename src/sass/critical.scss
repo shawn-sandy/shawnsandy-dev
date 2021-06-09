@@ -161,3 +161,19 @@ footer[role='contentinfo'] {
     }
   }
 }
+
+.fp-grid [role='list'],
+section [role='list'] {
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+}
+
+.fp-grid [role='list'] [role='listitem'],
+section [role='list'] [role='listitem'] {
+  flex: 1;
+}
