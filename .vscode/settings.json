@@ -38,7 +38,8 @@
     "wip",
     "update",
     "draft",
-    "accessibility"
+    "accessibility",
+    "helpers"
   ],
   "cSpell.words": [
     "lenna"
