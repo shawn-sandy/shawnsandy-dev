@@ -6,69 +6,38 @@
   <main style="padding-top: calc(100rem / 16)">{%- set feature = hlp.11ty.limit(collections['projects'], 4) |
 reverse -%}
     <section>
+      {# -------------- #}
       <article>
-        <div role="list-">
-          {%- for item in feature %}
-            <article role="listitem-">
-              {% if item.data.coverImage %}
-                <picture>
-                  <img src="/images/{{ item.data.coverImage }}" alt="{{ item.data.title | slug }}"/>
-                </picture>
-              {% endif %}
-              <h3>
-                <i class="{{ item.data.icon }}"></i>
-                {{ item.data.title }}
-              </h3>
-              <p>
-                {{ item.data.summary or hlp.11ty.stripHtml(item.templateContent) |
-    truncate(300) | safe }}
-              </p>
-              {% if item.url %}
-                <p>
-                  <a href="{{ item.url }}" role="button">
-                    <em>
-                      Continued
-                      <i class="ti ti-arrow-right"></i>
-                    </em>
-                  </a>
-                </p>
-              {% endif %}
-            </article>
-            <hr>
-            {%- endfor %}
-          </div>
-        </article>
-        <article>
-          {% if title %}
-            <h2>{{ title }}</h2>
-            {% if showDate %}
-              <time datetime="{{ page.date }}">
-                <i class="ti ti-calendar-event"></i>
-                {{ hlp.11ty.timeAgo(page.date) }}
-              </time>
-            {% endif %}
+        {% if title %}
+          <h2>{{ title }}</h2>
+          {% if showDate %}
+            <time datetime="{{ page.date }}">
+              <i class="ti ti-calendar-event"></i>
+              {{ hlp.11ty.timeAgo(page.date) }}
+            </time>
           {% endif %}
-          <p>
-            {{ content | safe }}
-          </p>
-        </article>
+        {% endif %}
+        <p>
+          {{ content | safe }}
+        </p>
+      </article>
+    </section>
+    <aside>
+      <section class="bio">
+        <h5>
+          <i class="ti ti-arrow-bar-to-right"></i>
+          {{ settings.author.name }}
+        </h5>
+        {# <i class="ti ti-brand-twitter"></i> #}
+        <p class="primary">
+          {{ settings.description }}
+        </p>
       </section>
-      <aside>
-        <section class="bio">
-          <h5>
-            <i class="ti ti-arrow-bar-to-right"></i>
-            {{ settings.author.name }}
-          </h5>
-          {# <i class="ti ti-brand-twitter"></i> #}
-          <p class="primary">
-            {{ settings.description }}
-          </p>
-        </section>
-        {# <hr /> #}
-        {% include "partials/sidebar.njk" %}
-      </aside>
-    </main>
-  {% endblock %}
-  {% block footer %}
-    {{ super() }}
-  {% endblock %}
+      {# <hr /> #}
+      {% include "partials/sidebar.njk" %}
+    </aside>
+  </main>
+{% endblock %}
+{% block footer %}
+  {{ super() }}
+{% endblock %}
