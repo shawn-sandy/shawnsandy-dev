@@ -1,8 +1,8 @@
 {
   "layout": "page.njk",
-  "title": "Content Page",
-  "tags": "contents",
-  "category": "contents",
+  "title": "Featured Projects",
+  "tags": "projects",
+  "category": "projects",
   "showDate": true,
   "scripts": []
 }
