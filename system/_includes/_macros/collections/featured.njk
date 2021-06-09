@@ -36,9 +36,6 @@ reverse -%}
     </div>
   </section>
 {%- endmacro -%}
-{# display a list with title and links #}
-{# attributes tag -
-tag, limit - number of items #}
 {%- macro postLinks(tag = 'posts', limit = 3) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
   <section>
