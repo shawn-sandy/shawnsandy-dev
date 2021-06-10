@@ -90,8 +90,10 @@ section {
   picture + * {
     margin-top: 2rem;
   }
-  @media (min-width: calc(980rem / 16)) {
-    padding-right: calc(80rem / 16);
+  > article {
+    @media (min-width: calc(980rem / 16)) {
+      padding-right: calc(80rem / 16);
+    }
   }
 }
 
@@ -168,12 +170,20 @@ section [role='list'] {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between !important;
   width: 80vw;
   margin: auto;
+  @media (min-width: 1600px) {
+    width: auto;
+  }
 }
 
 .fp-grid [role='list'] [role='listitem'],
 section [role='list'] [role='listitem'] {
-  flex: 1;
+  flex: 1 !important;
+  width: calc(100% / 3);
+  @media (max-width: 980px) {
+    flex: auto !important;
+    width: 100%;
+  }
 }
