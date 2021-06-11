@@ -59,7 +59,7 @@ const img = (imgs = ['google-security-check.jpg'], options = {}) => {
   if (imgs.length > 0) {
     resize([imgs[0]], options)
     const imgName = getName(imgs[0])
-    return `/${options.imgDir || 'images'}/${imgName}.${options.format || 'jpeg'}`
+    return `/${options.imgDir || 'images'}/${imgName}.${options.format || 'jpg'}`
   }
   return null
 }
