@@ -51,6 +51,11 @@ body > header {
   background-size: cover;
   [role='banner'] {
   }
+
+  blockquote {
+    color: tokens.$primary-blue;
+    font-style: italic;
+  }
 }
 
 .page-home > header {
