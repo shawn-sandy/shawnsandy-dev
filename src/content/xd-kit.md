@@ -1,6 +1,6 @@
 ---
-title: 'XD-DSP-KIT'
-subtitle: 'A minimalist UI Toolkit for building responsive, performance driven, accessibility first websites'
+title: 'XD DSP-KIT'
+subtitle: 'Publish your Adobe XD design systems packages to the Web--Publish, Share and Collaborate'
 date: 2021-06-08
 coverImage: ['xd-kit-cov.jpg']
 ---

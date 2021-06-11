@@ -13,14 +13,16 @@ reverse -%}
               <img src="/images/{{ item.data.coverImage }}" alt="{{ item.data.title | slug }}"/>
             </picture>
           {% endif %}
-          <h4>
-            <i class="{{ item.data.icon }}"></i>
-            {{ item.data.title }}
-          </h4>
-          <p>
-            {{ item.data.summary or hlp.11ty.stripHtml(item.templateContent) |
+          <section>
+            <h4>
+              <i class="{{ item.data.icon }}"></i>
+              {{ item.data.title }}
+            </h4>
+            <p>
+              {{ item.data.subtitle or hlp.11ty.stripHtml(item.templateContent) |
     truncate(300) | safe }}
-          </p>
+            </p>
+          </section>
           {% if item.url %}
             <p>
               <a href="{{ item.url }}" role="button">

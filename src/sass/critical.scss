@@ -196,9 +196,17 @@ section [role='list'] {
 .fp-grid [role='list'] [role='listitem'],
 section [role='list'] [role='listitem'] {
   // flex: 1 !important;
+  display: flex;
+  flex-direction: column;
   width: calc(100% / 3);
+
   @media (max-width: 980px) {
     flex: auto !important;
     width: 100%;
   }
+}
+
+[role='listitem'] > section {
+  flex: 2rem;
+  margin-bottom: 2rem;
 }
