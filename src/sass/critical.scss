@@ -47,7 +47,7 @@ header,
 }
 
 body > header {
-  background-image: url(/images/feature-bg@2x.png);
+  // background-image: url(/images/feature-bg@2x.png);
   background-size: cover;
   [role='banner'] {
   }
@@ -57,7 +57,7 @@ body > header {
   background-image: none !important;
   padding: 2rem;
   border-bottom: tokens.$primary-blue solid thin !important;
-  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+  // text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .primary {
@@ -127,10 +127,11 @@ textarea[role='presentation'] {
   padding: calc(70rem / 16) 0;
   max-width: 60vw;
   margin: auto;
-  h3 {
+  h3,
+  h2 {
     font-weight: normal;
-    font-size: calc(36rem / 16);
-    font-style: oblique;
+    // font-size: calc(36rem / 16);
+    // font-style: oblique;
   }
   @media (max-width: 980px) {
     max-width: 90vw;
