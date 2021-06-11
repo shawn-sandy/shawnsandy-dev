@@ -44,6 +44,5 @@
   "cSpell.words": [
     "lenna"
   ],
-  "conventionalCommits.lineBreak": "\\n",
-  "conventionalCommits.showEditor": true
+  "conventionalCommits.lineBreak": "\\n"
 }
