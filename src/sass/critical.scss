@@ -54,11 +54,9 @@ body > header {
 
   blockquote {
     color: tokens.$primary-blue;
-    font-style: italic;
+    // font-style: italic;
   }
-}
 
-.page-home > header {
   background-image: none !important;
   padding: 2rem;
   border-bottom: tokens.$primary-blue solid thin !important;
@@ -69,12 +67,17 @@ body > header {
   color: tokens.$primary !important;
 }
 
+.title-font {
+  font-family: 'Merriweather', serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
   @extend .primary;
+  font-family: 'Merriweather', serif;
 }
 main {
   img[alt] {
@@ -128,8 +131,8 @@ textarea[role='presentation'] {
 
 .bg-section {
   // background-image: url(/images/feature-bg@2x.png);
-  text-align: center;
-  padding: calc(70rem / 16) 0;
+  // text-align: center;
+  // padding: calc(70rem / 16) 0;
   max-width: 60vw;
   margin: auto;
   h3,

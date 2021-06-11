@@ -13,10 +13,10 @@ reverse -%}
               <img src="/images/{{ item.data.coverImage }}" alt="{{ item.data.title | slug }}"/>
             </picture>
           {% endif %}
-          <h3>
+          <h4>
             <i class="{{ item.data.icon }}"></i>
             {{ item.data.title }}
-          </h3>
+          </h4>
           <p>
             {{ item.data.summary or hlp.11ty.stripHtml(item.templateContent) |
     truncate(300) | safe }}
