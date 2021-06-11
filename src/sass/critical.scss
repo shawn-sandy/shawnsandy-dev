@@ -50,8 +50,14 @@ body > header {
   background-image: url(/images/feature-bg@2x.png);
   background-size: cover;
   [role='banner'] {
-    text-shadow: rgba(62, 66, 66, 0.4) 0px 10px 24px;
   }
+}
+
+.page-home > header {
+  background-image: none !important;
+  padding: 2rem;
+  border-bottom: tokens.$primary-blue solid thin !important;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .primary {
@@ -116,7 +122,7 @@ textarea[role='presentation'] {
 }
 
 .bg-section {
-  background-image: url(/images/feature-bg@2x.png);
+  // background-image: url(/images/feature-bg@2x.png);
   text-align: center;
   padding: calc(70rem / 16) 0;
   max-width: 60vw;
