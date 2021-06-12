@@ -15,8 +15,10 @@ reverse -%}
           {% endif %}
           <section>
             <h4>
-              <i class="{{ item.data.icon }}"></i>
-              {{ item.data.title }}
+              <a href="{{ item.url }}" title="{{ item.data.title }}">
+                <i class="{{ item.data.icon }}"></i>
+                {{ item.data.title }}
+              </a>
             </h4>
             <p>
               {{ item.data.subtitle or hlp.11ty.stripHtml(item.templateContent) |
