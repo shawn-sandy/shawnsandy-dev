@@ -30,7 +30,9 @@ a {
   &:any-link:visited {
     color: tokens.$primary-blue;
     text-decoration: none;
-    text-transform: capitalize;
+    &[role='button'] {
+      text-transform: capitalize;
+    }
   }
   &:any-link:hover {
     color: darken(tokens.$primary-blue, 20%);
