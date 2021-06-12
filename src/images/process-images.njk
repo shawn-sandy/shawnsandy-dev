@@ -1,0 +1,7 @@
+{#  thumbnails --500 x300  #}
+{% set thumbnail = {format: 'webp', width: 500, height: 300, name: 'xd-web-kit-cov' } %}
+{% set thumbnailCover = {format: 'webp', height: 300, name: 'xd-web-kit-cov' } %}
+{{ hlp.sharp.resize(['space.jpg', 'space-bg.jpg'], {format: 'webp', width: 1400px }) }}
+{{ hlp.sharp.resize(['xd-kit-cov.jpg'], thumbnail ) }}
+{{ hlp.sharp.resize(['pages.jpg'], thumbnail) }}
+{{ hlp.sharp.resize(['fengine.jpg'], thumbnail ) }}
