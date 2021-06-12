@@ -5,27 +5,31 @@ number of items, words - word count #}
 3, words = 200) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) |
 reverse -%}
-    <section>
-      <div role="list"> {%- for item in feature %}
+    <section style="margin: 3rem auto"> <div role="list">
+      {%- for item in feature %}
         <div role="listitem">
           {% if item.data.coverImage %}
             <picture>
-              <img src="{{ item.data.coverImage }}" alt="{{ item.data.title | slug }}"/>
+              <img src="/images/{{ item.data.coverImage }}" alt="{{ item.data.title | slug }}"/>
             </picture>
           {% endif %}
-          <h3>
-            <i class="{{ item.data.icon }}"></i>
-            {{ item.data.title }}
-          </h3>
-          <p>
-            {{ item.data.summary or hlp.11ty.stripHtml(item.templateContent) |
+          <section>
+            <h4>
+              <a href="{{ item.url }}" title="{{ item.data.title }}">
+                <i class="{{ item.data.icon }}"></i>
+                {{ item.data.title }}
+              </a>
+            </h4>
+            <p>
+              {{ item.data.subtitle or hlp.11ty.stripHtml(item.templateContent) |
     truncate(300) | safe }}
-          </p>
+            </p>
+          </section>
           {% if item.url %}
             <p>
               <a href="{{ item.url }}" role="button">
                 <em>
-                  Continued
+                  Continue Reading
                   <i class="ti ti-arrow-right"></i>
                 </em>
               </a>
@@ -36,9 +40,6 @@ reverse -%}
     </div>
   </section>
 {%- endmacro -%}
-{# display a list with title and links #}
-{# attributes tag -
-tag, limit - number of items #}
 {%- macro postLinks(tag = 'posts', limit = 3) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
   <section>
@@ -69,7 +70,7 @@ tag - tag, limit - number of items #}
 {%- macro postImages(tag = 'posts', limit
 = 3) -%}
   {%- set feature = hlp.11ty.limit(collections[tag], limit) | reverse -%}
-  <section>
+  <section style="margin: 2rem 0">
     <span>
       <ul role="list">
         {%- for item in feature %}
