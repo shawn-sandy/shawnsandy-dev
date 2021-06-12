@@ -19,29 +19,28 @@ const resize = (imgs = [], options = {}) => {
   const format = options.format || 'jpg'
   const srcDir = options.srcDir || './assets/img/'
   const outputDir = options.outputDir || './www/images/'
-  // const imageSrc = `${srcDir}${imgs}`
   const force = options.force || false
-  // const quality = options.quality || 80
 
   if (!Array.isArray(imgs) || imgs.length < 0) {
     console.error('Image error (please ensure img is and array)')
     return
   }
 
-  imgs.map((img) => {
+  imgs.map((img, index) => {
+    // console.log(index)
     const _name = img.split('.')
     const imgName = options.name || _name[0]
     const src = `${srcDir}${img}`
     const imagePath = `${outputDir}${imgName}.${format}`
     if (!fs.existsSync(src)) { console.error('Image not found', src); return null }
     if (!fs.existsSync(imagePath) || force) {
-      console.warn(imgName)
+      // console.warn(imgName)
       sharp(`${src}`)
         .toFormat(format)
-        .resize({ width: options.width || null, height: options.width || null })
+        .resize({ width: options.width || null, height: options.height || null })
         .toFile(`${outputDir}${imgName}.${format}`, (err, info) => {
           if (err) console.log('Error', err)
-          if (info) console.warn('Image created', imgSrc)
+          if (info) console.warn('Image created', `${imgName}.${format}`)
         })
     }
 
@@ -80,7 +79,7 @@ const imgSrc = (imgs = 'google-security-check.jpg', options = {}) => {
  * @returns
  */
 const coverImage = (imgs = ['og-cover.png']) => {
-  const cover = img(imgs, { width: 300, height: 157, format: 'jpg' })
+  const cover = img(imgs, { width: 800, height: 500, format: 'jpg' })
   return cover
 }
 
