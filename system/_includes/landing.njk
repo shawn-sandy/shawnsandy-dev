@@ -1,9 +1,17 @@
 {% extends "base.njk" %}
 {% block cover %}
-  {% include "partials/hero.njk" %}
+  <section>
+    <h3 role="presentation">
+      <i class="ti ti-grain"></i>
+      {{ settings.subtitle }}
+    </h3>
+    <blockquote class="title-font">
+      {{ settings.description }}
+    </blockquote>
+  </section>
+  {# {% include "partials/hero.njk" %} #}
 {% endblock %}
 {% block content %}
-  {{ feature.featured('info', 3) }}
-  <hr>
-    {{ super() }}
-  {% endblock %}
+  {{ feature.featured('projects', 3) }}
+  {{ super() }}
+{% endblock %}
