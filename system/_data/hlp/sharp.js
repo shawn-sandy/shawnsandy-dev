@@ -37,7 +37,7 @@ const resize = (imgs = [], options = {}) => {
       // console.warn(imgName)
       sharp(`${src}`)
         .toFormat(format)
-        .resize({ width: options.width || null, height: options.width || null })
+        .resize({ width: options.width || null, height: options.height || null })
         .toFile(`${outputDir}${imgName}.${format}`, (err, info) => {
           if (err) console.log('Error', err)
           if (info) console.warn('Image created', `${imgName}.${format}`)
@@ -79,7 +79,7 @@ const imgSrc = (imgs = 'google-security-check.jpg', options = {}) => {
  * @returns
  */
 const coverImage = (imgs = ['og-cover.png']) => {
-  const cover = img(imgs, { width: 300, height: 157, format: 'jpg' })
+  const cover = img(imgs, { width: 800, height: 500, format: 'jpg' })
   return cover
 }
 
