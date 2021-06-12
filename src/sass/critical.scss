@@ -5,6 +5,10 @@ body {
   border-left: tokens.$primary-blue solid 0.5rem;
 }
 
+img[src='/images/nav-logo.svg'] {
+  filter: drop-shadow(1px 5px 4px rgba(11, 2, 36, 0.4));
+}
+
 body > section,
 body > main,
 body > header > section,
