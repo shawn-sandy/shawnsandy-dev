@@ -54,9 +54,8 @@ header,
 
 body > header {
   // background-image: url(/images/feature-bg@2x.png);
+  padding: 0 0 3rem !important;
   background-size: cover;
-  [role='banner'] {
-  }
 
   blockquote {
     color: tokens.$primary-blue;
@@ -67,6 +66,11 @@ body > header {
   padding: 2rem;
   border-bottom: tokens.$primary-blue solid thin !important;
   // text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+[role='list'] [role='button'] > em {
+  background-color: tokens.$bg-color-secondary;
+  // color: #fff;
 }
 
 .primary {
