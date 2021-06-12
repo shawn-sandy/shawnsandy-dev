@@ -1,6 +1,6 @@
 {# thumbnails --500 x300 #}
 {% set options = {format: 'webp', width: 800, height: 500, suffix: '-thumbs' } %}
-{{ hlp.sharp.resize(['space.jpg', 'space-bg.jpg'], {format: 'webp', width: 1400px }) }}
-{{ hlp.sharp.resize(['xd-kit-cov.jpg'], options ) }}
-{{ hlp.sharp.resize(['pages.jpg'], opitions) }}
-{{ hlp.sharp.resize(['fengine.jpg'], options) }}
+{{ hlp.sharp.resize(['space.jpg', 'space-bg.jpg'], {format: 'webp', width: 1400 }) }}
+{{ hlp.sharp.resize(['xd-kit-cov.jpg'], {format: 'webp', width: 500, height: 300, name: 'xd-web-kit-cover', force: true }) }}
+{{ hlp.sharp.resize(['pages.jpg'], {format: 'webp', width: 500, height: 300, name: 'pages-cov', force: true }) }}
+{{ hlp.sharp.resize(['fengine.jpg'], {format: 'webp', width: 500, height: 300, name: 'fe-engine-cov', force: true }) }}
