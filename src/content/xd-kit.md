@@ -2,7 +2,7 @@
 title: 'XD WEB-KIT'
 subtitle: 'Publish your Adobe XD design systems packages to the Web--Publish, Share and Collaborate'
 date: 2021-06-08
-coverImage: ['xd-kit-cov.jpg']
+coverImage: ['xd-web-kit-cov.webp']
 ---
 
 ![{{ title }}]({{ hlp.sharp.img(['dsp-kit.jpg']) }})
