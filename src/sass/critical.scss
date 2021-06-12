@@ -11,12 +11,12 @@ body > header > section,
 body > footer > section,
 nav {
   @media (min-width: 980px) {
-    max-width: calc(1600rem / 16) !important;
-    width: 80%;
-  }
-  @media (min-width: 1980px) {
+    width: 90%;
     max-width: calc(1500rem / 16) !important;
+  }
+  @media (min-width: 1600px) {
     width: 80%;
+    // max-width: calc(1500rem / 16) !important;
   }
 }
 
