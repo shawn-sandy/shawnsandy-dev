@@ -75,7 +75,7 @@ const img = (imgs = ['google-security-check.jpg'], options = {}) => {
  * @returns
  */
 const imgSrc = (imgs = 'google-security-check.jpg', options = {}) => {
-  return `<img src="${img(imgs, options)}" alt="${options.name}"/>`
+  return `<img loading="lazy" src="${img(imgs, options)}" alt="${options.name}"/>`
 }
 
 /**
