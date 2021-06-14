@@ -6,15 +6,15 @@ tags: ['posts', 'tips', '11ty']
 coverImage: ['11ty-class-names-code.jpg']
 ---
 
-!['11ty classnames screenshots']({{ hlp.sharp.img(['11ty-class-names-code.jpg'])}})
+!['11ty classnames screenshots']({{ hlp.sharp.img(['11ty-class-names-code.jpg'], {suffix: '-main', force: true })}})
 
 When building dynamic websites, you will most likely find yourself working with template-driven pages controlled by a master layout(s). So it's standard practice for developers to generate dynamic CSS class-names for each page from template data, allowing them to quickly customize the look and feel of individual pages.
 
 Here's a tip I found on <a href="https://11ty.rocks/tips/layout-templating/" target="_blank" rel="nofollow noopenner">11ty rocks</a> that allows you to add dynamic classes on your  Eleventy template. I cleaned up the code to remove the if statements on Nunjucks templates and replaced them with `or` statement; personal preference.
 
-#### Usage
-
 > The fileSlug variable is mapped from inputPath and is useful for creating your own clean permalinks.
+
+#### Usage
 
 * You are going to need to grab the `flileSlug` from the 11ty supplied `page` data.
 
