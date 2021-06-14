@@ -77,8 +77,8 @@ header > section {
 }
 
 [role='list'] [role='button'] > em {
-  background-color: tokens.$bg-color;
-  color: tokens.$bg-color-secondary;
+  background-color: tokens.$primary-blue;
+  color: #fff;
   border-color: transparent;
 
   &:hover {
