@@ -5,8 +5,11 @@ body {
   border-left: tokens.$primary-blue solid 0.5rem;
 }
 
-img[src='/images/nav-logo.svg'] {
+img[src*='logo'] {
   filter: drop-shadow(1px 5px 4px rgba(11, 2, 36, 0.4));
+  &:hover {
+    filter: drop-shadow(1px 5px 4px rgba(11, 2, 36, 0.6));
+  }
 }
 
 body > section,
