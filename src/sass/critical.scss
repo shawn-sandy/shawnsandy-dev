@@ -77,8 +77,14 @@ header > section {
 }
 
 [role='list'] [role='button'] > em {
-  background-color: tokens.$bg-color-secondary;
-  // color: #fff;
+  background-color: tokens.$bg-color;
+  color: tokens.$bg-color-secondary;
+  border-color: transparent;
+
+  &:hover {
+    background-color: tokens.$bg-color-secondary;
+    color: tokens.$primary-blue;
+  }
 }
 
 .primary {
