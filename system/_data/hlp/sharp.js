@@ -31,16 +31,21 @@ const resize = (imgs = [], options = {}) => {
     const _name = img.split('.')
     const imgName = options.name || _name[0]
     const src = `${srcDir}${img}`
-    const imagePath = `${outputDir}${imgName}.${format}`
-    if (!fs.existsSync(src)) { console.error('Image not found', src); return null }
-    if (!fs.existsSync(imagePath) || force) {
-      // console.warn(imgName)
+    const suffix = options.suffix || ''
+    const image = `${outputDir}${imgName}${suffix}.${format}`
+
+    if (!fs.existsSync(src)) {
+      // console.log(image)
+      console.error('Image not found', src)
+      return null
+    }
+    if (!fs.existsSync(image) || force) {
       sharp(`${src}`)
         .toFormat(format)
         .resize({ width: options.width || null, height: options.height || null })
-        .toFile(`${outputDir}${imgName}.${format}`, (err, info) => {
+        .toFile(`${image}`, (err, info) => {
           if (err) console.log('Error', err)
-          if (info) console.warn('Image created', `${imgName}.${format}`)
+          if (info) console.warn('Image created', `${image}`)
         })
     }
 
@@ -58,7 +63,7 @@ const img = (imgs = ['google-security-check.jpg'], options = {}) => {
   if (imgs.length > 0) {
     resize([imgs[0]], options)
     const imgName = getName(imgs[0])
-    return `/${options.imgDir || 'images'}/${imgName}.${options.format || 'jpg'}`
+    return `/${options.imgDir || 'images'}/${imgName}${options.suffix || ''}.${options.format || 'jpg'}`
   }
   return null
 }
@@ -70,7 +75,7 @@ const img = (imgs = ['google-security-check.jpg'], options = {}) => {
  * @returns
  */
 const imgSrc = (imgs = 'google-security-check.jpg', options = {}) => {
-  return `<img src="${img(imgs, options)}" alt="${options.name}"/>`
+  return `<img loading="lazy" src="${img(imgs, options)}" alt="${options.name}"/>`
 }
 
 /**
