@@ -1,5 +1,5 @@
 ---
-title: "ShawnSandy.dev performance metrics"
+title: "ShawnSandy.dev performance metrics; Lighthouse"
 subtitle: ""
 date: 2021-06-15
 tags: ['posts', 'performance']
