@@ -3,8 +3,10 @@ title: "ShawnSandy.dev performance metrics; Lighthouse"
 subtitle: ""
 date: 2021-06-15
 tags: ['posts', 'performance']
-coverImage: ['web-dev-audit.jpg']
+coverImage: ['shawn-sandy-dev.jpg']
 ---
+
+![acknowledgement image]({{ hlp.sharp.img(['shawn-sandy-dev.jpg']) }})
 
 ![acknowledgement image]({{ hlp.sharp.img(['web-dev-audit.jpg']) }})
 
