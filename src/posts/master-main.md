@@ -1,9 +1,9 @@
 ---
-title: 'Master to Main, renaming Github default branch. Senseless?'
+title: 'Master to Main, renaming Github default branch. Making Sense of it?'
 subtitle: The renaming of a git branch from master to main made no sense. I did it and I'm not going back
 date: 2021-06-18
 tags: ['posts']
-coverImg: ['Acknowledgement.png']
+coverImage: ['Acknowledgement.png']
 ---
 
 ![img]({{ hlp.sharp.img(['Acknowledgement.png']) }})
