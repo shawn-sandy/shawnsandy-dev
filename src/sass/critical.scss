@@ -82,7 +82,7 @@ header > section {
   border-color: transparent;
 
   &:hover {
-    background-color: tokens.$bg-color-secondary;
+    background-color: tokens.$bg-color-light;
     color: tokens.$primary-blue;
   }
 }
