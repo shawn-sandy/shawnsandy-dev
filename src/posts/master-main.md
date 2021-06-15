@@ -6,6 +6,6 @@ tags: ['posts']
 coverImage: ['Acknowledgement.png']
 ---
 
-![img]({{ hlp.sharp.img(['Acknowledgement.png']) }})
+![acknowledgement image]({{ hlp.sharp.img(['Acknowledgement.png']) }})
 
 Github in response the racial turmoil of the last few years, Github did something that at the time made absolutely no sense to many us. In fact it felt like a cheap corporate stunt.
