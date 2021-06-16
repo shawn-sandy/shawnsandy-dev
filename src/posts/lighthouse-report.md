@@ -38,11 +38,11 @@ Here is a link to the  [Lighthouse score]([https://link](https://lighthouse-dot-
 
 This issue was caused by linking to a font from git using `UNPKG` . I added the `preload` and `as` attributes to the link, but I feel the best way to fix this would be to load the font locally and not from the CDN, the question is it worth the work?
 
-**Serve next-ge image formats**
+**Serve next-gen image formats**
 
 > JPEG 2000, JPEG XR, and WebP are image formats that have superior compression and quality characteristics compared to their older JPEG and PNG counterparts. Encoding your images in these formats rather than JPEG or PNG means that they will load faster and consume less cellular data.
 
-I'm not sure I want to give up png/jpegs as image formats just yet so I will have to think this over and make sure that backwards compatibility is not an issue.
+I'm not sure I want to give up png/jpegs as image formats just yet so I will have to think this over and make sure that backwards compatibility is not an issue. `**fixed` .
 
 **Image elements do not have explicit width and height**
 
