@@ -32,9 +32,11 @@ Here is a link to the  [Lighthouse score]([https://link](https://lighthouse-dot-
 
 **Eliminate render-blocking resources**
 
+![preload fonts]({{ hlp.sharp.img(['preload-fonts.png'])}})
+
 > The Opportunities section of your Lighthouse report lists all URLs blocking the first paint of your page. The goal is to reduce the impact of these render-blocking URLs by inlining critical resources, deferring non-critical resources, and removing anything unused.
 
-This issue was caused by linking to a font from git using `UNPKG` . Ths best way to fix this would be to load the font locally and not from the CDN, the question is it worth the work?
+This issue was caused by linking to a font from git using `UNPKG` . I added the `preload` and `as` attributes to the link, but I feel the best way to fix this would be to load the font locally and not from the CDN, the question is it worth the work?
 
 **Serve next-ge image formats**
 
