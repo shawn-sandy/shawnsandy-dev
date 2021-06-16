@@ -4,10 +4,15 @@
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/> {% include "partials/favicon.njk" %}
-    {% if env.node_env != 'production' %}
+    {% if env.node_env != 'PRODUCTION' %}
       <script src="https://cdn.accesslint.com/accesslint-1.1.2.js"></script>
     {% endif %}
-    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" media="screen"/>
+    <link
+      rel="stylesheet"
+      rel="preload"
+      as="font"
+      href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css?display=swap"
+      media="all"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
