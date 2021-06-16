@@ -42,7 +42,7 @@ const resize = (imgs = [], options = {}) => {
     if (!fs.existsSync(image) || force) {
       sharp(`${src}`)
         .toFormat(format)
-        .resize({ width: options.width || null, height: options.height || null })
+        .resize({ width: options.width || 1200, height: options.height || null })
         .toFile(`${image}`, (err, info) => {
           if (err) console.log('Error', err)
           if (info) console.warn('Image created', `${image}`)
