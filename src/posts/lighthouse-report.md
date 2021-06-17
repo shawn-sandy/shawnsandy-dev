@@ -52,7 +52,7 @@ Personally, I'm not a huge fan of this metric there is still not support for ima
 
 ![img]({{ hlp.sharp.img(['ss-dev-perf-score-95.jpg']) }})
 
-`*{{ hlp.11ty.timeAgo('2021-06-17')}} update*` : I added width/height attributes to the logo and featured images on the landing page, the change bumped up the performance score by 3 points to a 95, not bad!
+`*Updated {{ hlp.11ty.timeAgo('2021-06-17')}}*` : I added width/height attributes to the logo and featured images on the landing page, the change bumped up the performance score by 3 points to a 95, not bad!
 
 **Keep request counts low and transfer sizes small 20 requests • 382 KiB**
 
