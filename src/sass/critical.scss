@@ -19,7 +19,7 @@ body > header > section,
 body > footer > section,
 nav {
   @media (min-width: 980px) {
-    width: 90%;
+    width: 85% !important;
     max-width: calc(1500rem / 16) !important;
   }
   @media (min-width: 1600px) {
@@ -57,7 +57,6 @@ header,
 }
 
 body > header {
-  // background-image: url(/images/feature-bg@2x.png);
   padding: 0 0 3rem !important;
   background-size: cover;
 
@@ -82,7 +81,7 @@ header > section {
   border-color: transparent;
 
   &:hover {
-    background-color: tokens.$bg-color-secondary;
+    background-color: tokens.$bg-color-light;
     color: tokens.$primary-blue;
   }
 }
@@ -136,7 +135,8 @@ section {
 }
 
 p {
-  i {
+  i,
+  em {
     font-style: italic;
   }
   strong {
