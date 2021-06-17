@@ -1,9 +1,9 @@
 ---
 title: 'Master to Main, renaming Github default branch. Making Sense of it?'
-subtitle: The renaming of a git branch from master to main made no sense at first. But I did it and I'm not going back
+subtitle: The renaming of a git branch from master to main made no sense at first. But I did it, I love it and I'm not going back
 date: 2021-06-18
-tags: ['posts']
-coverImage: ['Acknowledgement.png']
+tags: ['posts', 'opinion']
+coverImage: ['github-master-main-announcement.jpg']
 ---
 
 ![acknowledgement image]({{ hlp.sharp.img(['Acknowledgement.png']) }})
@@ -28,8 +28,8 @@ Funny, after making the change to most of my repositories it dawned on me that r
 
 [GitHub Actions: Better support for alternative default branch names | GitHub Changelog](https://www.notion.so/GitHub-Actions-Better-support-for-alternative-default-branch-names-GitHub-Changelog-a65ca0d7802944ff800c4aa4ed485bd9)
 
-[A protest on changing master to main - GitHub Support Community](https://www.notion.so/A-protest-on-changing-master-to-main-GitHub-Support-Community-e58d4c2319784622b1eba8b7e1a011e5)
-
 [GitHub to replace "master" with alternative term to avoid slavery references | ZDNet](https://www.notion.so/GitHub-to-replace-master-with-alternative-term-to-avoid-slavery-references-ZDNet-01b84cd1780c46939f100eb8bc5028c9)
+
+[A protest on changing master to main - GitHub Support Community](https://www.notion.so/A-protest-on-changing-master-to-main-GitHub-Support-Community-e58d4c2319784622b1eba8b7e1a011e5)
 
 [Replace "master/slave" terminology with "primary/replica" [#2275877] | Drupal.org](https://www.notion.so/Replace-master-slave-terminology-with-primary-replica-2275877-Drupal-org-386b03b8b0fa4396b1e497dec07d8b56)
