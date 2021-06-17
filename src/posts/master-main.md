@@ -20,7 +20,7 @@ It was not just repositories. The company did a full audit of the impact of the 
 
 Funny, after making the change to most of my repositories it dawned on me that renaming to main made little sense in relation to my workflow. I prefer to work with a `feature/branch` `  that I push and into a develop for testing. That branch is then merged into the main (previously master) branch before release into production.  You see what I'm getting at here the name change would make more sense to my workflow if I changed it to production.
 
-> I was now empowered to choose and that means a whole lot! A thank you is in order to the folks at GitHub who worked so hard on something that many (including myself) brushed off as another token gesture by Corporate America.
+> I was now empowered to choose and that means a whole lot! A thank you is in order to the folks at GitHub who worked so hard on something that many (including myself) brushed off as another token gesture by Corporate America. THANK YOU!
 
 ##### Resources and Links
 
