@@ -48,7 +48,11 @@ I'm not sure I want to give up png/jpegs as image formats just yet so I will hav
 
 > Always include width and height size attributes on your images and video elements. Alternatively, reserve the required space with CSS aspect ratio boxes. This approach ensures that the browser can allocate the correct amount of space in the document while the image is loading.
 
-Personally, I'm not a huge fan of this metric as it impacts how I do my responsive image loading. to fix I will have to refactor some of my code so I will leave it in for now.
+Personally, I'm not a huge fan of this metric there is still not support for image attributes in markdown, and it impacts how I do my responsive image loading to fix I will have to refactor some of my code so, I will leave it in for now.
+
+![img]({{ hlp.sharp.img(['ss-dev-perf-score-95.jpg']) }})
+
+`*{{ hlp.11ty.timeAgo('2021-06-17')}} update*` : I added width/height attributes to the logo and featured images on the landing page, the change bumped up the performance score by 3 points to a 95, not bad!
 
 **Keep request counts low and transfer sizes small 20 requests • 382 KiB**
 
