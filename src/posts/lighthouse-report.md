@@ -6,7 +6,7 @@ tags: ['posts', 'performance']
 coverImage: ['shawn-sandy-dev.jpg']
 ---
 
-![acknowledgement image]({{ hlp.sharp.img(['shawn-sandy-dev.jpg'], { force: true, format: 'webp' }) }})
+![acknowledgement image]({{ hlp.sharp.img(['shawn-sandy-dev.jpg'], { format: 'webp' }) }})
 
 The blog's official launch is getting closer, no exact launch date yet, but it's getting closer *"can feel it in my bones"*. Most of the development work is done. I'm till tweaking things here and there, adding a couple of nice to have features, refining styles, etc,  but everything works. I'm also really pleased with the look and feel of the site, it's simple and clean, code and UX flows together nicely.
 
@@ -14,19 +14,19 @@ However, before launching I wanted to measure how the design and development dec
 
 ----------
 
-![site screenshot preview]({{ hlp.sharp.img(['web-dev-audit.jpg'], { force: true, format: 'webp' }) }})
+![site screenshot preview]({{ hlp.sharp.img(['lighthouse-ss-dev-score-1.jpg'], { format: 'webp' }) }})
 
 ----------
 
 > Using the web.dev/measure, allows you to see how well your website performs and gives you tips on how to improve your user experience
 
-Google's lighthouse online app (web.dev/measure) returned a pretty decent score--performance and accessibility both got a 98 score, best practice, and search engine optimization 100 apiece. Pretty good, a couple of minor errors, nothing that can't be fixed.
+Google's lighthouse online app (web.dev/measure) returned a pretty decent score--performance got a 92 score, best practice, accessibility and search engine optimization 100 apiece. Pretty good, a couple of minor errors, nothing that can't be fixed.
 
-Here is a link to the  [Lighthouse score]([https://link](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fshawnsandy.dev%2F))
+Here is a link to the {{ hlp.11ty.openUrl('https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fshawnsandy.dev%2F', 'Lighthouse Score') | safe }}
 
 ----------
 
-![lighthouse recommendations]({{ hlp.sharp.img(['lighthouse-reccomends.png'], { force: true, format: 'webp' }) }})
+![lighthouse recommendations]({{ hlp.sharp.img(['lighthouse-recommend.jpg'], { format: 'webp' }) }})
 
 ##### Recommendations and Fixes
 
@@ -48,7 +48,11 @@ I'm not sure I want to give up png/jpegs as image formats just yet so I will hav
 
 > Always include width and height size attributes on your images and video elements. Alternatively, reserve the required space with CSS aspect ratio boxes. This approach ensures that the browser can allocate the correct amount of space in the document while the image is loading.
 
-Personally, I'm not a huge fan of this metric as it impacts how I do my responsive image loading. to fix I will have to refactor some of my code so I will leave it in for now.
+Personally, I'm not a huge fan of this metric there is still not support for image attributes in markdown, and it impacts how I do my responsive image loading to fix I will have to refactor some of my code so, I will leave it in for now.
+
+![img]({{ hlp.sharp.img(['ss-dev-perf-score-95.jpg']) }})
+
+`*Updated {{ hlp.11ty.timeAgo('2021-06-17')}}*` : I added width/height attributes to the logo and featured images on the landing page, the change bumped up the performance score by 3 points to a 95, not bad!
 
 **Keep request counts low and transfer sizes small 20 requests • 382 KiB**
 

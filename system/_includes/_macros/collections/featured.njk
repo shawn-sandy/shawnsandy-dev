@@ -10,7 +10,7 @@ reverse -%}
         <div role="listitem">
           {% if item.data.coverImage %}
             <picture>
-              <img loading="lazy" src="/images/{{ item.data.coverImage }}" alt="{{ item.data.title | slug }}"/>
+              <img loading="lazy" src="/images/{{ item.data.coverImage }}" alt="{{ item.data.title | slug }}" width="500" height="300"/>
             </picture>
           {% endif %}
           <section>
@@ -78,7 +78,7 @@ tag - tag, limit - number of items #}
             <a href="" title="{{ item.data.title | slug }}">
               {% if item.data.coverImage %}
                 <picture>
-                  <img loading="lazy" src="{{ item.data.coverImage }}" alt="Image"/>
+                  <img loading="lazy" src="{{ item.data.coverImage }}" alt="Image" width="500" height="300"/>
                 </picture>
               {% else %}
                 <h3>
