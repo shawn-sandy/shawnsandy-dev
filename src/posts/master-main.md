@@ -14,7 +14,7 @@ For me, the announcement's timing felt like a cheap corporate publicity stunt an
 
 !['github announcement']({{ hlp.sharp.img(['github-master-main-announcement.jpg'])}})
 
-The change did not connect with me at first, but out of curiosity, but I decided I would give it a try. I was pleasantly surprised. GitHub had really thought the process through, provided [a full guide on the process](https://github.com/github/renaming/).
+The change did not connect with me at first, but out of curiosity, but I decided I would give it a try. I was pleasantly surprised. GitHub had really thought the this through, provided [a full guide on the process](https://github.com/github/renaming/).
 
 It was not just repositories. The company did a full audit of the impact of the change on all supporting services and refactored to ensure minimal downtime for repository owners that would make the change. It was a huge undertaking, and that made a difference for me. I appreciated the effort!
 
