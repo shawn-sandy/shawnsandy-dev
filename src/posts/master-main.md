@@ -16,15 +16,17 @@ For me, the announcement's timing felt like a cheap corporate publicity stunt an
 
 The change did not connect with me at first, but out of curiosity, but I decided I would give it a try. I was pleasantly surprised. GitHub had really thought the process through, provided [a full guide on the process](https://github.com/github/renaming/).
 
-It was not just repositories. The company did a full audit of the impact of the change on all supporting services and refactored to ensure minimal downtime for repository owners that would make the change. It was a huge effort, and that made a difference for me. I appreciated the effort!
+It was not just repositories. The company did a full audit of the impact of the change on all supporting services and refactored to ensure minimal downtime for repository owners that would make the change. It was a huge undertaking, and that made a difference for me. I appreciated the effort!
 
-Funny, after making the change to most of my repositories it dawned on me that renaming to main made little sense in relation to my workflow. I prefer to work with a `feature/branch` `  that I push and into a develop for testing. That branch is then merged into the main (previously master) branch before release into production.  You see what I'm getting at here the name change would make more sense to my workflow if I changed it to production.
+After making the change to most of my repositories it dawned on me that renaming to main made little sense in relation to my workflow. I prefer to work with a `feature/branch` model that I push and into a develop for testing. That branch is then merged into the main (previously master) branch before release into `production` .  You see what I'm getting at here the name would make more sense to my workflow if I changed it to production, something I would never have thought about prior.
 
-> I was now empowered to choose and that means a whole lot! A thank you is in order to the folks at GitHub who worked so hard on something that many (including myself) brushed off as another token gesture by Corporate America. THANK YOU!
+> I was now empowered to choose and that means a whole lot! A thank you is in order to the folks at GitHub who worked so hard on something that many (including myself) brushed off as another token gesture by Corporate America.
 
-##### Resources and Links
+THANK YOU GITHUB!
 
 ----------
+
+##### Resources and Links
 
  {{ hlp.11ty.openUrl('https://github.blog/changelog/2020-07-22-github-actions-better-support-for-alternative-default-branch-names/', 'GitHub Actions: Better support for alternative default branch names | GitHub Changelog' ) | safe }}
 
