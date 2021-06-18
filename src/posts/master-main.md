@@ -26,10 +26,10 @@ Funny, after making the change to most of my repositories it dawned on me that r
 
 ----------
 
-[GitHub Actions: Better support for alternative default branch names | GitHub Changelog](https://www.notion.so/GitHub-Actions-Better-support-for-alternative-default-branch-names-GitHub-Changelog-a65ca0d7802944ff800c4aa4ed485bd9)
+ {{ hlp.11ty.openUrl('https://github.blog/changelog/2020-07-22-github-actions-better-support-for-alternative-default-branch-names/', 'GitHub Actions: Better support for alternative default branch names | GitHub Changelog' ) | safe }}
 
-[GitHub to replace "master" with alternative term to avoid slavery references | ZDNet](https://www.notion.so/GitHub-to-replace-master-with-alternative-term-to-avoid-slavery-references-ZDNet-01b84cd1780c46939f100eb8bc5028c9)
+{{ hlp.11ty.openUrl('https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/', 'GitHub to replace "master" with alternative term to avoid slavery references' ) | safe }}
 
-[A protest on changing master to main - GitHub Support Community](https://www.notion.so/A-protest-on-changing-master-to-main-GitHub-Support-Community-e58d4c2319784622b1eba8b7e1a011e5)
+{{ hlp.11ty.openUrl('https://github.community/t/a-protest-on-changing-master-to-main/141098', 'A protest on changing master to main - GitHub Support Community' ) | safe }}
 
-[Replace "master/slave" terminology with "primary/replica" [#2275877] | Drupal.org](https://www.notion.so/Replace-master-slave-terminology-with-primary-replica-2275877-Drupal-org-386b03b8b0fa4396b1e497dec07d8b56)
+{{ hlp.11ty.openUrl('https://www.drupal.org/node/2275877', 'Replace "master/slave" terminology with "primary/replica" [#2275877] | Drupal.org' ) | safe }}
