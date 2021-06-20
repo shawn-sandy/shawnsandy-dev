@@ -1,12 +1,12 @@
 ---
-title: Building shawnsandy.dev on the JAM-STACK, 11ty, Netlify, Node, HTML, Javascript
-subtitle: "Javascript is the juice that powers the JAM stack; servers, builds, interactivity, data management, etc. It's what makes a lot of what we can now do on the front-end possible. It takes what would have required a backend framework and makes simple "
+title: JAM-STACKING shawnsandy.dev 11ty, Vanilla JS, HTML, Netlify, Node; 
+subtitle: "Jamstack is an architecture designed to make the web faster, more secure, and easier to scale. It builds on many of the tools and workflows which developers love, and which bring maximum productivity."
 date: 2021-06-22
 tags: ['posts', 'frontend']
-coverImage: ['javascript.jpeg']
+coverImage: ['servers.jpg']
 ---
 
-!['javascript']({{ hlp.sharp.img(['javascript.jpeg'])}})
+!['javascript']({{ hlp.sharp.img(['servers.jpg'])}})
 
 When you work in a corporate environment, you become comfortable; you fall into a safe routine work, home, and back to work. There's very little time for anything else; you lose your edge, the dream clouds the mission and the things you were once passionate about now take a backseat and slowly fade away.
 
