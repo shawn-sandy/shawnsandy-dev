@@ -1,7 +1,7 @@
 ---
-title: JAM-STACKING shawnsandy.dev 11ty, Vanilla JS, HTML, Netlify, Node; 
+title: JAM-STACKING shawnsandy.dev; 11ty, Vanilla JS, HTML, Netlify, Node
 subtitle: "Jamstack is an architecture designed to make the web faster, more secure, and easier to scale. It builds on many of the tools and workflows which developers love, and which bring maximum productivity."
-date: 2021-06-22
+date: 2021-06-20
 tags: ['posts', 'frontend']
 coverImage: ['servers.jpg']
 ---
