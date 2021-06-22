@@ -1,5 +1,5 @@
 ---
-title: JAM-STACKING shawnsandy.dev; 11ty, Vanilla JS, HTML, Netlify, Node
+title: "JAM-STACKING shawnsandy.dev: 11ty, Vanilla JS, HTML, Netlify, Node/NPM"
 subtitle: "Jamstack is an architecture designed to make the web faster, more secure, and easier to scale. It builds on many of the tools and workflows which developers love, and which bring maximum productivity."
 date: 2021-06-20
 tags: ['posts', 'frontend']
@@ -46,13 +46,13 @@ Node.js is used to run a massive part of my development; Locally, it functions a
 
 > Eleventy is not a JavaScript framework—that means zero boilerplate client-side JavaScript. We’re thinking long term and opting out of the framework rat race. The tool chain, code conventions, and modules you use in your front end stack are decoupled from this tool. Work from a solid foundation of pre-rendered templates that suit your project’s progressive enhancement baseline requirements.
 
-Eleventy.js is a javascript library used to generate static pages from markdown/HTML files at build/runtime that is simple to use. It's not a framework, but it provides all the foundation tools you have come to expect in a framework. The difference is that you get to choose the plumbing, fittings, accessories, and that's what sold me.
+Eleventy.js is a javascript library used to generate static pages from markdown/HTML files at build/runtime that is simple to use. While it's not a framework, but it provides all the foundation tools you have come to expect in a framework. The difference is that you get to choose the plumbing, fittings, accessories, and that's what sold me.
 
 ##### Other JS Libraries
 
-* Sharp for image resizing
-* Lodash for handling arrays, objects function etc
-* Day.js simple easy date handling
+* [Sharp for image resizing](https://sharp.pixelplumbing.com/)
+* [Lodash for handling arrays, objects function etc](https://lodash.com/)
+* [Day.js simple easy date handling](https://day.js.org/)
 
 ----------
 
@@ -60,8 +60,8 @@ Eleventy.js is a javascript library used to generate static pages from markdown/
 
 > Netlify is an all-in-one platform for automating modern web projects. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow. Integrate dynamic functionality like serverless functions, user authentication, and form handling as your projects grow.
 
-[Netlify](http://netlifly.is) plays the role of my entire DevOps team, providing not just hosting, CI/CD deployment, serverless functionality, authentication, analytics, form processing on the backend.
+[Netlify](http://netlifly.com) plays the role of my entire DevOps team, providing not just hosting, CI/CD deployment, serverless functionality, authentication, analytics, form processing on the backend.
 
-A/B testing, domain and DNS management, commit preview, and the recently added collaborative deploy previews allow you to share your development progress with stakeholders. Netlify is pushing the boundaries and making it simple for frontend [developers](http://developers.to) to explore this exciting new stack.
+A/B testing, domain and DNS management, commit preview, and the recently added collaborative deploy previews allow you to share your development progress with stakeholders. Netlify is pushing the boundaries and making it simple for frontend developers to explore this exciting new stack.
 
 That's it for now; I will go over each of these features how they are used in detail in the future hope you enjoyed it.
