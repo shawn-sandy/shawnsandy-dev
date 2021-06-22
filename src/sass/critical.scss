@@ -1,2 +1,58 @@
 @use '@shawnsandy/first-paint/src/styles/critical.scss';
 @use 'theme/shawnsandy/shawn-sandy.scss';
+
+body > section,
+body > main,
+body > header > section,
+body > footer > section,
+nav {
+  @media (min-width: 980px) {
+    width: 85% !important;
+    max-width: calc(1500rem / 16) !important;
+  }
+  @media (min-width: 1600px) {
+    width: 80%;
+    // max-width: calc(1500rem / 16) !important;
+  }
+}
+
+p + * {
+  margin-top: 1.5rem !important;
+}
+
+pre,
+textarea[role='presentation'] {
+  display: flex;
+  align-items: center;
+}
+
+.fp-grid [role='list'],
+section [role='list'] {
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between !important;
+  width: 80vw;
+  margin: auto;
+  @media (min-width: 1600px) {
+    width: auto;
+  }
+}
+
+.fp-grid [role='list'] [role='listitem'],
+section [role='list'] [role='listitem'] {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+
+  @media (max-width: 980px) {
+    flex: auto !important;
+    width: 100%;
+  }
+}
+
+[role='listitem'] > section {
+  flex: 2rem;
+  margin-bottom: 2rem;
+}
