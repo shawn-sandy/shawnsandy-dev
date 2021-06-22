@@ -14,22 +14,24 @@ For me, the announcement's timing felt like a cheap corporate publicity stunt an
 
 !['github announcement']({{ hlp.sharp.img(['github-master-main-announcement.jpg'])}})
 
-The change did not connect with me at first, but out of curiosity, but I decided I would give it a try. I was pleasantly surprised. GitHub had really thought the process through, provided [a full guide on the process](https://github.com/github/renaming/).
+The change did not connect with me at first, but out of curiosity, but I decided I would give it a try. I was pleasantly surprised. GitHub had really thought the this through, provided [a full guide on the process](https://github.com/github/renaming/).
 
-It was not just repositories. The company did a full audit of the impact of the change on all supporting services and refactored to ensure minimal downtime for repository owners that would make the change. It was a huge effort, and that made a difference for me. I appreciated the effort!
+It was not just repositories. The company did a full audit of the impact of the change on all supporting services and refactored to ensure minimal downtime for repository owners that would make the change. It was a huge undertaking, and that made a difference for me. I appreciated the effort!
 
-Funny, after making the change to most of my repositories it dawned on me that renaming to main made little sense in relation to my workflow. I prefer to work with a `feature/branch` `  that I push and into a develop for testing. That branch is then merged into the main (previously master) branch before release into production.  You see what I'm getting at here the name change would make more sense to my workflow if I changed it to production.
+After making the change to most of my repositories it dawned on me that renaming to main made little sense in relation to my workflow. I prefer to work with a `feature/branch` model that I push and into a develop for testing. That branch is then merged into the main (previously master) branch before release into `production` .  You see what I'm getting at here the name would make more sense to my workflow if I changed it to production, something I would never have thought about prior.
 
-> I was now empowered to choose and that means a whole lot! A thank you is in order to the folks at GitHub who worked so hard on something that many (including myself) brushed off as another token gesture by Corporate America. THANK YOU!
+> I was now empowered to choose and that means a whole lot! A thank you is in order to the folks at GitHub who worked so hard on something that many (including myself) brushed off as another token gesture by Corporate America.
 
-##### Resources and Links
+THANK YOU GITHUB!
 
 ----------
 
-[GitHub Actions: Better support for alternative default branch names | GitHub Changelog](https://www.notion.so/GitHub-Actions-Better-support-for-alternative-default-branch-names-GitHub-Changelog-a65ca0d7802944ff800c4aa4ed485bd9)
+##### Resources and Links
 
-[GitHub to replace "master" with alternative term to avoid slavery references | ZDNet](https://www.notion.so/GitHub-to-replace-master-with-alternative-term-to-avoid-slavery-references-ZDNet-01b84cd1780c46939f100eb8bc5028c9)
+ {{ hlp.11ty.openUrl('https://github.blog/changelog/2020-07-22-github-actions-better-support-for-alternative-default-branch-names/', 'GitHub Actions: Better support for alternative default branch names | GitHub Changelog' ) | safe }}
 
-[A protest on changing master to main - GitHub Support Community](https://www.notion.so/A-protest-on-changing-master-to-main-GitHub-Support-Community-e58d4c2319784622b1eba8b7e1a011e5)
+{{ hlp.11ty.openUrl('https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/', 'GitHub to replace "master" with alternative term to avoid slavery references' ) | safe }}
 
-[Replace "master/slave" terminology with "primary/replica" [#2275877] | Drupal.org](https://www.notion.so/Replace-master-slave-terminology-with-primary-replica-2275877-Drupal-org-386b03b8b0fa4396b1e497dec07d8b56)
+{{ hlp.11ty.openUrl('https://github.community/t/a-protest-on-changing-master-to-main/141098', 'A protest on changing master to main - GitHub Support Community' ) | safe }}
+
+{{ hlp.11ty.openUrl('https://www.drupal.org/node/2275877', 'Replace "master/slave" terminology with "primary/replica" [#2275877] | Drupal.org' ) | safe }}
