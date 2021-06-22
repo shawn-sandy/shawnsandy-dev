@@ -50,9 +50,9 @@ Eleventy.js is a javascript library used to generate static pages from markdown/
 
 ##### Other JS Libraries
 
-* [Sharp for image resizing](https://sharp.pixelplumbing.com/)
-* [Lodash for handling arrays, objects function etc](https://lodash.com/)
-* [Day.js simple easy date handling](https://day.js.org/)
+* {{ hlp.11ty.openUrl('Sharp for image resizing', 'https://sharp.pixelplumbing.com/') | safe }}
+* {{ hlp.11ty.openUrl('https://lodash.com/', 'Lodash for handling arrays, objects function etc') | safe }}
+* {{ hlp.11ty.openUrl('https://day.js.org/', 'Day.js simple easy date handling') | safe }}
 
 ----------
 
