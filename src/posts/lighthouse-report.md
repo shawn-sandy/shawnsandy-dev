@@ -54,6 +54,10 @@ Personally, I'm not a huge fan of this metric there is still not support for ima
 
 `*Updated {{ hlp.11ty.timeAgo('2021-06-17')}}*` : I added width/height attributes to the logo and featured images on the landing page, the change bumped up the performance score by 3 points to a 95, not bad!
 
+![img]({{ hlp.sharp.img(['audit-score-06-23-21.jpg']) }})
+
+`*Updated {{ hlp.11ty.timeAgo('2021-06-23')}}*` : Added `preload as style/font` to header styles and scripts, this change bumped up performance score by 3points to a 98.
+
 **Keep request counts low and transfer sizes small 20 requests • 382 KiB**
 
 > Lighthouse now supports performance budgets. This feature, LightWallet, can be set up in under five minutes and provides feedback on performance metrics and the size and quantity of page resources.

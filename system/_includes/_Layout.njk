@@ -25,8 +25,8 @@
       {# css #}
       <style>
         {{css | cssmin | safe}}</style>
-      <link rel="preload" as="style" href="/css/styles.css" media="all"/>
-      <link rel="preload" as="style" href="/css/elements.css" media="all"/>
+      <link rel="stylesheet" href="/css/styles.css" media="all"/>
+      <link rel="stylesheet" href="/css/elements.css" media="all"/>
       {% for styles in settings.styles %}
         <link href="{{ styles }}" rel="stylesheet" media="all"/>
       {% endfor %}
