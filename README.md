@@ -8,7 +8,7 @@
 
 **Deploy to Netlify**
 
-* [Click here to deploy FP-Pages to Netlify.](https://app.netlify.com/start/deploy?repository=https://github.com/shawn-sandy/fp-pages) you can read more about netlify here [Netlify](https://www.netlify.com/) and make sure and check out the [Netlify docs](https://docs.netlify.com/)
+* [Click here to deploy FP-Pages to Netlify.](https://app.netlify.com/start/deploy?repository=https://github.com/shawn-sandy/shawnsandy-dev) you can read more about netlify here [Netlify](https://www.netlify.com/) and make sure and check out the [Netlify docs](https://docs.netlify.com/)
 * Set the name of your repo Netlify will clone to the git repository you linked to earlier
 * Set your [ENV variables (see more)](#env-config) this can be updated later
 * Click save and deploy button and watch Netlify do its magic
