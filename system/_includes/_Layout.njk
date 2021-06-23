@@ -58,20 +58,17 @@
     {% block footer %}
       {% include "partials/footer.njk" %}
     {% endblock %}
-    {% for js in metadata.scripts %}
-      <script src="{{ js }}"></script>
-    {% endfor %}
     {# grab any scripts in the settings.js #}
     {% if
     settings.scripts %}
       {% for src in settings.scripts %}
-        <script src="{{ src }}"></script>
+        <script src="{{ src }}" defer></script>
       {% endfor %}
     {% endif %}
     {# load scripts data from the page #}
     {% if scripts %}
       {% for script in scripts %}
-        <script src="{{ script }}"></script>
+        <script src="{{ script }}" defer></script>
       {% endfor %}
     {% endif %}
     {%- if showRecaptcha and env.form_provider ===
