@@ -4,7 +4,7 @@
 
 
 [template.environment]
-  NODE_ENV =  "NODE environment"
+  NODE_ENV =  "DEVELOPMENT"
   SITE_MAP_URL = "https://www.xxx.com/sitemap.xml"
   CONTACT_EMAIL = "Contact email"
   FORM_PROVIDER = "Forms provider (netlify/web3forms)"
