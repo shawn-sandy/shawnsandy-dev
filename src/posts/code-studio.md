@@ -17,3 +17,24 @@ I created this extension for two reasons, the first to teach myself how to, the 
 #### Featured Extensions
 
 * [webhint, the hinting engine for web best practices](https://webhint.io/)
+
+```json
+{
+  "recommendations": [
+    "shawnsandy.codestudio",
+    "dbaeumer.vscode-eslint",
+    "mkaufman.HTMLHint",
+    "humao.rest-client",
+    "dsznajder.es7-react-js-snippets",
+    "eseom.nunjucks-template",
+    "douglaszaltron.nunjucks-vscode-extensionpack",
+    "msjsdiag.debugger-for-chrome",
+    "sdras.vue-vscode-extensionpack",
+    "octref.vetur",
+    "hollowtree.vue-snippets",
+    "sdras.vue-vscode-snippets"
+  ]
+}
+```
+
+----------
