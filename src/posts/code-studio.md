@@ -14,9 +14,31 @@ I created this extension for two reasons, the first to teach myself how to, the 
 
 ----------
 
+#### Install/Usage
+
+* **VSCode market place** <https://marketplace.visualstudio.com/items?itemName=shawnsandy.codestudio>
+* Or go to your extensions panel `View > Extensions` and type `codestudio` in search box to find the extension than click install.
+* The [VSCode ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension requires the latest version of, If you haven't installed ESLint either locally or globally do so by running `npm install eslint` in the workspace folder for a local install or `npm install -g eslint` for a global install.
+
+----------
+
 #### Featured Extensions
 
-* [webhint, the hinting engine for web best practices](https://webhint.io/)
+* {{ hlp.11ty.openUrl('https://webhint.io/', "Webhint is a customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors.") | safe }}
+* {{ hlp.11ty.openUrl('https://github.com/Huachao/vscode-restclient/blob/master/README.md', 'REST Client allows you to send HTTP request and view the response in Visual Studio Code directly.') | safe }}
+*  {{ hlp.11ty.openUrl('https://github.com/sleistner/vscode-fileutils/blob/master/README.md', 'File Utils - Visual Studio Code Extension') | safe }}
+* {{ hlp.11ty.openUrl('https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits', 'This extension helps you to fill in commit message according to Conventional Commits.') | safe }}
+* {{ hlp.11ty.openUrl('https://gitlens.amod.io/', 'GitLens supercharges the Git capabilities built into Visual Studio Code') | safe }}
+
+----------
+
+#### Recommending extensions in your project
+
+You can recommend extensions to team members, users, or contributors by adding the `extensions.json` to your project folder `./vscode` directory.
+
+* Create and `extensions.json` file in `.vscode/` folder in your project
+* Copy and paste the code below into the `extensions.json` file you created
+* Share the project/repo with others and they will be promoted to install your recommend extensions on first load.
 
 ```json
 {
