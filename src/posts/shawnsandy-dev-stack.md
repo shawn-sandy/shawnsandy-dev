@@ -8,13 +8,13 @@ coverImage: ['servers.jpg']
 
 !['javascript']({{ hlp.sharp.img(['servers.jpg'])}})
 
-Before joining the 9-5 workforce, no matter where what I was doing I always had a side project, whether it was a WordPress plugin, Laravel library, a CSS toolkit, or a VUE plugin. I was always exploring new things trying out the latest tech. But when you work in a corporate environment, you become comfortable; you fall into a safe routine work, home, and back to work. There's very little time for anything else; you lose your edge, the dream clouds the mission and, the things you were once passionate about now take a backseat and slowly fade away.
+Before joining the 9-5 workforce, no matter where or what I was doing I always had a side project, whether it was a WordPress plugin, Laravel library, a CSS toolkit, or a VUE plugin. I was always exploring new things trying out the latest tech or prototyping some idea. But when you work in a corporate environment, you become comfortable; you fall into a safe routine work, home, and back to work. There's very little time for anything else; you lose your edge, the dream clouds the mission and, the things you were once passionate about now take a backseat and slowly fade away.
 
 At least that's how it felt for me. So I made a decision, dust off some of those projects that I had forgotten about, catch up on all the new shiny stuff that I had missed (a lot of those), create something new and meaningful, and have fun doing it.
 
 I also realized that I needed a place to share my renewed passion with others. Naturally, I decided to start a blog, well, not just any average blog; I wanted one built on that JAM stack thingy that all the cool cats were talking about; it would also allow me to try out a classless, accessibility-first CSS framework that I had been building.
 
-By this time, I was entirely on board with the idea of Statically generated websites as a viable option to the traditional CMS like WordPress. I tried several static site generators and chose 11_TY mainly because it did not require a Javascript framework like react or vue as many of the others I had come across do. It had a short learning curve, and more importantly, it did not get in my way.
+By this time, I was already sold on the idea of Statically generated websites as a viable option to the traditional CMS like WordPress. I tried several static site generators and chose 11_TY mainly because it did not require a Javascript framework like react or vue as many of the others I had come across do. It had a short learning curve, and more importantly, it did not get in my way.
 
 I would also need a place to host my Blog; I went with Netlify; I played around with it for about a year, so I was familiar with how it worked; it was designed for static website hosting and free for personal projects, no-brainer.
 
@@ -24,7 +24,9 @@ I would also need a place to host my Blog; I went with Netlify; I played around 
 
 ##### FirstPaint: CSS framework
 
-I had been working on a small SASS/CSS framework off and on for about two years. My goal was to replace Bootstrap, my framework of choice at the time, with my own, something lightweight and easy to use. A simple drop-in solution. Sometime later, I ran into a couple of CSS classless frameworks. The idea resonated, so I decided to refactor and build a classless SASS framework that would focus on accessibility. Since I was also digging into performance and site metrics with Google lighthouse at the time, so I named the library FirstPaint.
+> First Paint is an easy to use CSS/SCSS starter library that contains accessibility focused, classless, semantic HTML elements and components for quickly scaffolding/building modern, lightweight mobile friendly digital products, websites apps and the likes.
+
+I had been working on a small SASS/CSS framework off and on for about two years. My goal was to replace Bootstrap, my framework of choice at the time, with my own, something lightweight and easy to use. A simple drop-in solution. Sometime later, I ran into a couple of CSS classless frameworks. The idea resonated, so I decided to refactor and build a classless SASS framework that would focus on accessibility. Since I was also digging into performance and site metrics with Google lighthouse at the time, so I named the library FirstPaint.  {{ hlp.11ty.openUrl('https://github.com/shawn-sandy/ideas/blob/main/projects/first-paint/README.md', 'You can checkout the library here') | safe }}.
 
 ##### FP. PAGES: HTML5 (UI KIT)
 
