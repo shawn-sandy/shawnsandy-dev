@@ -8,7 +8,7 @@
     <title>{{ settings.title }}</title>
     <meta name="description" content="title" />
     <meta name="author" content="author" />
-    {% if env.node_env != 'production' %}
+    {% if env.node_env != 'PRODUCTION' %}
     <script src="https://cdn.accesslint.com/accesslint-1.1.2.js"></script>
     {% endif %}
     <script
