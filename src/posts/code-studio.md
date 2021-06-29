@@ -2,7 +2,7 @@
 title: CodeStudio Extension Pack for VS Code (ver. 0.8.0)
 subtitle: 'I created this extension for two reasons, the first to teach myself how to, the second, to scratch an itch that I had trying to figure out the quickest to get VSCODE from install to work ready.'
 date: 2021-06-26
-coverImg: ["code-studio.jpg"]
+coverImage: ["code-studio.jpg"]
 tags: ['posts']
 ---
 
