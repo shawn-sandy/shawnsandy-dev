@@ -42,5 +42,6 @@
   "cSpell.words": [
     "lenna"
   ],
-  "conventionalCommits.lineBreak": "\\n"
+  "conventionalCommits.lineBreak": "\\n",
+  "webhint.enableTelemetry": "disabled"
 }
