@@ -1,14 +1,26 @@
-{% extends "page.njk" %}
-<!--  -->
-{% block content %}
-<!--  -->
-<section>
-  {% for content in collections[category]| reverse %}
-  <article>
-    <p>{{ content.data.summary }}</p>
-    <hr />
-  </article>
-  {% endfor %}
-</section>
-<!--  -->
-{% endblock %}
+{% extends "base.njk" %}
+<!-- hide cover page -->
+{% block cover %}
+  <section class="bg-section" style="">
+    <h3 class="title-font  quote">
+      {{ subtitle or settings.subtitle }}
+    </h3>
+    <blockquote class="title-font">
+      {{ subtitle or settings.description }}
+    </blockquote>
+  {% endblock %}
+  {% block content %}
+    <main style="padding-top: calc(100rem / 16)">
+      <section>
+        {# -------------- #}
+        <article>
+          <p>
+            {{ content | safe }}
+          </p>
+        </article>
+      </section>
+      <aside>
+        {% include "partials/sidebar.njk" %}
+      </aside>
+    </main>
+  {% endblock %}

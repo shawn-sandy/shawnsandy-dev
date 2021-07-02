@@ -142,7 +142,7 @@ blockquote {
   @media (max-width: 980px) {
     max-width: 90vw;
     h3 {
-      font-size: calc(26rem / 16);
+      font-size: calc(26 / 16 * 1rem);
     }
   }
 }
