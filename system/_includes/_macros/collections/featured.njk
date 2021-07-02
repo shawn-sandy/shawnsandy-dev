@@ -10,7 +10,7 @@ reverse -%}
         <div role="listitem">
           {% if item.data.coverImage %}
             <picture>
-              <img loading="lazy" src="/images/{{ item.data.coverImage }}" alt="{{ item.data.title | slug }}" width="500" height="300"/>
+              <img loading="lazy" src="{{ hlp.sharp.coverImage(item.data.coverImage) }}" alt="{{ item.data.title | slug }}" width="500" height="300"/>
             </picture>
           {% endif %}
           <section>
