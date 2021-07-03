@@ -3,6 +3,7 @@ title: 'Tip: Simple, dynamic 11ty class-names'
 subtitle: ''
 date: 2021-06-08
 tags: ['posts', 'tips', '11ty']
+subtitle: "Here's a tip I found on 11ty rocks that allows you to add dynamic classes on your Eleventy template. I cleaned up the code to remove the if statements on Nunjucks templates and replaced them with or statement; personal preference."
 coverImage: ['11ty-class-names-code.jpg']
 ---
 
