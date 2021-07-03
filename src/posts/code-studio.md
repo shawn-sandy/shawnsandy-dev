@@ -1,6 +1,6 @@
 ---
 title: CodeStudio Extension Pack for VS Code (ver. 0.8.0)
-subtitle: 'CodeStudio is an extension pack for VSCODE that bundles several extensions for frontend developers into one install. I created this extension for two reasons, the first to teach myself how to, the second, to scratch an itch that I had trying to figure out the quickest to get VSCODE from install to work ready.'
+subtitle: 'CodeStudio is an extension pack for VSCODE that bundles several extensions (frontend) developers into one install. I created this extension for two reasons, the first to teach myself how to, the second, to scratch an itch that I had trying to figure out the quickest to get VSCODE from install to work ready.'
 date: 2021-06-26
 coverImage: ["code-studio.jpg"]
 tags: ['posts']
@@ -8,7 +8,7 @@ tags: ['posts']
 
 ![code studio]({{ hlp.sharp.img(['code-studio.jpg']) }})
 
-CodeStudio is an extension pack for VSCODE that bundles several extensions into one install. I created the extension for two reasons, the first to teach myself how to, the second, to scratch an itch that I had trying to figure out how to get VSCODE from installation to work ready in the quickest possible time. I managed to do both; YAY me :)!
+CodeStudio is an extension pack for VSCODE that bundles several extensions (frontend) into one install. I created the extension for two reasons, the first to teach myself how to, the second, to scratch an itch that I had trying to figure out how to get VSCODE from installation to work ready in the quickest possible time. I managed to do both; YAY me :)!
 
 In version 8.0, I have added two new extensions WebHint and Conventional Commits to the pack and removed a couple of older extensions with features that we're built into VSCODE.
 
