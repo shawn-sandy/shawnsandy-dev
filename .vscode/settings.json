@@ -37,10 +37,12 @@
     "assets",
     "wip",
     "update",
-    "accessibility"
+    "accessibility",
+    "enhancement"
   ],
   "cSpell.words": [
     "lenna"
   ],
-  "conventionalCommits.lineBreak": "\\n"
+  "conventionalCommits.lineBreak": "\\n",
+  "webhint.enableTelemetry": "disabled"
 }
