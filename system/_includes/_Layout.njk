@@ -7,13 +7,17 @@
     {% if env.node_env != 'PRODUCTION' %}
       <script defer src="https://cdn.accesslint.com/accesslint-1.1.2.js"></script>
     {% endif %}
-    <link rel="preload" as="style" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" media="all"/>
+    <link
+      rel="preload"
+      as="style"
+      href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css"
+      media="all"
+      crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
-      rel="preload"
-      as="style"
-      media="all">
+      media="all"
+      crossorigin="anonymous">
     {% block head %}
       <title>
         {{ title or settings.subtitle }} | {{ settings.title }}
