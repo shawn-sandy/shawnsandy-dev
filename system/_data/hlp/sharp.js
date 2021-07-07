@@ -84,7 +84,7 @@ const imgSrc = (imgs = 'google-security-check.jpg', options = {}) => {
  * @returns
  */
 const coverImage = (imgs = ['og-cover.png']) => {
-  return img(imgs, { width: 800, height: 500, format: 'jpg', suffix: '-cover', force: true })
+  return img(imgs, { width: 800, height: 500, format: 'webp', suffix: '-cover', force: true })
 }
 
 module.exports = {
