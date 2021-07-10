@@ -95,12 +95,15 @@ section {
     display: flex;
     justify-content: space-between;
     border: tokens.$primary-blue solid 0.19rem;
+    transition: all 0.2s ease !important;
+
     &:hover,
     &:focus {
       color: #fff;
       background-color: tokens.$primary-blue;
       border-color: transparent;
       text-decoration: none;
+      transform: scale(0.95);
     }
   }
 
