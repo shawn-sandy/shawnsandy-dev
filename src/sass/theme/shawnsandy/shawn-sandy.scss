@@ -179,3 +179,10 @@ footer[role='contentinfo'] {
     }
   }
 }
+
+img {
+  transition: all 0.2s ease !important;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
