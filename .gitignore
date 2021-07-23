@@ -3,3 +3,6 @@
 .cache/
 www/
 .env
+
+# Local Netlify folder
+.netlify
