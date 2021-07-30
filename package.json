@@ -55,7 +55,7 @@
   "homepage": "https://github.com/shawn-sandy/first-paint-apps#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-cache-assets": "^2.2.1",
+    "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-img": "^0.9.0",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
