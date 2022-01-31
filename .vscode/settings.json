@@ -44,5 +44,11 @@
     "lenna"
   ],
   "conventionalCommits.lineBreak": "\\n",
-  "webhint.enableTelemetry": "disabled"
+  "webhint.enableTelemetry": "disabled",
+  "markdownlint.config": {
+    "MD028": false,
+    "MD025": {
+      "front_matter_title": ""
+    }
+  }
 }

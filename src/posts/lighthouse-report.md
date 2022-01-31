@@ -26,13 +26,13 @@ Here is a link to the {{ hlp.11ty.openUrl('https://lighthouse-dot-webdotdevsite.
 
 ----------
 
-![lighthouse recommendations]({{ hlp.sharp.img(['lighthouse-recommend.jpg'], { format: 'webp' }) }})
+![lighthouse recommendations]({{ hlp.sharp.img(['lighthouse-reccomended.png'], { format: 'webp' }) }})
 
 ##### Recommendations and Fixes
 
 **Eliminate render-blocking resources**
 
-![preload fonts]({{ hlp.sharp.img(['preload-fonts.png'])}})
+![preload fonts]({{ hlp.sharp.img(['preload.png'])}})
 
 > The Opportunities section of your Lighthouse report lists all URLs blocking the first paint of your page. The goal is to reduce the impact of these render-blocking URLs by inlining critical resources, deferring non-critical resources, and removing anything unused.
 
@@ -54,7 +54,7 @@ Personally, I'm not a huge fan of this metric there is still not support for ima
 
 `*Updated {{ hlp.11ty.timeAgo('2021-06-17')}}*` : I added width/height attributes to the logo and featured images on the landing page, the change bumped up the performance score by 3 points to a 95, not bad!
 
-![img]({{ hlp.sharp.img(['audit-score-06-23-21.jpg']) }})
+![img]({{ hlp.sharp.img(['audit.jpg']) }})
 
 `*Updated {{ hlp.11ty.timeAgo('2021-06-23')}}*` : Added `preload as style/font` to header styles and scripts, this change bumped up performance score by 3points to a 98.
 

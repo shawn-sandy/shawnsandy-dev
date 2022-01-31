@@ -1,9 +1,24 @@
 ---
 layout: landing.njk
-title: ""
+title: ''
 scripts: []
 category: posts
 ---
 
 {%- include "partials/category.njk" %}
 <!--  -->
+{% raw %} {{ title }}
+<div v-scope>
+  <p>{{ count }}</p>
+  <p>{{ plusOne }}</p>
+  <button @click="increment" type="button">increment</button>
+</div>
+<div v-scope>{{ currentDate }} -- {{ daysAgo }}</div>
+<div v-scope="Counter({ initialCount: 1 })" @mounted="mounted">
+  <p>{{ count }} -- {{ Counted }}</p>
+  <button type="button" @click="inc">increment</button>
+</div>
+<div v-scope="Published({ publishedAt: '2021-1-10' })">
+  <p>{{ calcDays }}</p>
+</div>
+{% endraw %}

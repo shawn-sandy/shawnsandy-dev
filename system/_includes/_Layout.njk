@@ -20,6 +20,7 @@
       rel="preload stylesheet"
       as="style"
       crossorigin="anonymous">
+    <script src="https://unpkg.com/petite-vue" defer init></script>
     {% block head %}
       <title>
         {{ title or settings.subtitle }} | {{ settings.title }}
@@ -85,5 +86,67 @@
       </script>
     {% endif -%}
     {% clipboardscript %}
+    <script src="https://unpkg.com/petite-vue"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="https://unpkg.com/browse/dayjs@1.10.7/plugin/relativeTime.js"></script>
+    <script>
+      // calculate days ago
+      function Published(props) {
+        return {
+          aDate: props.publishedAt,
+          get calcDays() {
+            var day = dayjs(props.publishedAt).format('MMMM DD YYYY')
+            var period = (dayjs().diff(day, 'day')) > 30
+              ? 'month'
+              : 'day'
+            var label = (period === 'month')
+              ? ' months ago'
+              : ' days ago'
+            return dayjs().diff(dayjs(day), period) + label;
+          }
+        }
+      }
+      function Counter(props) {
+        return {
+          count: props.initialCount,
+          inc() {
+            this.count ++
+          },
+          mounted() {
+            console.log(`I'm mounted!`)
+          },
+          get Counted() {
+            return this.count
+          }
+        }
+      }
+      PetiteVue.createApp({
+        // exposed to all expressions $delimiters: [ "${", "}$" ],
+        Counter,
+        Published,
+        count: 0,
+        // getters
+        get plusOne() {
+          return this.count + 1
+        },
+        get currentDate() {
+          return dayjs().format('MMMM DD YYYY')
+        },
+        get daysAgo() {
+          var day = dayjs('2021-1-10').format('MMMM DD YYYY')
+          var period = (dayjs().diff(day, 'day')) > 30
+            ? 'month'
+            : 'day'
+          var label = (period === 'month')
+            ? ' months ago'
+            : ' days ago'
+          return dayjs().diff(dayjs(day), period) + label;
+        },
+        // methods
+        increment() {
+          this.count ++
+        }
+      }).mount()
+    </script>
   </body>
 </html>

@@ -2,16 +2,17 @@
   "recommendations": [
     "shawnsandy.codestudio",
     "dbaeumer.vscode-eslint",
-    "mkaufman.HTMLHint",
+    "mkaufman.htmlhint",
     "humao.rest-client",
     "dsznajder.es7-react-js-snippets",
     "eseom.nunjucks-template",
     "douglaszaltron.nunjucks-vscode-extensionpack",
-    "msjsdiag.debugger-for-chrome",
     "sdras.vue-vscode-extensionpack",
     "octref.vetur",
     "hollowtree.vue-snippets",
     "sdras.vue-vscode-snippets",
-    "vivaxy.vscode-conventional-commits"
+    "vivaxy.vscode-conventional-commits",
+    "ms-edgedevtools.vscode-edge-devtools",
+    "github.vscode-pull-request-github"
   ]
 }
