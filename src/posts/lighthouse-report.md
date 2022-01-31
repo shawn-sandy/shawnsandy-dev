@@ -26,9 +26,9 @@ Here is a link to the {{ hlp.11ty.openUrl('https://lighthouse-dot-webdotdevsite.
 
 ----------
 
-![lighthouse recommendations]({{ hlp.sharp.img(['lighthouse-reccomended.png'], { format: 'webp' }) }})
+![lighthouse recommendations]({{ hlp.sharp.img(['lighthouse-reccomends.png'], {format: 'webp'}) }})
 
-##### Recommendations and Fixes
+#### Recommendations and Fixes
 
 **Eliminate render-blocking resources**
 
