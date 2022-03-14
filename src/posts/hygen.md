@@ -5,9 +5,6 @@ subtitle: "Automote boilerplate code with Hygen--a simple, fast, and scalable co
 tags: ['posts', 'developer tooling']
 coverImage: ['hygen-script.png']
 ---
-
-> Hygen: The scalable code generator that saves you time.
-
 While working on creating components for a personal react project and I kept having to create the same files over and over. So I decided to automate the creation process, first thoughts were to go with `plop.js` but remembered that I had come across `Hygen.js` that seemed like and easier solution so I went with that. I will detail the process when I find time, for here is a usage guide find a gist(s) with my `hygen` scripts` below. align-baseline <a href="https://www.hygen.io/docs/quick-start" target="_blank" rel="nofollow noopener">Hygen Quick Start</a>
 
 ![hygen]({{ hlp.sharp.img(['hygen-script.png']) }})
@@ -20,9 +17,12 @@ While working on creating components for a personal react project and I kept hav
 - Build the template (see gist below)
 - Use the generator `hygen react-components new`
 
-----
+---
+
 > Gist of my Hygen scripts for creating react components with story book stories
-----
+
+---
+
 <script src="https://gist.github.com/shawn-sandy/031f2e3beae8c1e7c342a7c7e114425b.js"></script>
 
 Thank you hope you find this post useful.
