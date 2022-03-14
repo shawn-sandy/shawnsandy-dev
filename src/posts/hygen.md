@@ -20,11 +20,9 @@ While working on creating components for a personal react project and I kept hav
 - Build the template (see gist below)
 - Use the generator `hygen react-components new`
 
-
 ----
 > Gist of my Hygen scripts for creating react components with story book stories
 ----
 <script src="https://gist.github.com/shawn-sandy/031f2e3beae8c1e7c342a7c7e114425b.js"></script>
-
 
 Thank you hope you find this post useful.
