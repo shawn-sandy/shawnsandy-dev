@@ -13,6 +13,7 @@
     "sdras.vue-vscode-snippets",
     "vivaxy.vscode-conventional-commits",
     "ms-edgedevtools.vscode-edge-devtools",
-    "github.vscode-pull-request-github"
+    "github.vscode-pull-request-github",
+    "zaaack.markdown-editor"
   ]
 }
