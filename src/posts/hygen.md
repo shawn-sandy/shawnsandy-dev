@@ -1,7 +1,7 @@
 ---
 title: "Automate boilerplate task/code with Hygen"
 date: 2022-03-14
-subtitle: "Automote boilerplate code with Hygen--a simple, fast, and scalable code generator that lives in your project."
+subtitle: "Automate boilerplate code with Hygen--a simple, fast, and scalable code generator that lives in your project."
 tags: ['posts', 'developer tooling']
 coverImage: ['hygen-script.png']
 ---
