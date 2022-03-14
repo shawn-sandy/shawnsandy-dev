@@ -2,7 +2,7 @@
   "title": "ShawnSandy.dev",
   "subtitle": "Design, Code, Performance, Usability, Accessibility",
   "url": "https://shawnsandy.dev",
-  "description": "Design First; Frontend Engineer, advocate, Dad, Husband, and content creator that's crazy about design, performance, usability, accessibility empowerment, diversity and inclusion.",
+  "description": "UX/UI Engineer, advocate, Dad, Husband, content creator and autodidact; crazy about design, performance, usability, accessibility, diversity, and inclusion.",
   "logo_url": "/images/nav-logo.svg",
   "feed": {
     "subtitle": "A UI toolkit for creating and managing design/style systems, pattern libraries, style-guides, etc",
@@ -16,7 +16,5 @@
     "twitter": "@shawnsandy"
   },
   "styles": [],
-  "scripts": [
-    "./js/min/index.min.js"
-  ]
+  "scripts": ["./js/min/index.min.js"]
 }

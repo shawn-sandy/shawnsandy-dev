@@ -29,10 +29,13 @@ const resize = (imgs = [], options = {}) => {
   imgs.map((img, index) => {
     // console.log(index)
     const _name = img.split('.')
+    // const imgFormat = img.split('.').pop()
+    const getFormat = img.split('.').pop()
+    if (!options.format) { options.format = getFormat }
     const imgName = options.name || _name[0]
     const src = `${srcDir}${img}`
     const suffix = options.suffix || ''
-    const image = `${outputDir}${imgName}${suffix}.${format}`
+    const image = `${outputDir}${imgName}${suffix}.${options.format}`
 
     if (!fs.existsSync(src)) {
       // console.log(image)
@@ -62,8 +65,10 @@ const resize = (imgs = [], options = {}) => {
 const img = (imgs = ['google-security-check.jpg'], options = {}) => {
   if (imgs.length > 0) {
     resize([imgs[0]], options)
+    const getFormat = imgs[0].split('.').pop()
+    if (!options.format) { options.format = getFormat }
     const imgName = getName(imgs[0])
-    return `/${options.imgDir || 'images'}/${imgName}${options.suffix || ''}.${options.format || 'jpg'}`
+    return `/${options.imgDir || 'images'}/${imgName}${options.suffix || ''}.${options.format}`
   }
   return null
 }
