@@ -56,3 +56,7 @@ section [role='list'] [role='listitem'] {
   flex: 2rem;
   margin-bottom: 2rem;
 }
+
+body > header {
+  border-bottom-style: dotted !important;
+}
