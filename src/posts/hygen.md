@@ -7,7 +7,7 @@ coverImage: ['hygen-script.png']
 ---
 While working on react components for a personal project I kept having to create the same files over and over. Why not automate the creation process, first thoughts were to go with `plop.js` but remembered that I had come across `Hygen.js` that seemed like and easier solution so I decided to give it a try.
 
-I will detail the process when I find time (promise 🙂), for I have added a gist(s) with my `hygen` scripts` below. Checkout the <a href="https://www.hygen.io/docs/quick-start" target="_blank" rel="nofollow noopener">Hygen Quick Start</a>
+I will detail the process when I find time (promise 🙂), for now I have added a gist(s) with my `hygen` scripts` below. Checkout the <a href="https://www.hygen.io/docs/quick-start" target="_blank" rel="nofollow noopener">Hygen Quick Start</a>
 
 #### Install, setup hygen, scaffold a project in hygen
 
