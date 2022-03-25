@@ -11,7 +11,7 @@ module.exports = {
       {
         type: 'input',
         name: 'fileName',
-        message: 'What is file name name (blog.md)?'
+        message: 'What is file name name (blog)?'
       },
       {
         type: 'select',

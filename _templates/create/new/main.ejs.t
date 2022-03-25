@@ -1,21 +1,14 @@
 ---
-to: _templates/create/<%= name %>/<%= fileName %>
+to: _templates/create/<%= name %>/<%= fileName %>.ejs.t
 ---
 
----
-to: app/hello.js
----
-## name <%= name %>
-## fileName <%= fileName %>
-## options <%= options %>
+# ---
+# to: path/name/<%= name %>/<%= fileName %>.ext
+# ---
 
-const hello = ```
-Hello!
-This is your first hygen template.
+#name: <%= name %>
+#fileName: <%= fileName %>
+#options: <%= options %>
 
-Learn what it can do here:
+# open prompt.js dir to configure generator actions
 
-https://github.com/jondot/hygen
-```
-
-console.log(hello)
