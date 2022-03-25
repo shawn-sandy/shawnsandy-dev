@@ -34,11 +34,11 @@
   "terminal.integrated.automationShell.osx": "",
   "conventionalCommits.scopes": [
     "content",
-    "assets",
     "wip",
     "update",
     "accessibility",
-    "enhancement"
+    "enhancement",
+    "dev"
   ],
   "cSpell.words": ["lenna"],
   "conventionalCommits.lineBreak": "\\n",
