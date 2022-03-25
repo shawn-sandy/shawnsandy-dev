@@ -16,13 +16,19 @@ prompt: ({ inquirer }) => {
         name: 'actionName',
         message: 'What is action name (blog)?'
       },
+      {
+        type: 'select',
+        name: 'options',
+        message: 'Which sub_folder of the package dir you would like to place the component (src/components)?',
+        choices: ['components', 'elements', 'modules', 'page', 'services']
+      }
 
     ]
     return inquirer
       .prompt(questions)
       .then(answers => {
-        const { name, actionName } = answers
-        return { ...answers, actionName}
+        const { name, actionName, options } = answers
+        return { ...answers, actionName, options}
       })
   }
 }
