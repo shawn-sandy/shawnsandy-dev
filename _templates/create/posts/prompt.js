@@ -9,26 +9,26 @@ prompt: ({ inquirer }) => {
       {
         type: 'input',
         name: 'name',
-        message: 'What is the doc name?'
+        message: 'What is the post name/title?'
       },
       {
         type: 'input',
-        name: 'actionName',
-        message: 'What is action name (blog)?'
+        name: 'fileName',
+        message: 'What is file name (blog.md/html)?'
       },
       {
         type: 'select',
         name: 'options',
         message: 'Which sub_folder of the package dir you would like to place the component (src/components)?',
-        choices: ['components', 'elements', 'modules', 'page', 'services']
+        choices: ['content', 'posts', 'pages', 'developers']
       }
 
     ]
     return inquirer
       .prompt(questions)
       .then(answers => {
-        const { name, actionName, options } = answers
-        return { ...answers, actionName, options}
+        const { name, fileName, options } = answers
+        return { ...answers, name, fileName, options}
       })
   }
 }
