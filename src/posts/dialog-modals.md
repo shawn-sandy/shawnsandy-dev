@@ -97,4 +97,6 @@ While, I have not done any meaningful research into the details of making the di
 
 [Mark Dotto - Fun with the dialog element](https://markdotto.com/2022/03/16/dialog-element/)
 
+[CSS-TRICKS - Replace JS dialogs with HTML dialog element](https://css-tricks.com/replace-javascript-dialogs-html-dialog-element/)
+
 [A11y - Dialog Element](https://a11y-dialog.netlify.app/)
