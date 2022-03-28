@@ -89,3 +89,12 @@ dialog {
 > The dialog element still has compatibility issues with some forms of assistive technology, which may prevent people from reading or using dialog element content.
 
 While, I have not done any meaningful research into the details of making the dialog element accessible, I would add the `aria-live` to the element to make it announce changes with `aria-modal` and `aria-hidden`  attributes. A listener for the `esc` key to close the dialog, and `tab` focus for keyboard navigation. [Check the here for more info and examples.](https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html)
+
+
+#### Links and References
+
+[Cordorps - How to implement and style the dialog element](https://tympanus.net/codrops/2021/10/06/how-to-implement-and-style-the-dialog-element/)
+
+[Mark Dotto - Fun with the dialog element](https://markdotto.com/2022/03/16/dialog-element/)
+
+[A11y - Dialog Element](https://a11y-dialog.netlify.app/)
