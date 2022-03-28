@@ -10,7 +10,7 @@ tags: ['posts', 'tools', accessibility']
 <!-- image -->
 !['Accesslint github site']({{ hlp.sharp.img(['dialog.png'])}})
 
-Yeaaa!!! You heard me right native HTML5 Modals are finally are here, available across all evergreen browsers and they are fun. Well actually its the new `<dialog>` element. While it does require a bit of javascript to work for events and the likes, most of the functionality you need to create a modals come out of the box white this gem.
+Yeaaa!!! You heard me right native HTML5 Modals are finally here, available across all evergreen browsers and they are fun. Well actually its the new `<dialog>` element. While it does require a bit of javascript to work for events and the likes, most of the functionality you need to create a modals come out of the box white this gem.
 
 Creating a modals with the `dialog` element is pretty simple compared to what we had to do before to get a modal on the page, I will walk you through the my process to try and give you an idea of how simple it can be.
 ### Creating a Modal Dialog
