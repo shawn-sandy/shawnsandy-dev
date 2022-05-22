@@ -1,17 +1,15 @@
 @use '@shawnsandy/first-paint/src/components.scss';
 
-
 @include components.button-links();
 @include components.form-elements();
 @include components.header-addBorders();
 @include components.elements-pre();
 
-
-a[role=button]>em {
+a[role='button'] > em {
   filter: contrast(1.15);
 }
 
-header>section[role=banner] {
+header > section[role='banner'] {
   @media (min-width: 980px) {
     max-width: 70%;
   }
@@ -21,15 +19,14 @@ strong {
   font-weight: 500;
 }
 
-[aria-label=feature] {
-
+[aria-label='feature'] {
   ul {
-    margin-left: .9rem;
+    margin-left: 0.9rem;
     list-style: disc;
     margin-bottom: 1rem;
 
-    li+li {
-      margin-top: .5rem;
+    li + li {
+      margin-top: 0.5rem;
     }
   }
 
@@ -42,4 +39,8 @@ nav {
   @media (min-width: 980px) {
     //align-items: center;
   }
+}
+
+img[alt]::after {
+  all: revert !important;
 }
