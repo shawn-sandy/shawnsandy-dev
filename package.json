@@ -67,7 +67,7 @@
     "html-minifier": "^4.0.0",
     "jimp": "^0.16.1",
     "lodash.take": "^4.1.1",
-    "sharp": "^0.29.2",
+    "sharp": "^0.29.3",
     "style-dictionary": "^3.0.3"
   },
   "devDependencies": {
