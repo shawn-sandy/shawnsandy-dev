@@ -1,6 +1,0 @@
-{
-  "layout": "dashboard.njk",
-  "tags": "developers",
-  "showDate": true,
-  "scripts": []
-}

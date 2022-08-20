@@ -60,3 +60,7 @@ section [role='list'] [role='listitem'] {
 body > header {
   border-bottom-style: dotted !important;
 }
+
+img[alt]::after {
+  all: none;
+}

@@ -6,3 +6,4 @@ www/
 
 # Local Netlify folder
 .netlify
+src/.DS_Store

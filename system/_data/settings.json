@@ -16,5 +16,5 @@
     "twitter": "@shawnsandy"
   },
   "styles": [],
-  "scripts": ["./js/min/index.min.js"]
+  "scripts": ["/js/min/index.min.js"]
 }
