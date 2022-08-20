@@ -1,5 +1,5 @@
 ---
-title: Native HTML5 Modals (aka Modals) are FUN!
+title: Native HTML5 Modals (aka HTML Dialogs) are FUN!
 subtitle: 'Native HTML5 Modals (Dialogs) are finally here and available across all ever green browsers and they are fun!'
 date: 2022-03-25
 coverImage: ['dialog.png']
