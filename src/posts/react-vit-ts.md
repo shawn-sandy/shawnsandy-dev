@@ -358,12 +358,12 @@ I have created a Vite React Typescript starter template https://github.com/shawn
 
  Please check out the links and resources below for additional info.
 
-[Vite](https://vitejs.dev/)
+[Vite](https://vitejs.dev/) Next Generation Frontend Tooling. Get ready for a development environment that can finally catch up with you.
 
-[Vitest](https://vitest.dev/)
+[Vitest](https://vitest.dev/) Blazing Fast Unit Test Framework. A Vite-native unit test framework. It's fast!
 
-[Testing Library | Testing Library](https://testing-library.com/)
+[Testing Library | Testing Library](https://testing-library.com/) Simple and complete testing utilities that encourage good testing practices
 
-[Jest](https://jestjs.io/)
+[Jest](https://jestjs.io/) Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 
-[Chai](https://www.chaijs.com/)
+[Chai](https://www.chaijs.com/) Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
