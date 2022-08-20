@@ -2,7 +2,7 @@
 title: 'Creating, Testing, and Publishing React components with Vite'
 subtitle: 'Recently I switched from create-react-app (CRA) for creating and publishing react apps and components to rolling my own build solution using Vite, Vitest, and Typescript.'
 date: 2022-08-20
-coverImage: ['access-lint.jpg']
+coverImage: ['vite.png']
 tags: ['posts']
 ---
 
