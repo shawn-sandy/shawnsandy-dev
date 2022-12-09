@@ -40,7 +40,9 @@
     "enhancement",
     "dev"
   ],
-  "cSpell.words": ["lenna"],
+  "cSpell.words": [
+    "lerna"
+  ],
   "conventionalCommits.lineBreak": "\\n",
   "webhint.enableTelemetry": "disabled",
   "markdownlint.config": {
@@ -49,5 +51,17 @@
       "front_matter_title": ""
     }
   },
-  "errorLens.excludePatterns": ["**/*.md"]
+  "errorLens.excludePatterns": [
+    "**/*.md"
+  ],
+  "frontMatter.content.autoUpdateDate": true,
+  "[markdown]": {
+    "editor.fontSize": 14,
+    "editor.lineHeight": 26,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 64,
+    "editor.lineNumbers": "off",
+    "editor.quickSuggestions": true,
+    "editor.minimap.enabled": true
+  }
 }

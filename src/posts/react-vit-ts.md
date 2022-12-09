@@ -1,13 +1,19 @@
 ---
-title: 'Creating, Testing, and Publishing React components with Vite'
-subtitle: 'Recently I switched from create-react-app (CRA) for creating and publishing react apps and components to rolling my own build solution using Vite, Vitest, and Typescript.'
+title: Creating, Testing, and Publishing React components with Vite
+subtitle: Recently I switched from create-react-app (CRA) for creating and publishing
+  react apps and components to rolling my own build solution using Vite, Vitest,
+  and Typescript.
 date: 2022-08-20
-coverImage: ['vite.png']
-tags: ['posts']
+coverImage:
+  - vite.png
+tags:
+  - posts
+description: "Recently I switched from create-react-app (CRA) for creating and publishing
+  react apps and components to rolling my own build solution using Vite, Vitest,
+  and Typescript. "
 ---
 
 ![code studio]({{ hlp.sharp.img(['vite-test.png']) }})
-
 
 Recently I switched from create-react-app (CRA) for creating and publishing react apps and components to rolling my own build solution using Vite, Vitest, and Typescript. CRA provided an excellent start for creating basic react applications, but it lacked the flexibility I needed to customize component development and builds to meet my specific needs. I've been hearing great things about Vite, So I decided to try it and was not disappointed. Here is a basic outline of what this involved; I will get into more details in a future post.
 
@@ -26,7 +32,7 @@ Vite.js is a super easy-to-use next-generation build tool from the creator of VU
 
  What's more is that if you use Jest, Chai, or React Testing Library and are concerned with having to learn a new API. Vitest test is compatible with these frameworks which is a huge plus. It also offers a UI to view and interact with your test/code in the browser, SWEET!!!
 
-### Scaffold a React component with Vite.
+### Scaffold a React component with Vite
 
 ```bash
 npm create vite@latest
@@ -138,10 +144,10 @@ Next, add a test command `vitest` to your npm scripts section in your `package.j
 
 ```json
 "scripts": {
-	"start": "vite --open",
-	"dev": "vite",
-	...
-	"test": "vitest"
+ "start": "vite --open",
+ "dev": "vite",
+ ...
+ "test": "vitest"
 },
 ```
 
@@ -170,13 +176,13 @@ Now let's add some additional test script utilities to leverage the benefits of 
 ```json
 
 "scripts": {
-	"start": "vite --open",
-	"dev": "vite",
-	...
-	"test": "vitest"
-	"test:ui": "vitest --ui",
-	"test:coverage": "vitest --run --coverage",
-	"test:ui:coverage": "vitest --ui --coverage"
+ "start": "vite --open",
+ "dev": "vite",
+ ...
+ "test": "vitest"
+ "test:ui": "vitest --ui",
+ "test:coverage": "vitest --run --coverage",
+ "test:ui:coverage": "vitest --ui --coverage"
 },
 ```
 
@@ -234,10 +240,10 @@ Next, add the following command to your scripts section of your `package.json` f
 
 ```json
 "scripts": {
-	"start": "vite --open",
-	"dev": "vite",
-	...
-	"build": "tsc && vite build",
+ "start": "vite --open",
+ "dev": "vite",
+ ...
+ "build": "tsc && vite build",
   "build:package": "tsc && vite build --mode package --config vite.package.config.ts",
 },
 ```
@@ -352,7 +358,7 @@ export default Button
 
 ### Vite React Typescript Starter Template
 
-I have created a Vite React Typescript starter template https://github.com/shawn-sandy/vite-react-ts-kit on github [click here to clone to your own repository](https://github.com/shawn-sandy/vite-react-ts-kit/generate)  or you can use [degit to copy](https://github.com/Rich-Harris/degit) to copy to you machine `degit shawn-sandy/vite-react-ts-kit`
+I have created a Vite React Typescript starter template <https://github.com/shawn-sandy/vite-react-ts-kit> on github [click here to clone to your own repository](https://github.com/shawn-sandy/vite-react-ts-kit/generate)  or you can use [degit to copy](https://github.com/Rich-Harris/degit) to copy to you machine `degit shawn-sandy/vite-react-ts-kit`
 
 ### Resources/Links
 
