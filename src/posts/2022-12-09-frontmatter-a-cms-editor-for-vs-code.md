@@ -8,7 +8,7 @@ tags:
   - posts
 categories: ""
 keywords: []
-lastmod: 2022-12-10T20:54:32.581Z
+lastmod: 2022-12-10T21:31:54.014Z
 description: Front Matter is a CMS that runs within Visual Studio Code/GitPod/... It gives
   you the power and control of a full-blown CMS while also providing you the
   flexibility and speed of the static site generator of your choice. Jump right
@@ -46,6 +46,6 @@ The sidebar allows you to manage your manage content properties
 - content configuration
 - view modified files
 
-I'm still learning how all this works but I like what I'm seeing so far and I plan continue using it to create and manage content for this blog. Check out the [Front Matter Website for more info](https://frontmatter.codes/)
+I'm still learning how all this works but I like what I'm seeing so far, I plan continue using it to create and manage content for this blog. Check out the [Front Matter Website for more info](https://frontmatter.codes/)
 
 Enjoy!
