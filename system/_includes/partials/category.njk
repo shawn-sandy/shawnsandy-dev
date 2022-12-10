@@ -7,7 +7,7 @@
     <h3 id="{{ content.data.title | slug }}">
       <a href="{{ content.url }}">{{ content.data.title }}</a>
     </h3>
-    <p>{{ content.data.summary or hlp.11ty.stripHtml(content.templateContent) |
+    <p>{{ content.data.description or hlp.11ty.stripHtml(content.templateContent) |
     truncate(300) | safe }}</p>
     <footer>
       <a href="{{ content.url }}" role="button">

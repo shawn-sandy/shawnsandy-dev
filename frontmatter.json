@@ -46,5 +46,34 @@
       ]
     }
   ],
-  "frontMatter.framework.id": "11ty"
+  "frontMatter.framework.id": "11ty",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "pages",
+      "path": "[[workspace]]/src/pages"
+    },
+    {
+      "title": "codestudio",
+      "path": "[[workspace]]/src/codestudio"
+    },
+    {
+      "title": "content",
+      "path": "[[workspace]]/src/content"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/src/posts"
+    }
+  ],
+  "frontMatter.content.snippets": {
+    "add sharp image": {
+      "description": "Insert image using MD",
+      "body": [
+        "![code studio]({{ hlp.sharp.img(['image-name.jpg']) }})",
+        ""
+      ],
+      "isMediaSnippet": true,
+      "fields": []
+    }
+  }
 }
