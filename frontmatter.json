@@ -90,6 +90,26 @@
           "required": true
         }
       ]
+    },
+    "External URLS": {
+      "description": "",
+      "body": " {{ hlp.11ty.openUrl('https://[[url]]', '[[label]]') | safe }} ",
+      "fields": [
+        {
+          "name": "label",
+          "title": "label",
+          "type": "string",
+          "single": true,
+          "default": ""
+        },
+        {
+          "name": "url",
+          "title": "url",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
     }
   }
 }
