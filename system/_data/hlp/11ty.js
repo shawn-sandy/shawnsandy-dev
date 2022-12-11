@@ -9,6 +9,13 @@ const date = new Date()
 const dayjs = require('dayjs')
 const relativeTime = require('dayjs/plugin/relativeTime')
 
+const formattedDate = (date) => dayjs(date).format('MMMM DD, YYYY')
+
+const timeAgo = (date) => {
+  dayjs.extend(relativeTime)
+  return dayjs(date).fromNow()
+}
+
 const currentYear = () => date.getFullYear()
 
 const formatDate = (date) => new Date(date).toDateString()
@@ -28,11 +35,6 @@ const limit = ($arr = [], $limit = 3) => {
   return null
 }
 
-const timeAgo = (date) => {
-  dayjs.extend(relativeTime)
-  return dayjs(date).fromNow()
-}
-
 const openUrl = (url, label = null) => {
   if (!url) { console.warn('url required'); return }
   return `<a href="${url}" target="_blank" rel="nofollow noopener">${label || url}</a>`
@@ -46,5 +48,6 @@ module.exports = {
   stripHtml, // deprecated use strip
   limit,
   timeAgo,
-  openUrl
+  openUrl,
+  formattedDate
 }

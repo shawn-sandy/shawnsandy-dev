@@ -1,0 +1,115 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "11ty",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "pages",
+      "path": "[[workspace]]/src/pages"
+    },
+    {
+      "title": "codestudio",
+      "path": "[[workspace]]/src/codestudio"
+    },
+    {
+      "title": "content",
+      "path": "[[workspace]]/src/content"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/src/posts"
+    }
+  ],
+  "frontMatter.content.snippets": {
+    "Sharp image": {
+      "description": "",
+      "body": [
+        "",
+        "!['[[alt]]']({{ hlp.sharp.img(['[[image-path]]']) }})",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "alt",
+          "title": "alt",
+          "type": "string",
+          "single": true,
+          "default": "image"
+        },
+        {
+          "name": "image-path",
+          "title": "image-path",
+          "type": "string",
+          "single": true,
+          "default": "",
+          "required": true
+        }
+      ]
+    },
+    "External URLS": {
+      "description": "",
+      "body": " {{ hlp.11ty.openUrl('https://[[url]]', '[[label]]') | safe }} ",
+      "fields": [
+        {
+          "name": "label",
+          "title": "label",
+          "type": "string",
+          "single": true,
+          "default": ""
+        },
+        {
+          "name": "url",
+          "title": "url",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
+    }
+  }
+}

@@ -12,12 +12,13 @@
           {% if showDate %}
             <time datetime="{{ page.date }}">
               <i class="ti ti-calendar-event"></i>
-              {{ hlp.11ty.timeAgo(page.date) }}
+              {# {{ hlp.11ty.timeAgo(page.date) }} #}
+              {{ hlp.11ty.formattedDate(page.date) }}
             </time>
           {% endif %}
         {% endif %}
         <p>
-          {{ content | safe }}
+         {{ content | safe }}
         </p>
       </article>
     </section>
