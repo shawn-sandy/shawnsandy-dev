@@ -66,14 +66,30 @@
     }
   ],
   "frontMatter.content.snippets": {
-    "add sharp image": {
-      "description": "Insert image using MD",
+    "Sharp image": {
+      "description": "",
       "body": [
-        "![code studio]({{ hlp.sharp.img(['image-name.jpg']) }})",
+        "",
+        "!['[[alt]]']({{ hlp.sharp.img(['[[image-path]]']) }})",
         ""
       ],
-      "isMediaSnippet": true,
-      "fields": []
+      "fields": [
+        {
+          "name": "alt",
+          "title": "alt",
+          "type": "string",
+          "single": true,
+          "default": "image"
+        },
+        {
+          "name": "image-path",
+          "title": "image-path",
+          "type": "string",
+          "single": true,
+          "default": "",
+          "required": true
+        }
+      ]
     }
   }
 }
