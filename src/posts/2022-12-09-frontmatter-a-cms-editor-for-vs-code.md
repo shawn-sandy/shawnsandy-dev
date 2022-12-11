@@ -1,5 +1,5 @@
 ---
-title: FrontMatter a CMS editor for VS Code
+title: FrontMatter a CMS editor for VS Code (first look)
 subtitle: Front Matter is an integrated CMS editor Visual Studio Code
 date: 2022-12-12T12:46:06.000Z
 preview: ""
@@ -8,7 +8,7 @@ tags:
   - posts
 categories: ""
 keywords: []
-lastmod: 2022-12-11T10:23:07.258Z
+lastmod: 2022-12-11T10:27:53.280Z
 description: Front Matter is a CMS that runs within Visual Studio Code/GitPod/... It gives
   you the power and control of a full-blown CMS while also providing you the
   flexibility and speed of the static site generator of your choice. Jump right
