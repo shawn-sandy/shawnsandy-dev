@@ -10,12 +10,13 @@ categories: ""
 keywords: []
 coverImage:
   - front-matter-dashboard.png
-lastmod: 2022-12-11T18:52:37.584Z
+lastmod: 2022-12-15T12:38:56.505Z
 description: Front Matter is a CMS that runs within Visual Studio Code/GitPod/... It gives
   you the power and control of a full-blown CMS while also providing you the
   flexibility and speed of the static site generator of your choice. Jump right
   into editing and creating content with Front Matter and be able to preview it
   straight in VS Code.
+slug: frontmatter-cms-editor-code
 ---
 
 ![front matter dashboard]({{ hlp.sharp.img(['front-matter-dashboard.png']) }})
@@ -28,6 +29,8 @@ I tried the latest version of Front Matter an integrated CMS editor for VSCode a
 - Check your framework - loads presets for you static framework of choice
 - Register content folders - add folders for your content files
 - Load the dashboard if you choose - check if you want the dashboard loaded
+
+!['image']({{ hlp.sharp.img(['front-matter-preview.png']) }})
 
 From the dashboard you can create and manage
 

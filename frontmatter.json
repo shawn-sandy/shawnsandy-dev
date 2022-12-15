@@ -42,6 +42,30 @@
           "title": "Categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "subtitle",
+          "name": "subtitle",
+          "type": "string"
+        },
+        {
+          "title": "keywords",
+          "name": "keywords",
+          "type": "fields",
+          "fields": []
+        },
+        {
+          "title": "coverImage",
+          "name": "coverImage",
+          "type": "choice",
+          "choices": [
+            "front-matter-dashboard.png"
+          ]
+        },
+        {
+          "title": "lastmod",
+          "name": "lastmod",
+          "type": "datetime"
         }
       ]
     }
